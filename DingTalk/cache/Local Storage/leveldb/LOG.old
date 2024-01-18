@@ -1,0 +1,6 @@
+2024/01/17-08:55:44.845 4a1 Reusing MANIFEST /home/ma/.config/DingTalk/cache/Local Storage/leveldb/MANIFEST-000001
+2024/01/17-08:55:44.850 4a1 Recovering log #40
+2024/01/17-08:55:44.851 4a1 Reusing old log /home/ma/.config/DingTalk/cache/Local Storage/leveldb/000040.log 
+2024/01/17-08:55:56.844 4a3 Level-0 table #44: started
+2024/01/17-08:55:56.854 4a3 Level-0 table #44: 106710 bytes OK
+2024/01/17-08:55:56.858 4a3 Delete type=0 #40

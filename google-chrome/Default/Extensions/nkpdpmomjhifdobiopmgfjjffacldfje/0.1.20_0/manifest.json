@@ -1,0 +1,46 @@
+{
+   "action": {
+      "default_icon": "images/ep_128.png",
+      "default_popup": "popup.html",
+      "default_title": "EasyPubMedicine"
+   },
+   "background": {
+      "module": true,
+      "service_worker": "js/background.js"
+   },
+   "content_scripts": [ {
+      "css": [ "css/style.css" ],
+      "js": [ "js/content-script.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_end"
+   } ],
+   "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'",
+      "sandbox": "sandbox allow-scripts allow-forms allow-popups allow-modals; script-src 'self' 'unsafe-inline' 'unsafe-eval'; child-src 'self'"
+   },
+   "declarative_net_request": {
+      "rule_resources": [ {
+         "enabled": true,
+         "id": "ruleset_1",
+         "path": "rules.json"
+      } ]
+   },
+   "description": "EasyPubMedicine makes PubMed easy to use",
+   "host_permissions": [ "https://sci-hub.st/", "https://sci-hub.se/", "https://sci-hub.ru/", "https://sci-hub.ee/", "https://sci-hub.do/", "https://sci-hub.ren/", "https://sci-hub.cc/", "https://sci-hub.tw/", "https://sci-hub.wf/", "https://sci-hub.shop/", "http://libgen.gs/", "https://cn.bing.com/dict/", "https://translate.google.com/", "https://translate.google.cn/", "https://gitee.com/easypubmed/easypubmed/", "https://www.ncbi.nlm.nih.gov/", "https://www.deepl.com/", "https://api.openai.com/", "*://*.qq.com/", "*://*.deepl.com/", "*://*.google.com/*", "*://*.ncbi.nlm.nih.gov/*", "file://*/*", "http://lx2.loc.gov/", "*://*.amazon.com/*", "https://easypubmed.vercel.app/", "https://pubmed.ncbi.nlm.nih.gov/", "https://lingocloud.cyapi.cn/" ],
+   "icons": {
+      "128": "images/ep_128.png",
+      "16": "images/ep_16.png",
+      "48": "images/ep_48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAygzX1MrhSJ7YQaM91976iw7lGIdUBtckcnXD8OEH0ame5SQ5wOF+XDL1yepOr6TV/cQcSco3C0QmTL80F1n0tYIX2iH0N4hDZ7VYy4EjgHrYVLdk9daNtr3QsEUkA0f8RfkKhf7xcP2y1hUIf+ByvEJjC8SlX8Brd+40Yw+BnMBx98jB8b18YU6P9KoeF6wniZEVkrqJ9KGqVJNpN7Ne9iNfblPRv5Qgt3D9II+TemG/ppO9VbLFZarZfCsbiv61tKzcSQvbzQTB9NkW9y9OyC0DrqknLK2tY9aOzXgFakQa/NDuu2+uF/tGgHufEco21Oztm7DLG73oVyTDAY0+sQIDAQAB",
+   "manifest_version": 3,
+   "name": "EasyPubMedicine",
+   "permissions": [ "declarativeNetRequest", "unlimitedStorage", "downloads", "downloads.open", "clipboardRead", "clipboardWrite", "storage", "contextMenus", "debugger" ],
+   "short_name": "EP",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.1.20",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "images/*.png", "data/*.*", "data/locales/*.xml", "css/style.css", "pubmedFilter.html", "referenceManager.html", "esSideBar/*.*", "esSidebar.html", "screenshot.html" ]
+   } ]
+}

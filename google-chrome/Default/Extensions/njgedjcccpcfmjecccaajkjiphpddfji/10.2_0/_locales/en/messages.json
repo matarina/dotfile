@@ -1,0 +1,10 @@
+{
+   "appDesc": {
+      "description": "The description of the application, displayed in the web store.",
+      "message": "It displays a variety of literature rankings on multiple academic websites, and provides translation and literature collection functions to facilitate scientific research"
+   },
+   "appName": {
+      "description": "The title of the application, displayed in the web store.",
+      "message": "easyScholar"
+   }
+}

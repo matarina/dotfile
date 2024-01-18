@@ -1,0 +1,24 @@
+{
+   "action": {
+      "default_icon": "icon.png"
+   },
+   "author": "Omar Wheatley",
+   "background": {
+      "service_worker": "myscript.js"
+   },
+   "description": "This extension hides images and videos for less distractions.",
+   "icons": {
+      "128": "icon.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA9u1wHtQOsyQzGTeSYZRVz2C38gu+iAK0WIYFNWs54ZTo9iAcrwwdXbymoHEojwJkJUI04Fy6LKy7Pv1gprmTYBGDo1j+3I6qEtF7Hf9UqCVd9Q+FUIZdS+4sM1KpFGGFePWTGP+5sA3FJIU7Vqu9rwG5XctwY/pMjAtMyTh7Pbx+zD1uE/yWCIh2w0rN66tRilnruA6PUQlTZgqOdx2jXkwX2MxuMGoHcR3nOS4vyu0xA2E8nojXrBC3NTqYDNWDnh753DP/TLLkN8da3SbG1IvcgjYKo+KFxmKoajCMxPliSA2o5D/oyd8aIVdceF6KJaFl3kkK5u6qlGPUvyUm2wIDAQAB",
+   "manifest_version": 3,
+   "name": "Hide Images/Videos",
+   "options_ui": {
+      "open_in_tab": false,
+      "page": "options.html"
+   },
+   "permissions": [ "activeTab", "storage", "scripting" ],
+   "short_name": "Hide Images",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.0.0"
+}

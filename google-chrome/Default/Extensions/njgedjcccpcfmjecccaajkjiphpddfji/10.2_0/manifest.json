@@ -1,0 +1,33 @@
+{
+   "action": {
+      "default_icon": {
+         "16": "lib/logo/16.png",
+         "32": "lib/logo/32.png"
+      },
+      "default_popup": "popup/popup.html"
+   },
+   "background": {
+      "service_worker": "/show_ranking/ranking/service_worker.js"
+   },
+   "content_scripts": [ {
+      "css": [ "show_ranking/style.css", "lib/sweetalert2/sweetalert2.min.css", "lib/paper/dialog.css" ],
+      "exclude_matches": [ "https://www.scoregg.com/*", "https://appstorrent.ru/*", "https://www.ctrip.com/*", "https://online.phyloviz.net/*", "https://*.overleaf.com/*", "https://overleaf.com/*" ],
+      "js": [ "lib/js/jquery-3.3.1.min.js", "lib/paper/dialog.js", "lib/paper/xm-select.js", "show_ranking/ranking/utils.js", "lib/sweetalert2/sweetalert2.min.js", "translation/translation.js" ],
+      "matches": [ "https://*/*", "http://*/*" ]
+   } ],
+   "default_locale": "zh_CN",
+   "description": "显示各种文献排名，并且提供翻译、文献收藏功能，助力科研。",
+   "homepage_url": "https://www.easyscholar.cc",
+   "host_permissions": [ "https://easyscholar.co/*", "https://www.easyscholar.cc/*", "https://easyscholar.cc/*" ],
+   "icons": {
+      "128": "lib/logo/128.png",
+      "16": "lib/logo/16.png",
+      "48": "lib/logo/48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAu9FX9uYBjF6w/PU2XX4C1QUhUW35hDx443kazb2FQbf9E9vXFRQTeWaPy83vt9nUB0+KjYhjhVR8QaV53495AsgkFyIeHDXo2Z5gwC3AuPTJNPVh8qDUf7yUzwYnnm3lWJ0Iw63Z/8txpN48TOOerfN+6MOhqhqP4ClOP7Gi5ZdbeY0N2LMju2DNWoFUM0QzC8TzFhvyl8Pv8p93qK/kT9yR8SYsjN54hhRlQm51vJZsmx9nt91RHYnDYqadmiqv9PIk6WkVlhWTM1MVZwkZ+/iujFybFF8p+IKVTDz233R2U5LDdrdm7gZ7ecJkDaTXMiawDCLJj65HsoCEdsCfXQIDAQAB",
+   "manifest_version": 3,
+   "name": "easyScholar",
+   "permissions": [ "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "10.2"
+}

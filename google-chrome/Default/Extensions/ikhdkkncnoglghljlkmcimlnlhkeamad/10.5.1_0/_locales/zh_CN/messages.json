@@ -1,0 +1,37 @@
+{
+   "commands_translate": {
+      "message": "翻译选中的文本"
+   },
+   "commonds_hoverTranslate": {
+      "message": "鼠标悬浮取词"
+   },
+   "commonds_page": {
+      "message": "网页全文翻译"
+   },
+   "commonds_pageSwitchMode": {
+      "message": "切换双语 / 原文 / 译文"
+   },
+   "commonds_panel": {
+      "message": "打开独立翻译窗口"
+   },
+   "commonds_play": {
+      "message": "朗读文本"
+   },
+   "commonds_screenshot": {
+      "message": "截图翻译"
+   },
+   "commonds_switchWeb": {
+      "message": "切换网页划词开关"
+   },
+   "commonds_translateWithPopup": {
+      "message": "使用独立窗口翻译选中的文本"
+   },
+   "description": {
+      "description": "扩展程序的描述。",
+      "message": "一站式划词 / 截图 / 网页全文 / 音视频翻译扩展，支持谷歌、DeepL、ChatGPT、百度等 9 个国内外主流翻译服务，均可用于全文翻译。能在 PDF 里使用。"
+   },
+   "name": {
+      "description": "扩展程序的名称",
+      "message": "划词翻译"
+   }
+}

@@ -1,0 +1,23 @@
+2024/01/18-08:44:07.358 a9c Reusing MANIFEST /home/ma/.config/DingTalk/cache/Local Storage/leveldb/MANIFEST-000001
+2024/01/18-08:44:07.358 a9c Recovering log #43
+2024/01/18-08:44:07.359 a9c Level-0 table #46: started
+2024/01/18-08:44:07.361 a9c Level-0 table #46: 28730 bytes OK
+2024/01/18-08:44:07.363 a9c Delete type=0 #43
+2024/01/18-08:44:07.364 a9e Compacting 4@0 + 1@1 files
+2024/01/18-08:44:07.382 a9e Generated table #48@0: 273 keys, 674022 bytes
+2024/01/18-08:44:07.382 a9e Compacted 4@0 + 1@1 files => 674022 bytes
+2024/01/18-08:44:07.383 a9e compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/01/18-08:44:07.383 a9e Delete type=2 #38
+2024/01/18-08:44:07.383 a9e Delete type=2 #46
+2024/01/18-08:44:07.383 a9e Delete type=2 #41
+2024/01/18-08:44:07.383 a9e Delete type=2 #44
+2024/01/18-08:44:07.383 a9e Delete type=2 #35
+2024/01/18-17:07:25.500 2b602 Level-0 table #50: started
+2024/01/18-17:07:25.507 2b602 Level-0 table #50: 107646 bytes OK
+2024/01/18-17:07:25.510 2b602 Delete type=0 #47
+2024/01/18-17:07:32.113 188ba Level-0 table #52: started
+2024/01/18-17:07:32.116 188ba Level-0 table #52: 15555 bytes OK
+2024/01/18-17:07:32.119 188ba Delete type=0 #49
+2024/01/18-17:13:11.897 188ba Level-0 table #54: started
+2024/01/18-17:13:11.902 188ba Level-0 table #54: 80920 bytes OK
+2024/01/18-17:13:11.905 188ba Delete type=0 #51

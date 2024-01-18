@@ -1,0 +1,6 @@
+2024/01/10-17:55:35.909 15b43 Creating DB /home/ma/.config/google-chrome/Default/IndexedDB/https_cellandbioscience.biomedcentral.com_0.indexeddb.leveldb since it was missing.
+2024/01/10-17:55:35.912 15b43 Reusing MANIFEST /home/ma/.config/google-chrome/Default/IndexedDB/https_cellandbioscience.biomedcentral.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/01/10-17:56:19.109 15b43 Level-0 table #5: started
+2024/01/10-17:56:19.110 15b43 Level-0 table #5: 2505 bytes OK
+2024/01/10-17:56:19.112 15b43 Delete type=0 #3
+2024/01/10-17:56:19.113 15b43 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbrowser_extension=self.webpackChunkbrowser_extension||[]).push([[104],{26605:(e,n,o)=>{o.r(n),o.d(n,{IconSvgPaths16:()=>s,IconSvgPaths20:()=>t,getIconPaths:()=>a,iconNameToPathsRecordKey:()=>u});var r=o(49464),s=o(433),t=o(89061),c=o(23280);function a(e,n){var o=(0,r.Ho)(e);return n===c.J.STANDARD?s[o]:t[o]}function u(e){return(0,r.Ho)(e)}}}]);

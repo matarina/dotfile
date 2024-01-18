@@ -1,0 +1,6 @@
+2024/01/11-16:16:19.743 1094a8 Creating DB /home/ma/.config/google-chrome/Default/IndexedDB/https_passport.weibo.com_0.indexeddb.leveldb since it was missing.
+2024/01/11-16:16:19.746 1094a8 Reusing MANIFEST /home/ma/.config/google-chrome/Default/IndexedDB/https_passport.weibo.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/01/11-16:16:22.463 1094a8 Level-0 table #5: started
+2024/01/11-16:16:22.464 1094a8 Level-0 table #5: 1054 bytes OK
+2024/01/11-16:16:22.466 1094a8 Delete type=0 #3
+2024/01/11-16:16:22.466 1094a8 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

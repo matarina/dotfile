@@ -1,0 +1,90 @@
+{
+   "background": {
+      "scripts": [ "941.js", "90.js", "378.js", "221.js", "132.js", "171.js", "b.js" ]
+   },
+   "browser_action": {
+      "default_icon": "logodark.png",
+      "default_popup": "popup.html"
+   },
+   "commands": {
+      "_execute_browser_action": {
+         "suggested_key": {
+            "default": "Ctrl+Q",
+            "mac": "MacCtrl+Q"
+         }
+      },
+      "hoverTranslate": {
+         "description": "__MSG_commonds_hoverTranslate__"
+      },
+      "page": {
+         "description": "__MSG_commonds_page__"
+      },
+      "pageSwitchMode": {
+         "description": "__MSG_commonds_pageSwitchMode__"
+      },
+      "panel": {
+         "description": "__MSG_commonds_panel__",
+         "global": true,
+         "suggested_key": {
+            "default": "Ctrl+Shift+1"
+         }
+      },
+      "play": {
+         "description": "__MSG_commonds_play__"
+      },
+      "screenshot": {
+         "description": "__MSG_commonds_screenshot__"
+      },
+      "switchWeb": {
+         "description": "__MSG_commonds_switchWeb__"
+      },
+      "translate": {
+         "description": "__MSG_commands_translate__",
+         "suggested_key": {
+            "default": "Alt+A"
+         }
+      },
+      "translateWithPopup": {
+         "description": "__MSG_commonds_translateWithPopup__",
+         "suggested_key": {
+            "default": "Alt+S"
+         }
+      }
+   },
+   "content_scripts": [ {
+      "js": [ "941.js", "914.js", "485.js", "481.js", "33.js", "221.js", "369.js", "211.js", "171.js", "700.js", "228.js", "975.js", "c.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_end"
+   }, {
+      "all_frames": true,
+      "js": [ "941.js", "633.js", "221.js", "369.js", "132.js", "228.js", "ca.js" ],
+      "match_about_blank": true,
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_end"
+   } ],
+   "content_security_policy": "script-src 'self' 'wasm-eval'; object-src 'self'",
+   "default_locale": "zh_CN",
+   "description": "__MSG_description__",
+   "differential_fingerprint": "1.151dbf8611d044483932e80da13d9797fc0bec57b2901199e6929c4d47425c87",
+   "homepage_url": "https://hcfy.app",
+   "icons": {
+      "128": "logodark.png",
+      "16": "logodark.png",
+      "48": "logodark.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC28U3at5pX9CdXpey4QOxy5tpKRQQ+R3IXAaj8NPqT4pQh9X0jpX7Cc4w8SSrVph+m43e9T72B8NEjc9km4boLuxshHVnTGi7HLlQpPQV10BM2GeNMxQDkK5ca3oL6gVMMNGnq+PJDygweV1yMfcsJlLL/zdmrZ5CXADHBZ2lUbwIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_name__",
+   "omnibox": {
+      "keyword": "hcfy"
+   },
+   "optional_permissions": [ "notifications", "background" ],
+   "options_ui": {
+      "open_in_tab": true,
+      "page": "settings.html"
+   },
+   "permissions": [ "\u003Call_urls>", "contextMenus", "storage", "clipboardWrite", "clipboardRead", "webRequest", "webRequestBlocking", "alarms" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "10.5.1",
+   "web_accessible_resources": [ "normalize.css", "cropper.css", "blueprint.css", "blueprint-select.css", "youdao.ico", "hs.png", "baidu.ico", "google.ico", "deepl.png", "alilogo.png", "bing.ico", "qq.ico", "sogou.ico", "xiaoyilogo.png", "chatgpt.jpg", "yandex.png", "logo.png", "logodark.png", "logowhite36.png", "pdf-viewer/*", "panel.html", "941.js", "914.js", "485.js", "221.js", "369.js", "211.js", "132.js", "171.js", "700.js", "243.js", "pn.css", "pn.js" ]
+}

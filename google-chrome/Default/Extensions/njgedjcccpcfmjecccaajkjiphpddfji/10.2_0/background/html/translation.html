@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>easyScholar</title>
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+
+		<link rel="stylesheet" type="text/css" href="/lib/css/page.css" />
+
+		<link rel="stylesheet" type="text/css" href="/lib/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="/background/css/common.css" />
+		<link rel="stylesheet" href="/lib/css/layui.css">
+	</head>
+	<body>
+		<div class="page" id="app">
+			<div class="nav-left">
+				<div class="LogoName">
+					easyScholar
+				</div>
+				<div class="navDiv">
+					<div class="navName">导航</div>
+					<div class="nav-list">
+						<ul>
+
+							<li class="nav-tab a_active ">
+								<a href="translation.html" class="li-a active">在线翻译</a>
+							</li>
+							<li class="nav-tab">
+								<a href="setting.html" class="li-a" >设置</a>
+							</li>
+<!--							<li class="nav-tab ">-->
+<!--								<a href="author.html" class="li-a">关于作者</a>-->
+<!--							</li>-->
+
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="nav-right">
+				<div class="nav-top">
+					<h3>欢迎使用easyScholar！！记得点击保存按钮哦~保存后要重新刷新网页才能生效</h3>
+				</div>
+
+
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">设置翻译源  <button  class="glyphicon glyphicon-question-sign"
+								data-toggle="tooltip" data-placement="top" title="大部分来自模拟网页翻译，可能会有频率限制，当被限制时，可以稍后尝试。切换引擎后，原来的界面需要刷新"></button>
+						</h3>
+
+					</div>
+					<div class="panel-body">
+						<div class="RadioStyle">
+							<div class="Block PaddingL">
+								<input type="radio"  name="translateWhere" checked="checked" value="xiaoniu" id="xiaoniutranslate" />
+								<label for="xiaoniutranslate">小牛翻译（速度最快最稳定）</label>
+								<input type="radio"  name="translateWhere" checked="checked" value="reverso" id="reverso" />
+								<label for="reverso">Reverso</label>
+								<input type="radio"  name="translateWhere" checked="checked" value="yandex" id="yandex" />
+								<label for="yandex">Yandex</label>
+								<input type="radio" name="translateWhere" value="sougou" id="sougoutranslate" />
+								<label for="sougoutranslate">搜狗翻译</label>
+								<input type="radio" name="translateWhere" value="caiyunweb" id="caiyunwebtranslate" />
+								<label for="caiyunwebtranslate">彩云小译（有分钟级别的次数限制）</label>
+								<input type="radio" name="translateWhere" value="keyan" id="keyantranslate" />
+								<label for="keyantranslate">棵岩阅读</label>
+								<input type="radio"  name="translateWhere" checked="checked" value="googleMirro" id="googletranslateMirro" />
+								<label for="googletranslateMirro">谷歌翻译镜像（可能会挂）</label>
+								<input type="radio"  name="translateWhere" checked="checked" value="google" id="googletranslate" />
+								<label for="googletranslate">谷歌翻译（国内无法使用）</label>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						设置小牛翻译API-KEY  <button  class="glyphicon glyphicon-question-sign"
+								data-toggle="tooltip" data-placement="top" title="为什么选小牛翻译呢？因为它每日会赠送20万翻译字符+100页文档，足以使用。此外通过密钥方式调用，速度最快最稳定"></button>
+						<a style="color: blue" href="https://niutrans.com/login?active=3&userSource=EasyScholar" target="_blank"  class="panel-title">点我注册</a>
+						<a style="color: blue" href="https://niutrans.com/cloud/account_info/info" target="_blank"  class="panel-title">获取小牛翻译密钥</a>
+					</div>
+					<div class="col-md-4">
+						<div class="panel-body">
+							<div class="input-group input-group-sm">
+								<input name="translatexiaoniuapikey" placeholder="请输入api-key" type="text" class="form-control" >
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">设置翻译键  <button  class="glyphicon glyphicon-question-sign"
+								data-toggle="tooltip" data-placement="top" title="仅支持26个英文字母，默认为按键  t 。设置CLOSE可关闭翻译功能"></button></h3>
+					</div>
+					<div class="col-md-2">
+						<div class="panel-body">
+							<div class="input-group input-group-sm">
+								<input name="translateKeycode" type="text" value="t" class="form-control" >
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">设置隐藏翻译结果键  <button  class="glyphicon glyphicon-question-sign"
+								data-toggle="tooltip" data-placement="top" title="仅支持26个英文字母，默认为按键  y "></button></h3>
+					</div>
+					<div class="col-md-2">
+						<div class="panel-body">
+							<div class="input-group input-group-sm">
+								<input name="translateHideKeycode" type="text" value="y" class="form-control" >
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">设置翻译结果位置  <button  class="glyphicon glyphicon-question-sign"
+								data-toggle="tooltip" data-placement="top" title="默认为选择文本的后面 "></button></h3>
+					</div>
+					<div class="col-md-4">
+						<div class="panel-body">
+							<div class="RadioStyle">
+								<div class="Block PaddingL">
+									<input type="radio"  name="translatePosition"  value="after" id="translateResultPositionAfter" />
+									<label for="translateResultPositionAfter">后面</label>
+									<input type="radio" name="translatePosition" value="before" id="translateResultPositionBefore" />
+									<label for="translateResultPositionBefore">前面</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">设置翻译结果颜色  <button  class="glyphicon glyphicon-question-sign"
+								data-toggle="tooltip" data-placement="top" title="仅支持16进制颜色码，默认为 #55aaff "></button></h3>
+					</div>
+
+					<div class="col-md-3">
+						<div class="panel-body">
+							<div class="input-group input-group-sm">
+								<label>仅支持16进制颜色码，默认为 #55aaff </label>&nbsp&nbsp&nbsp<span
+									id="selectTranslateColor"></span>
+								<input id="translateColor" name="translateColor" type="text" value="#55aaff" class="form-control" >
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">注：edge浏览器上按下键盘后，没有任何反应的解决办法？</div>
+					<div class="panel-body">
+						有三种解决办法。
+
+						<br/>1. 注意到你每次选择文本后，旁边弹出的迷你小菜单（带有“使用bing搜索“等字样）了吗？因为它的出现导致键盘监听失效。可以直接在迷你小菜单中选择始终隐藏，或者在设置->辅助功能->使 Microsoft Edge 更易于使用中，关闭选择文本时显示迷你菜单（推荐）。
+						<br/>2. 不关闭也可以，就需要选择文本后，不要松开鼠标左键，直接按下键盘的翻译键，即可。
+						<br/>3. 或者选择文本后，移开鼠标，让迷你菜单消失，再按下键盘的翻译键。
+					</div>
+				</div>
+				<div class="col-md-1">
+				<button class="btn btn-primary"
+						id="saveTranslateSetting" type="button" data-toggle="button" aria-pressed="false">
+				  保存该页面所有设置
+				</button>
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<script src="/lib/js/jquery-3.3.1.min.js"></script>
+	<script src="/lib/layui.js"></script>
+	<script src="/background/background.js"></script>
+	<script src="/lib/js/bootstrap.min.js"></script>
+
+</html>

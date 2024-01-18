@@ -1,0 +1,10 @@
+{
+   "appDesc": {
+      "description": "The description of the application, displayed in the web store.",
+      "message": "在多个学术网站上，显示多种文献排名，并且提供翻译、文献收藏功能，助力科研"
+   },
+   "appName": {
+      "description": "The title of the application, displayed in the web store.",
+      "message": "easyScholar"
+   }
+}

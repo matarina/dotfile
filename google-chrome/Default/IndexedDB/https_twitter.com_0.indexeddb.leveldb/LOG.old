@@ -1,0 +1,6 @@
+2024/01/17-10:59:07.800 9ec Creating DB /home/ma/.config/google-chrome/Default/IndexedDB/https_twitter.com_0.indexeddb.leveldb since it was missing.
+2024/01/17-10:59:07.802 9ec Reusing MANIFEST /home/ma/.config/google-chrome/Default/IndexedDB/https_twitter.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/01/17-11:19:08.036 9ed Level-0 table #5: started
+2024/01/17-11:19:08.037 9ed Level-0 table #5: 1125 bytes OK
+2024/01/17-11:19:08.039 9ed Delete type=0 #3
+2024/01/17-11:19:08.039 9ed Manual compaction at level-0 from (begin) .. (end); will stop at (end)

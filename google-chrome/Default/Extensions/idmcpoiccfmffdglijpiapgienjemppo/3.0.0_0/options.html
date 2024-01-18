@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Options</title>
+    <link href="material/material-components-web.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="mdc-switch hide-images-s">
+    <div class="mdc-switch__track"></div>
+    <div class="mdc-switch__thumb-underlay">
+        <div class="mdc-switch__thumb"></div>
+        <input type="checkbox" id="checkbox-1" class="mdc-switch__native-control" role="switch">
+    </div>
+</div>
+<label for="checkbox-1">Hide Images</label>
+
+<div style="display: inline-block; width: 10px;"></div>
+
+<div class="mdc-switch hide-videos-s">
+    <div class="mdc-switch__track"></div>
+    <div class="mdc-switch__thumb-underlay">
+        <div class="mdc-switch__thumb"></div>
+        <input type="checkbox" id="checkbox-2" class="mdc-switch__native-control" role="switch">
+    </div>
+</div>
+<label for="checkbox-2">Hide Videos</label>
+
+<div style="height:20px"></div>
+<button class="mdc-button sv-button">
+    <div class="mdc-button__ripple"></div>
+    <span class="mdc-button__label">Save</span>
+</button>
+
+<div class="notes" style="display: none;">
+    <div style="height:10px"></div>
+    <div style="font-size: 0.9em;">Saved. Refresh applicable tabs for changes to take effect</div>
+</div>
+
+<script src="material/material-components-web.min.js"></script>
+<script src="options.js"></script>
+</body>
+</html>

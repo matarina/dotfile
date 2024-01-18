@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>easyScholar</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+
+    <link rel="stylesheet" type="text/css" href="/lib/css/page.css"/>
+    <link rel="stylesheet" href="/lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/lib/css/layui.css">
+
+
+</head>
+<body>
+<div class="page" id="app">
+    <div class="nav-left">
+        <div class="LogoName">
+            easyScholar
+        </div>
+        <div class="navDiv">
+            <div class="navName">导航</div>
+            <div class="nav-list">
+                <ul>
+
+                    <li class="nav-tab ">
+                        <a href="translation.html" class="li-a">在线翻译</a>
+                    </li>
+                    <li class="nav-tab a_active">
+                        <a href="setting.html" class="li-a active">设置</a>
+                    </li>
+                    <!--                    <li class="nav-tab ">-->
+                    <!--                        <a href="author.html" class="li-a">关于作者</a>-->
+                    <!--                    </li>-->
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="nav-right">
+        <div class="nav-top">
+            <h3>欢迎使用easyScholar！！记得点击保存按钮哦~保存后要重新刷新网页才能生效</h3>
+        </div>
+
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">设置等级颜色
+                    <button class="glyphicon glyphicon-question-sign"
+                            data-toggle="tooltip" data-placement="top"
+                            title="仅支持16进制颜色码，若设置#ffffff，则可以隐藏该分类等级。如果用户有自己满意的配色方案，欢迎发送到我的邮箱，我将会内置在默认颜色里"></button>
+                </h3>
+            </div>
+            <div class="col-md-10">
+                <div class="panel-body">
+                    <label>等级1</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span id="selectChangeColor1"></span>
+                    <div class="input-group ">
+                        <input id="changeColor1" type="text" class="form-control">
+                    </div>
+
+                    <br/>
+                    <label>等级2</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span
+                        id="selectChangeColor2"></span>
+                    <div class="input-group ">
+                        <input id="changeColor2" type="text" class="form-control">
+                    </div>
+                    <br/>
+                    <label>等级3</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span
+                        id="selectChangeColor3"></span>
+                    <div class="input-group ">
+                        <input id="changeColor3" type="text" class="form-control">
+                    </div>
+                    <br/>
+                    <label>等级4</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span
+                        id="selectChangeColor4"></span>
+                    <div class="input-group ">
+                        <input id="changeColor4" type="text" class="form-control">
+                    </div>
+                    <br/>
+                    <label>等级5</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span id="selectChangeColor5"></span>
+                    <div class="input-group ">
+                        <input id="changeColor5" type="text" class="form-control">
+                    </div>
+                    <br/>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">设置字体颜色
+                    <button class="glyphicon glyphicon-question-sign"
+                            data-toggle="tooltip" data-placement="top"
+                            title="仅支持16进制颜色码"></button>
+                </h3>
+            </div>
+            <div class="col-md-10">
+                <div class="panel-body">
+                    <label>字体</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span id="selectfontColour"></span>
+                    <div class="input-group ">
+                        <input id="fontColour" type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">设置字体是否加粗</h3>
+            </div>
+            <div class="col-md-4">
+                <div class="panel-body">
+                    <div class="RadioStyle">
+                        <div class="Block PaddingL">
+                            <input type="radio" name="isFontBold" value="bold" id="fontBold"/>
+                            <label for="fontBold">加粗</label>
+                            <input type="radio" name="isFontBold" value="nobold" id="fontNoBold"/>
+                            <label for="fontNoBold">不加粗</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">设置显示等级文字大小</h3>
+            </div>
+            <div class="col-md-4">
+                <div class="panel-body">
+                    <div class="RadioStyle">
+                        <div class="input-group ">
+                            <input id="fontSize" type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">文献等级详细信息提示</h3>
+            </div>
+            <div class="col-md-4">
+                <div class="panel-body">
+                    <div class="RadioStyle">
+                        <div class="Block PaddingL">
+                            <input type="radio" name="isRankTitle" value="RankTitleOpen" id="RankTitleOpen"/>
+                            <label for="SciLinkOpen">开启</label>
+                            <input type="radio" name="isRankTitle" value="RankTitleClose" id="RankTitleClose"/>
+                            <label for="SciLinkClose">关闭</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">SCI-HUB链接</h3>
+            </div>
+            <div class="col-md-4">
+                <div class="panel-body">
+                    <div class="RadioStyle">
+                        <div class="Block PaddingL">
+                            <input type="radio" name="isSciLink" value="SciLinkOpen" id="SciLinkOpen"/>
+                            <label for="SciLinkOpen">开启</label>
+                            <input type="radio" name="isSciLink" value="SciLinkClose" id="SciLinkClose"/>
+                            <label for="SciLinkClose">关闭</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">设置英文全文链接
+                    <button class="glyphicon glyphicon-question-sign"
+                            data-toggle="tooltip" data-placement="top"
+                            title="底下的参考链接每日更新，您可以放心参考。请完整的复制，尤其不要遗漏最后的斜杆"></button>
+                </h3>
+                <p id="SciLinktooltip"></p>
+            </div>
+            <div class="col-md-5">
+                <div class="panel-body">
+                    <div class="RadioStyle">
+                        <div class="input-group ">
+                            <input id="SciLink" type="text" class="form-control">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-1">
+            <button class=" btn btn-primary" id="saveSetting" type="button" data-toggle="button" aria-pressed="false">
+                保存该页面所有设置
+            </button>
+        </div>
+    </div>
+
+</div>
+</body>
+<script src="/lib/js/jquery-3.3.1.min.js"></script>
+<script src="/lib/layui.js"></script>
+<script src="/background/background.js"></script>
+<script src="/lib/js/bootstrap.min.js"></script>
+
+
+</html>
