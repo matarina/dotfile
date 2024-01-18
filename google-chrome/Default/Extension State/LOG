@@ -1,3 +1,6 @@
 2024/01/18-11:02:29.146 176fd Reusing MANIFEST /home/ma/.config/google-chrome/Default/Extension State/MANIFEST-000001
 2024/01/18-11:02:29.146 176fd Recovering log #55
 2024/01/18-11:02:29.147 176fd Reusing old log /home/ma/.config/google-chrome/Default/Extension State/000055.log 
+2024/01/18-18:28:04.880 176fe Level-0 table #59: started
+2024/01/18-18:28:04.886 176fe Level-0 table #59: 4023188 bytes OK
+2024/01/18-18:28:04.888 176fe Delete type=0 #55
