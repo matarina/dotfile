@@ -1,0 +1,7 @@
+rendezvous_server = 'rs-ny.rustdesk.com:21116'
+nat_type = 1
+serial = 0
+
+[options]
+verification-method = 'use-permanent-password'
+local-ip-addr = '172.10.1.213'

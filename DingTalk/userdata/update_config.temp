@@ -1,0 +1,12 @@
+{
+	"install": {
+		"description": "版本：7.1.0-Release.31218 日期：2023.12.18\n变更说明：\n1、【体验】容器性能优化\n2、【问题】修复若干bug&稳定性问题", 
+		"package": {
+			"url": "https://dtapp-pub.dingtalk.com/dingtalk-desktop/xc_dingtalk_update/linux_deb/Release/com.alibabainc.dingtalk_7.1.0.31218_amd64.deb", 
+			"force_update": false, 
+			"version": "7.1.0-Release.31218", 
+			"update_version": "7.1.0-Release.31218", 
+			"md5": "aa20f787ff53bf3781d5e1d3db0d033c"
+		}
+	}
+}

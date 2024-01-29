@@ -1,0 +1,939 @@
+[0124/184623.224999:ERROR:cef_web_view_custom_scheme_common.cc(29)] [renderer]::RegisterCustomSchemes, not find custom scheme.
+[0124/184623.394034:ERROR:cef_web_view_custom_scheme_common.cc(29)] [renderer]::RegisterCustomSchemes, not find custom scheme.
+[0124/184623.400100:ERROR:cef_web_view_custom_scheme_common.cc(29)] [renderer]::RegisterCustomSchemes, not find custom scheme.
+[0124/184623.526164:ERROR:object_proxy.cc(623)] Failed to call method: org.freedesktop.DBus.Properties.Get: object_path= /org/freedesktop/portal/desktop: org.freedesktop.DBus.Error.InvalidArgs: No such interface “org.freedesktop.portal.FileChooser”
+[0124/184623.526184:WARNING:property.cc(144)] version: GetAndBlock: failed.
+[0124/184623.526354:ERROR:select_file_dialog_linux_portal.cc(274)] Failed to read portal version property
+[0124/184623.535908:ERROR:gpu_init.cc(523)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0124/184623.548652:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_browser
+[0124/184623.548677:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_browser
+[0124/184623.548683:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_browser
+[0124/184623.548687:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_browser
+[0124/184623.548691:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_browser
+[0124/184623.548695:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_browser
+[0124/184623.776582:ERROR:cef_web_view_custom_scheme_common.cc(29)] [renderer]::RegisterCustomSchemes, not find custom scheme.
+[0124/200116.713333:ERROR:cef_web_view_custom_scheme_common.cc(29)] [renderer]::RegisterCustomSchemes, not find custom scheme.
+[0124/200116.882696:ERROR:cef_web_view_custom_scheme_common.cc(29)] [renderer]::RegisterCustomSchemes, not find custom scheme.
+[0124/200116.884569:ERROR:cef_web_view_custom_scheme_common.cc(29)] [renderer]::RegisterCustomSchemes, not find custom scheme.
+[0124/200116.998878:ERROR:object_proxy.cc(623)] Failed to call method: org.freedesktop.DBus.Properties.Get: object_path= /org/freedesktop/portal/desktop: org.freedesktop.DBus.Error.InvalidArgs: No such interface “org.freedesktop.portal.FileChooser”
+[0124/200116.998913:WARNING:property.cc(144)] version: GetAndBlock: failed.
+[0124/200116.999129:ERROR:select_file_dialog_linux_portal.cc(274)] Failed to read portal version property
+[0124/200117.009217:ERROR:gpu_init.cc(523)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0124/200117.023300:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_browser
+[0124/200117.023335:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_browser
+[0124/200117.023344:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_browser
+[0124/200117.023351:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_browser
+[0124/200117.023359:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_browser
+[0124/200117.023366:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_browser
+[0124/200117.212716:ERROR:cef_web_view_custom_scheme_common.cc(29)] [renderer]::RegisterCustomSchemes, not find custom scheme.
+[0124/200130.776661:WARNING:root_window.cc(1306)] [browser]RootWindow::Navigate browser.browser() is null
+[0124/200130.781356:WARNING:root_window.cc(1306)] [browser]RootWindow::Navigate browser.browser() is null
+[0124/200130.785786:WARNING:root_window.cc(1306)] [browser]RootWindow::Navigate browser.browser() is null
+[0124/200130.903660:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 10
+[0124/200130.909337:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/200130.909345:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/200130.909371:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/200130.909347:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/200130.909393:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/200130.909414:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/200130.909450:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/200130.909434:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/200130.909451:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/200130.909427:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/200130.909454:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/200130.909466:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/200130.909450:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/200130.909483:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/200130.909478:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/200130.909492:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/200130.909495:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/200130.909495:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/200130.909496:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/200130.909501:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/200130.909494:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/200130.909503:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/200130.909516:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/200130.909514:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/200130.909529:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/200130.909546:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/200130.909553:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/200130.909546:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/200130.909562:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/200130.909569:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/200130.909579:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/200130.909563:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/200130.909583:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/200130.909573:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/200130.909602:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/200130.909598:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/200130.909590:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/200130.909627:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/200130.909629:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/200130.909656:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/200130.909654:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/200130.909644:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/200130.909656:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/200130.909658:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/200130.909664:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/200130.909685:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/200130.909656:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/200130.909723:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/200130.909694:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/200130.909745:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/200130.909657:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/200130.909758:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/200130.909732:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/200130.909729:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/200130.909791:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/200130.909786:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/200130.909794:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/200130.909813:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/200130.909823:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/200130.909834:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/200130.909839:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/200130.909842:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/200130.909810:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/200130.909865:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/200130.909863:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/200130.909863:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/200130.909890:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/200130.909906:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/200130.909915:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/200130.909921:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/200130.909941:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/200130.909926:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/200130.997993:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: Uncaught ReferenceError: doc is not defined
+Source: http://desktop.dingtalk.com/web_content/contact.html
+Line: 7
+-----------------------
+
+[0124/200131.012839:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: Refused to execute inline script because it violates the following Content Security Policy directive: "script-src 'self' https://o.alicdn.com". Either the 'unsafe-inline' keyword, a hash ('sha256-8RfGP4xnEhTtHtM/EM4dYX5yms0fqjRJtA3yzyk+kTw='), or a nonce ('nonce-...') is required to enable inline execution.
+
+Source: http://desktop.dingtalk.com/web_content/call.html
+Line: 36
+-----------------------
+
+[0124/200131.264202:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'getUnreadCount')
+Source: http://desktop.dingtalk.com/web_content/assets/call.js
+Line: 24
+-----------------------
+
+[0124/200131.719456:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 10
+[0124/200131.963879:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: Uncaught (in promise) #<Object>
+Source: http://desktop.dingtalk.com/web_content/chatbox.html?isFourColumnMode=true
+Line: 0
+-----------------------
+
+[0124/200132.049334:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 10
+[0124/200132.049364:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 10
+[0124/200132.049377:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 10
+[0124/200132.790994:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 8
+[0124/200132.791057:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 9
+[0124/200132.791075:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 10
+[0124/200132.791091:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 11
+[0124/200132.791106:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 12
+[0124/200132.792696:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 8
+[0124/200132.792712:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 9
+[0124/200132.792724:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 10
+[0124/200132.792746:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 11
+[0124/200132.792758:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 12
+[0124/200134.063685:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: Uncaught (in promise) #<Object>
+Source: http://desktop.dingtalk.com/web_content/recentlyUsed.html
+Line: 0
+-----------------------
+
+[0124/200134.166407:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 10
+[0124/200134.168176:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 10
+[0124/200134.168215:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 10
+[0124/200134.212712:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 11
+[0124/200146.257064:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 11
+[0124/200208.112581:ERROR:root_window.cc(1102)] 
+-------------------------
+ConsoleMessage
+Message: [WARN dingRetcodeLog repeat]: [object Object]
+Source: http://desktop.dingtalk.com/web_content/assets/advancedSearch.js
+Line: 2
+-----------------------
+
+[0124/200208.177418:ERROR:root_window.cc(1102)] 
+-------------------------
+ConsoleMessage
+Message: [WARN dingRetcodeLog repeat]: [object Object]
+Source: http://desktop.dingtalk.com/web_content/assets/advancedSearch.js
+Line: 2
+-----------------------
+
+[0124/200208.288008:ERROR:root_window.cc(1102)] 
+-------------------------
+ConsoleMessage
+Message: [WARN dingRetcodeLog repeat]: [object Object]
+Source: http://desktop.dingtalk.com/web_content/assets/advancedSearch.js
+Line: 2
+-----------------------
+
+[0124/200208.360627:ERROR:root_window.cc(1102)] 
+-------------------------
+ConsoleMessage
+Message: [WARN dingRetcodeLog repeat]: [object Object]
+Source: http://desktop.dingtalk.com/web_content/assets/advancedSearch.js
+Line: 2
+-----------------------
+
+[0124/200247.257836:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/200247.257986:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/200247.258011:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/200247.258028:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/200247.258105:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/200247.258157:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/201407.972476:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/201407.972539:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/201407.972554:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/201407.972567:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/201407.972579:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/201407.972592:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/201408.066582:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: Refused to load the script 'https://at.alicdn.com/t/font_2618430_vzu8ruzmgzg.js' because it violates the following Content Security Policy directive: "script-src 'self' https://g.alicdn.com https://dev.g.alicdn.com https://o.alicdn.com". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback.
+
+Source: http://desktop.dingtalk.com/web_content/assets/searchMore.js
+Line: 2
+-----------------------
+
+[0124/201410.283266:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/201410.283327:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/201410.283341:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/201410.283353:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/201410.283366:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/201410.283378:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/201410.452893:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: you need to call init method first
+Source: http://desktop.dingtalk.com/web_content/assets/selectUserModal.js
+Line: 1
+-----------------------
+
+[0124/201410.452926:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: you need to call init method first
+Source: http://desktop.dingtalk.com/web_content/assets/selectUserModal.js
+Line: 1
+-----------------------
+
+[0124/201410.452989:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: you need to call init method first
+Source: http://desktop.dingtalk.com/web_content/assets/selectUserModal.js
+Line: 1
+-----------------------
+
+[0124/201410.453033:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: you need to call init method first
+Source: http://desktop.dingtalk.com/web_content/assets/selectUserModal.js
+Line: 1
+-----------------------
+
+[0124/201410.453042:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: you need to call init method first
+Source: http://desktop.dingtalk.com/web_content/assets/selectUserModal.js
+Line: 1
+-----------------------
+
+[0124/201410.453099:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: you need to call init method first
+Source: http://desktop.dingtalk.com/web_content/assets/selectUserModal.js
+Line: 1
+-----------------------
+
+[0124/201410.547993:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: Uncaught (in promise) #<Object>
+Source: http://desktop.dingtalk.com/web_content/selectUserModal.html?params=%7B%22allowEmpty%22%3Atrue%2C%22currentPanelOptions%22%3A%7B%22params%22%3A%7B%22cId%22%3A%2252769553574%22%7D%2C%22type%22%3A5%7D%2C%22initSelectedItems%22%3A%7B%22uids%22%3A%5B%5D%7D%2C%22maxItems%22%3A5%2C%22multiple%22%3Atrue%2C%22panelTypes%22%3A%5B5%5D%7D
+Line: 0
+-----------------------
+
+[0124/201410.653443:ERROR:root_window.cc(1102)] 
+-------------------------
+ConsoleMessage
+Message: APLUS初始化完成
+Source: https://d.alicdn.com/alilog/mlog/aplus.js?id=202622119
+Line: 2
+-----------------------
+
+[0124/201544.632543:WARNING:connection.cc(41)] X error received.  Request: DestroyWindowRequest, Error: WindowError{.sequence = 8432, .bad_value = 6291511, .minor_opcode = 0, .major_opcode = 4}
+[0124/201544.633285:WARNING:connection.cc(41)] X error received.  Request: DestroyWindowRequest, Error: WindowError{.sequence = 8464, .bad_value = 6291512, .minor_opcode = 0, .major_opcode = 4}
+[0124/203154.028728:ERROR:jsapi_v8_handler_impl.cc(131)] [cef_web_view][renderer][jsapi][error]: not find the v8 callback map for event "im.message.receiveMsgs"
+[0124/203220.932129:WARNING:connection.cc(41)] X error received.  Request: ConfigureWindowRequest, Error: ValueError{.sequence = 12201, .bad_value = 0, .minor_opcode = 0, .major_opcode = 12}
+[0124/203228.107893:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 4
+[0124/203228.107934:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 9
+[0124/203228.107991:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 12
+[0124/203228.108116:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 4
+[0124/203228.108134:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 9
+[0124/203228.108169:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 12
+[0124/203228.108233:ERROR:jsapi_v8_handler_impl.cc(131)] [cef_web_view][renderer][jsapi][error]: not find the v8 callback map for event "im.fileTask.addNewTask"
+[0124/203228.108474:ERROR:jsapi_v8_handler_impl.cc(131)] [cef_web_view][renderer][jsapi][error]: not find the v8 callback map for event "im.download.statusChange"
+[0124/203228.108684:ERROR:jsapi_v8_handler_impl.cc(131)] [cef_web_view][renderer][jsapi][error]: not find the v8 callback map for event "im.fileTask.updateTask"
+[0124/203228.620213:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 4
+[0124/203228.620300:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 9
+[0124/203228.620407:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 12
+[0124/203228.620337:ERROR:jsapi_v8_handler_impl.cc(131)] [cef_web_view][renderer][jsapi][error]: not find the v8 callback map for event "im.download.statusChange"
+[0124/203228.620586:ERROR:jsapi_v8_handler_impl.cc(131)] [cef_web_view][renderer][jsapi][error]: not find the v8 callback map for event "im.fileTask.updateTask"
+[0124/203230.163591:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 4
+[0124/203230.163664:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 9
+[0124/203230.163762:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 12
+[0124/203230.163718:ERROR:jsapi_v8_handler_impl.cc(131)] [cef_web_view][renderer][jsapi][error]: not find the v8 callback map for event "im.download.statusChange"
+[0124/203230.163982:ERROR:jsapi_v8_handler_impl.cc(131)] [cef_web_view][renderer][jsapi][error]: not find the v8 callback map for event "im.fileTask.updateTask"
+[0124/203230.371079:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 4
+[0124/203230.371111:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 9
+[0124/203230.371162:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 12
+[0124/203230.371221:ERROR:jsapi_v8_handler_impl.cc(131)] [cef_web_view][renderer][jsapi][error]: not find the v8 callback map for event "im.download.statusChange"
+[0124/203230.371385:ERROR:jsapi_v8_handler_impl.cc(131)] [cef_web_view][renderer][jsapi][error]: not find the v8 callback map for event "im.fileTask.updateTask"
+[0124/203230.372235:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 4
+[0124/203230.372205:ERROR:jsapi_v8_handler_impl.cc(131)] [cef_web_view][renderer][jsapi][error]: not find the v8 callback map for event "im.download.statusChange"
+[0124/203230.372291:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 9
+[0124/203230.372343:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 12
+[0124/203230.372410:ERROR:jsapi_v8_handler_impl.cc(131)] [cef_web_view][renderer][jsapi][error]: not find the v8 callback map for event "im.download.statusChange"
+[0124/203230.372634:ERROR:jsapi_v8_handler_impl.cc(131)] [cef_web_view][renderer][jsapi][error]: not find the v8 callback map for event "im.fileTask.updateTask"
+[0124/212622.405779:ERROR:cef_web_view_custom_scheme_common.cc(29)] [renderer]::RegisterCustomSchemes, not find custom scheme.
+[0124/212622.600456:ERROR:cef_web_view_custom_scheme_common.cc(29)] [renderer]::RegisterCustomSchemes, not find custom scheme.
+[0124/212622.608448:ERROR:cef_web_view_custom_scheme_common.cc(29)] [renderer]::RegisterCustomSchemes, not find custom scheme.
+[0124/212622.688453:ERROR:object_proxy.cc(623)] Failed to call method: org.freedesktop.DBus.Properties.Get: object_path= /org/freedesktop/portal/desktop: org.freedesktop.DBus.Error.InvalidArgs: No such interface “org.freedesktop.portal.FileChooser”
+[0124/212622.688476:WARNING:property.cc(144)] version: GetAndBlock: failed.
+[0124/212622.688656:ERROR:select_file_dialog_linux_portal.cc(274)] Failed to read portal version property
+[0124/212622.697864:ERROR:gpu_init.cc(523)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0124/212622.710337:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_browser
+[0124/212622.710368:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_browser
+[0124/212622.710376:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_browser
+[0124/212622.710385:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_browser
+[0124/212622.710394:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_browser
+[0124/212622.710402:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_browser
+[0124/212622.918339:ERROR:cef_web_view_custom_scheme_common.cc(29)] [renderer]::RegisterCustomSchemes, not find custom scheme.
+[0124/212623.510154:WARNING:root_window.cc(1306)] [browser]RootWindow::Navigate browser.browser() is null
+[0124/212623.514810:WARNING:root_window.cc(1306)] [browser]RootWindow::Navigate browser.browser() is null
+[0124/212623.519246:WARNING:root_window.cc(1306)] [browser]RootWindow::Navigate browser.browser() is null
+[0124/212623.620101:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/212623.620164:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/212623.620181:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/212623.620202:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/212623.620220:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/212623.620237:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/212623.625792:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/212623.625897:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/212623.625931:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/212623.625947:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/212623.625963:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/212623.625988:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/212623.632153:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/212623.632189:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/212623.632256:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/212623.632257:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/212623.632289:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/212623.632311:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/212623.632312:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/212623.632333:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/212623.632357:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/212623.632376:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/212623.632391:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/212623.632425:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/212623.634547:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/212623.634635:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/212623.634665:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/212623.634686:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/212623.634703:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/212623.634750:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/212623.640577:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/212623.640663:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/212623.640685:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/212623.640703:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/212623.640721:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/212623.640739:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/212623.643124:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/212623.643195:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/212623.643220:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/212623.643582:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/212623.643603:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/212623.643619:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/212623.645384:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/212623.645472:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/212623.645531:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/212623.645567:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/212623.645599:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/212623.645635:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/212623.648119:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/212623.648214:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/212623.648243:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/212623.648286:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/212623.648303:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/212623.648319:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/212623.650269:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/212623.650322:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/212623.650338:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/212623.650380:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/212623.650406:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/212623.650427:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/212623.653558:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/212623.653619:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/212623.653634:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/212623.653650:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/212623.653664:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/212623.653676:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/212623.660188:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/212623.660244:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/212623.660259:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/212623.660272:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/212623.660284:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/212623.660296:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/212623.673648:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 10
+[0124/212623.685220:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 10
+[0124/212623.685258:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 10
+[0124/212623.687931:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 10
+[0124/212623.688029:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 10
+[0124/212623.703012:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 10
+[0124/212623.703459:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 10
+[0124/212623.704140:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 10
+[0124/212623.705249:ERROR:jsapi_v8_handler_impl.cc(131)] [cef_web_view][renderer][jsapi][error]: not find the v8 callback map for event "im.message.receiveMsgs"
+[0124/212623.736829:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: Uncaught ReferenceError: doc is not defined
+Source: http://desktop.dingtalk.com/web_content/contact.html
+Line: 7
+-----------------------
+
+[0124/212623.750134:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: Refused to execute inline script because it violates the following Content Security Policy directive: "script-src 'self' https://o.alicdn.com". Either the 'unsafe-inline' keyword, a hash ('sha256-8RfGP4xnEhTtHtM/EM4dYX5yms0fqjRJtA3yzyk+kTw='), or a nonce ('nonce-...') is required to enable inline execution.
+
+Source: http://desktop.dingtalk.com/web_content/call.html
+Line: 36
+-----------------------
+
+[0124/212623.754035:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 11
+[0124/212623.754134:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 11
+[0124/212624.006524:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'getUnreadCount')
+Source: http://desktop.dingtalk.com/web_content/assets/call.js
+Line: 24
+-----------------------
+
+[0124/212624.155834:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: Uncaught (in promise) #<Object>
+Source: http://desktop.dingtalk.com/web_content/recentlyUsed.html
+Line: 0
+-----------------------
+
+[0124/212624.235948:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: [pc-call-home] [lwp request failed] /r/Adaptor/MoziBmsStatisticsI/getAccountUsageDashboard [object Object] [object Object]
+Source: http://desktop.dingtalk.com/web_content/assets/call.js
+Line: 32
+-----------------------
+
+[0124/212624.236741:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: Uncaught (in promise) #<Object>
+Source: http://desktop.dingtalk.com/web_content/call.html
+Line: 0
+-----------------------
+
+[0124/212624.800601:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: Uncaught (in promise) #<Object>
+Source: http://desktop.dingtalk.com/web_content/chatbox.html?isFourColumnMode=true
+Line: 0
+-----------------------
+
+[0124/212625.524347:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 8
+[0124/212625.524446:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 9
+[0124/212625.524480:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 10
+[0124/212625.524508:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 11
+[0124/212625.524554:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 12
+[0124/212625.525788:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 8
+[0124/212625.525816:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 9
+[0124/212625.525841:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 10
+[0124/212625.525863:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 11
+[0124/212625.525887:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 12
+[0124/212631.345954:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 4
+[0124/212631.346005:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 9
+[0124/212631.346038:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 10
+[0124/212631.346062:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 12
+[0124/212631.346199:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 4
+[0124/212631.346226:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 9
+[0124/212631.346250:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 10
+[0124/212631.346275:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 12
+[0124/212631.408215:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 4
+[0124/212631.408246:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 9
+[0124/212631.408265:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 10
+[0124/212631.408281:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 12
+[0124/212632.501535:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 4
+[0124/212632.501598:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 9
+[0124/212632.501636:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 10
+[0124/212632.501669:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 12
+[0124/212632.912494:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 4
+[0124/212632.912546:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 9
+[0124/212632.912582:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 10
+[0124/212632.912615:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 12
+[0124/212632.914543:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 4
+[0124/212632.914620:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 9
+[0124/212632.914645:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 10
+[0124/212632.914665:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 12
+[0124/212638.554893:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 11
+[0124/223528.775798:ERROR:cef_web_view_custom_scheme_common.cc(29)] [renderer]::RegisterCustomSchemes, not find custom scheme.
+[0124/223528.971667:ERROR:cef_web_view_custom_scheme_common.cc(29)] [renderer]::RegisterCustomSchemes, not find custom scheme.
+[0124/223528.972622:ERROR:cef_web_view_custom_scheme_common.cc(29)] [renderer]::RegisterCustomSchemes, not find custom scheme.
+[0124/223529.061411:ERROR:object_proxy.cc(623)] Failed to call method: org.freedesktop.DBus.Properties.Get: object_path= /org/freedesktop/portal/desktop: org.freedesktop.DBus.Error.InvalidArgs: No such interface “org.freedesktop.portal.FileChooser”
+[0124/223529.061430:WARNING:property.cc(144)] version: GetAndBlock: failed.
+[0124/223529.061635:ERROR:select_file_dialog_linux_portal.cc(274)] Failed to read portal version property
+[0124/223529.072821:ERROR:gpu_init.cc(523)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0124/223529.086414:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_browser
+[0124/223529.086446:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_browser
+[0124/223529.086453:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_browser
+[0124/223529.086459:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_browser
+[0124/223529.086464:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_browser
+[0124/223529.086470:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_browser
+[0124/223529.333198:ERROR:cef_web_view_custom_scheme_common.cc(29)] [renderer]::RegisterCustomSchemes, not find custom scheme.
+[0124/223529.470174:WARNING:root_window.cc(1306)] [browser]RootWindow::Navigate browser.browser() is null
+[0124/223529.474632:WARNING:root_window.cc(1306)] [browser]RootWindow::Navigate browser.browser() is null
+[0124/223529.478992:WARNING:root_window.cc(1306)] [browser]RootWindow::Navigate browser.browser() is null
+[0124/223529.599994:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/223529.600149:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/223529.600220:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/223529.600267:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/223529.600309:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/223529.600350:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/223529.606724:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/223529.606809:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/223529.606901:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/223529.606987:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/223529.607034:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/223529.607071:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/223529.611668:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/223529.611787:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/223529.611818:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/223529.611844:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/223529.611868:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/223529.611893:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/223529.616170:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/223529.616289:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/223529.616324:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/223529.616354:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/223529.616383:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/223529.616412:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/223529.624024:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/223529.624246:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/223529.624318:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/223529.624377:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/223529.624432:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/223529.624500:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/223529.627876:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/223529.628066:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/223529.628201:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/223529.628243:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/223529.628272:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/223529.628365:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/223529.633198:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/223529.633313:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/223529.633358:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/223529.633421:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/223529.633506:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/223529.633573:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/223529.643228:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/223529.643366:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/223529.643408:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/223529.643441:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/223529.643473:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/223529.643505:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/223529.646325:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/223529.646401:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/223529.646426:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/223529.646446:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/223529.646518:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/223529.646568:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/223529.649757:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/223529.649816:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/223529.649825:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 10
+[0124/223529.649832:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/223529.649845:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/223529.649857:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/223529.649875:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 10
+[0124/223529.649870:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/223529.650395:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 10
+[0124/223529.650503:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 10
+[0124/223529.651904:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/223529.651951:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/223529.651966:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/223529.651980:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/223529.651992:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/223529.652005:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/223529.653023:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/223529.653063:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/223529.653077:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/223529.653092:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/223529.653104:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/223529.653116:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/223529.732153:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: Uncaught ReferenceError: doc is not defined
+Source: http://desktop.dingtalk.com/web_content/contact.html
+Line: 7
+-----------------------
+
+[0124/223529.739474:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: Refused to execute inline script because it violates the following Content Security Policy directive: "script-src 'self' https://o.alicdn.com". Either the 'unsafe-inline' keyword, a hash ('sha256-8RfGP4xnEhTtHtM/EM4dYX5yms0fqjRJtA3yzyk+kTw='), or a nonce ('nonce-...') is required to enable inline execution.
+
+Source: http://desktop.dingtalk.com/web_content/call.html
+Line: 36
+-----------------------
+
+[0124/223530.006891:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'getUnreadCount')
+Source: http://desktop.dingtalk.com/web_content/assets/call.js
+Line: 24
+-----------------------
+
+[0124/223530.178447:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: Uncaught (in promise) #<Object>
+Source: http://desktop.dingtalk.com/web_content/recentlyUsed.html
+Line: 0
+-----------------------
+
+[0124/223530.257652:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: [pc-call-home] [lwp request failed] /r/Adaptor/MoziBmsStatisticsI/getAccountUsageDashboard [object Object] [object Object]
+Source: http://desktop.dingtalk.com/web_content/assets/call.js
+Line: 32
+-----------------------
+
+[0124/223530.260341:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: Uncaught (in promise) #<Object>
+Source: http://desktop.dingtalk.com/web_content/call.html
+Line: 0
+-----------------------
+
+[0124/223530.766833:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: Uncaught (in promise) #<Object>
+Source: http://desktop.dingtalk.com/web_content/chatbox.html?isFourColumnMode=true
+Line: 0
+-----------------------
+
+[0124/223531.484340:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 8
+[0124/223531.484420:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 9
+[0124/223531.484447:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 10
+[0124/223531.484470:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 11
+[0124/223531.484499:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 12
+[0124/223531.486761:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 8
+[0124/223531.486792:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 9
+[0124/223531.486814:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 10
+[0124/223531.486836:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 11
+[0124/223531.486857:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 12
+[0124/223544.578960:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 11
+[0124/223916.257478:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: GrayManager is not init, you must call initInstance first!
+Source: http://desktop.dingtalk.com/web_content/assets/chatbox/vendors.adb84442.js
+Line: 2
+-----------------------
+
+[0124/225829.139639:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/225829.139693:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/225829.139707:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/225829.139720:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/225829.139733:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/225829.139748:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/225829.151572:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: Uncaught ReferenceError: doc is not defined
+Source: http://desktop.dingtalk.com/web_content/emotionPanel.html?simple_mode=true
+Line: 7
+-----------------------
+
+[0124/230340.279445:ERROR:root_window.cc(1102)] 
+-------------------------
+ConsoleMessage
+Message: [WARN dingRetcodeLog repeat]: [object Object]
+Source: http://desktop.dingtalk.com/web_content/assets/advancedSearch.js
+Line: 2
+-----------------------
+
+[0124/230343.646819:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/230343.646872:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/230343.646886:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/230343.646898:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/230343.646910:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/230343.646922:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/230346.879353:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/230346.879405:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/230346.879420:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/230346.879432:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/230346.879444:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/230346.879456:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/230347.077341:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: you need to call init method first
+Source: http://desktop.dingtalk.com/web_content/assets/createConversation.js
+Line: 12
+-----------------------
+
+[0124/230347.077365:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: you need to call init method first
+Source: http://desktop.dingtalk.com/web_content/assets/createConversation.js
+Line: 12
+-----------------------
+
+[0124/230347.077428:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: you need to call init method first
+Source: http://desktop.dingtalk.com/web_content/assets/createConversation.js
+Line: 12
+-----------------------
+
+[0124/230347.077435:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: you need to call init method first
+Source: http://desktop.dingtalk.com/web_content/assets/createConversation.js
+Line: 12
+-----------------------
+
+[0124/230347.077447:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: you need to call init method first
+Source: http://desktop.dingtalk.com/web_content/assets/createConversation.js
+Line: 12
+-----------------------
+
+[0124/230347.077532:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: you need to call init method first
+Source: http://desktop.dingtalk.com/web_content/assets/createConversation.js
+Line: 12
+-----------------------
+
+[0124/230704.878308:ERROR:cef_web_view_custom_scheme_common.cc(29)] [renderer]::RegisterCustomSchemes, not find custom scheme.
+[0124/230705.038871:ERROR:cef_web_view_custom_scheme_common.cc(29)] [renderer]::RegisterCustomSchemes, not find custom scheme.
+[0124/230705.039629:ERROR:cef_web_view_custom_scheme_common.cc(29)] [renderer]::RegisterCustomSchemes, not find custom scheme.
+[0124/230705.079030:ERROR:object_proxy.cc(623)] Failed to call method: org.freedesktop.DBus.Properties.Get: object_path= /org/freedesktop/portal/desktop: org.freedesktop.DBus.Error.InvalidArgs: No such interface “org.freedesktop.portal.FileChooser”
+[0124/230705.079058:WARNING:property.cc(144)] version: GetAndBlock: failed.
+[0124/230705.079070:ERROR:select_file_dialog_linux_portal.cc(274)] Failed to read portal version property
+[0124/230705.082198:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_browser
+[0124/230705.082223:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_browser
+[0124/230705.082230:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_browser
+[0124/230705.082239:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_browser
+[0124/230705.082245:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_browser
+[0124/230705.082250:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_browser
+[0124/230705.082748:ERROR:gpu_init.cc(523)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0124/230705.276422:ERROR:cef_web_view_custom_scheme_common.cc(29)] [renderer]::RegisterCustomSchemes, not find custom scheme.
+[0124/230705.371430:WARNING:root_window.cc(1306)] [browser]RootWindow::Navigate browser.browser() is null
+[0124/230705.375851:WARNING:root_window.cc(1306)] [browser]RootWindow::Navigate browser.browser() is null
+[0124/230705.379994:WARNING:root_window.cc(1306)] [browser]RootWindow::Navigate browser.browser() is null
+[0124/230705.435313:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/230705.435378:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/230705.435395:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/230705.435409:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/230705.435422:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/230705.435435:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/230705.462655:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/230705.462731:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/230705.462758:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/230705.462772:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/230705.462784:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/230705.462805:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/230705.464839:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/230705.464900:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/230705.464914:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/230705.464926:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/230705.464938:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/230705.464950:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/230705.470633:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/230705.470727:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/230705.470757:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/230705.470780:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/230705.470802:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/230705.470825:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/230705.471889:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/230705.471979:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/230705.472007:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/230705.472030:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/230705.472051:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/230705.472073:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/230705.472564:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/230705.472607:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/230705.472621:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/230705.472634:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/230705.472646:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/230705.472657:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/230705.478093:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/230705.478209:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/230705.478293:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/230705.478338:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/230705.478367:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/230705.478408:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/230705.479743:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/230705.479845:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/230705.479901:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/230705.479955:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/230705.479982:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/230705.480016:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/230705.483291:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/230705.483358:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/230705.483406:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/230705.483438:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/230705.483451:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/230705.483463:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/230705.484127:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/230705.484167:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/230705.484181:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/230705.484193:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/230705.484204:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/230705.484216:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/230705.486351:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/230705.486413:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/230705.486430:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/230705.486445:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/230705.486459:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/230705.486473:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/230705.487901:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/230705.487957:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/230705.487986:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/230705.488015:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/230705.488030:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/230705.488089:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/230705.500700:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 10
+[0124/230705.500728:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 10
+[0124/230705.501604:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 10
+[0124/230705.501642:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 10
+[0124/230705.530564:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: Uncaught ReferenceError: doc is not defined
+Source: http://desktop.dingtalk.com/web_content/contact.html
+Line: 7
+-----------------------
+
+[0124/230705.534144:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: Refused to execute inline script because it violates the following Content Security Policy directive: "script-src 'self' https://o.alicdn.com". Either the 'unsafe-inline' keyword, a hash ('sha256-8RfGP4xnEhTtHtM/EM4dYX5yms0fqjRJtA3yzyk+kTw='), or a nonce ('nonce-...') is required to enable inline execution.
+
+Source: http://desktop.dingtalk.com/web_content/call.html
+Line: 36
+-----------------------
+
+[0124/230705.788717:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'getUnreadCount')
+Source: http://desktop.dingtalk.com/web_content/assets/call.js
+Line: 24
+-----------------------
+
+[0124/230705.900509:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: Uncaught (in promise) #<Object>
+Source: http://desktop.dingtalk.com/web_content/recentlyUsed.html
+Line: 0
+-----------------------
+
+[0124/230706.009225:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: [pc-call-home] [lwp request failed] /r/Adaptor/MoziBmsStatisticsI/getAccountUsageDashboard [object Object] [object Object]
+Source: http://desktop.dingtalk.com/web_content/assets/call.js
+Line: 32
+-----------------------
+
+[0124/230706.009245:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: Uncaught (in promise) #<Object>
+Source: http://desktop.dingtalk.com/web_content/call.html
+Line: 0
+-----------------------
+
+[0124/230706.565759:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: Uncaught (in promise) #<Object>
+Source: http://desktop.dingtalk.com/web_content/chatbox.html?isFourColumnMode=true
+Line: 0
+-----------------------
+
+[0124/230707.384334:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 8
+[0124/230707.384401:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 9
+[0124/230707.384430:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 10
+[0124/230707.384455:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 11
+[0124/230707.384479:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 12
+[0124/230707.386349:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 8
+[0124/230707.386392:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 9
+[0124/230707.386417:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 10
+[0124/230707.386442:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 11
+[0124/230707.386465:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 12
+[0124/230720.429174:WARNING:root_window.cc(1460)] RootWindow::SendProcessMessageImpl ignored because before browse is not passed, log_flag = , browser_id = 11
+[0124/232101.158826:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small1 with value: value1_small_renderer
+[0124/232101.158890:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_small2 with value: value2_small_renderer
+[0124/232101.158907:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium1 with value: value1_medium_renderer
+[0124/232101.158921:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_medium2 with value: value2_medium_renderer
+[0124/232101.158935:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large1 with value: value1_large_renderer
+[0124/232101.158948:WARNING:crash_reporting.cc(250)] Failed to set crash key: testkey_large2 with value: value2_large_renderer
+[0124/232101.170812:ERROR:root_window.cc(1105)] 
+-------------------------
+ConsoleMessage
+Message: Uncaught ReferenceError: doc is not defined
+Source: http://desktop.dingtalk.com/web_content/emotionPanel.html?simple_mode=true
+Line: 7
+-----------------------
+

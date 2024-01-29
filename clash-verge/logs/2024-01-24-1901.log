@@ -1,0 +1,12 @@
+2024-01-24 19:01:56 ERROR - failed to create the pid file
+2024-01-24 19:01:56 INFO - [clash]: level=info msg="RESTful API listening at: 127.0.0.1:9090"
+2024-01-24 19:01:56 INFO - [clash]: level=info msg="inbound mixed://127.0.0.1:7890 create success."
+2024-01-24 19:02:41 INFO - [clash]: level=info msg="Start initial compatible provider 故障转移"
+2024-01-24 19:02:41 INFO - [clash]: level=info msg="Start initial compatible provider 自动选择(已剔除IPLC)"
+2024-01-24 19:02:41 INFO - [clash]: level=info msg="Start initial compatible provider TaiShan Net"
+2024-01-24 19:03:24 ERROR - error sending request for url (https://jp.taishan.pro/api/v1/client/subscribe?token=150cc22381276d4640e90dd963faada3): error trying to connect: Connection reset by peer (os error 104)
+2024-01-24 19:03:28 ERROR - error sending request for url (https://jp.taishan.pro/api/v1/client/subscribe?token=150cc22381276d4640e90dd963faada3): error trying to connect: Connection reset by peer (os error 104)
+2024-01-24 19:03:33 INFO - [clash]: level=info msg="Start initial compatible provider 故障转移"
+2024-01-24 19:03:33 INFO - [clash]: level=info msg="Start initial compatible provider 自动选择(已剔除IPLC)"
+2024-01-24 19:03:33 INFO - [clash]: level=info msg="Start initial compatible provider TaiShan Net"
+2024-01-24 19:04:53 INFO - [clash]: level=warning msg="[TCP] dial GLOBAL 127.0.0.1:51220 --> www.google.com:80 error: dial tcp4 172.217.160.100:80: i/o timeout"

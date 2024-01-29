@@ -1,0 +1,25 @@
+# Profiles Config for Clash Verge
+
+current: r03truL2v0mA
+chain: null
+valid:
+- dns
+- sub-rules
+- unified-delay
+items:
+- uid: r03truL2v0mA
+  type: remote
+  name: Remote File
+  file: r03truL2v0mA.yaml
+  url: https://jp.taishan.pro/api/v1/client/subscribe?token=150cc22381276d4640e90dd963faada3
+  selected:
+  - name: GLOBAL
+    now: 🇺🇸[US]凤凰城03
+  extra:
+    upload: 397231738
+    download: 19079133513
+    total: 68719476736
+    expire: 1714358624
+  updated: 1706353596
+  option:
+    update_interval: 1440

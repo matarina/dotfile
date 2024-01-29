@@ -1,0 +1,6 @@
+2024-01-27 21:55:51 ERROR - failed to create the pid file
+2024-01-27 21:55:51 INFO - [clash]: level=info msg="Start initial compatible provider 故障转移"
+2024-01-27 21:55:51 INFO - [clash]: level=info msg="Start initial compatible provider 自动选择(已剔除IPLC)"
+2024-01-27 21:55:51 INFO - [clash]: level=info msg="Start initial compatible provider TaiShan Net"
+2024-01-27 21:55:51 INFO - [clash]: level=info msg="inbound mixed://127.0.0.1:7890 create success."
+2024-01-27 21:55:51 INFO - [clash]: level=info msg="RESTful API listening at: 127.0.0.1:9090"

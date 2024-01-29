@@ -1,0 +1,24 @@
+2024/01/27-22:56:16.913 ac0 Reusing MANIFEST /home/ma/.config/DingTalk/cache/Local Storage/leveldb/MANIFEST-000001
+2024/01/27-22:56:16.914 ac0 Recovering log #21
+2024/01/27-22:56:16.914 ac0 Reusing old log /home/ma/.config/DingTalk/cache/Local Storage/leveldb/000021.log 
+2024/01/28-00:28:17.475 ac0 Level-0 table #25: started
+2024/01/28-00:28:17.477 ac0 Level-0 table #25: 96520 bytes OK
+2024/01/28-00:28:17.479 ac0 Delete type=0 #21
+2024/01/28-17:50:53.592 ac0 Level-0 table #27: started
+2024/01/28-17:50:53.596 ac0 Level-0 table #27: 21434 bytes OK
+2024/01/28-17:50:53.600 ac0 Delete type=0 #24
+2024/01/28-17:51:17.788 ac0 Level-0 table #29: started
+2024/01/28-17:51:17.790 ac0 Level-0 table #29: 89593 bytes OK
+2024/01/28-17:51:17.792 ac0 Delete type=0 #26
+2024/01/28-17:51:17.792 ac0 Compacting 4@0 + 1@1 files
+2024/01/28-17:51:17.799 ac0 Generated table #30@0: 205 keys, 621142 bytes
+2024/01/28-17:51:17.799 ac0 Compacted 4@0 + 1@1 files => 621142 bytes
+2024/01/28-17:51:17.801 ac0 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/01/28-17:51:17.801 ac0 Delete type=2 #29
+2024/01/28-17:51:17.801 ac0 Delete type=2 #27
+2024/01/28-17:51:17.801 ac0 Delete type=2 #25
+2024/01/28-17:51:17.801 ac0 Delete type=2 #22
+2024/01/28-17:51:17.801 ac0 Delete type=2 #20
+2024/01/28-17:58:12.160 ac0 Level-0 table #32: started
+2024/01/28-17:58:12.163 ac0 Level-0 table #32: 14982 bytes OK
+2024/01/28-17:58:12.167 ac0 Delete type=0 #28
