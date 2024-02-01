@@ -1,5 +1,5 @@
 enc_id = '00g7VErN//qG0aqyfVE+wO8WKlUankYb17XA=='
-password = '005wyapoR4aLTXVT+HO1jEW2SlVqyVKO42CeU='
+password = '005VjpxB6TPxRUg61Q8EEFJhv0H/e1PfsqA68S9hM='
 salt = 'br6s8d'
 key_pair = [
     [
@@ -106,4 +106,5 @@ key_pair = [
 key_confirmed = true
 
 [keys_confirmed]
+"47.243.250.213" = true
 rs-ny = true

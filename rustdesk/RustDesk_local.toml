@@ -10,7 +10,8 @@ fav = []
 
 [options]
 wayland-restore-token = 'a64c012a-a853-4b78-b08f-32026170eaef'
+theme = 'dark'
 
 [ui_flutter]
-wm_Main = '{"width":371.0,"height":1066.0,"offsetWidth":3462.0,"offsetHeight":7.0,"isMaximized":false,"isFullscreen":false}'
 peer-sorting = 'Remote ID'
+wm_Main = '{"width":371.0,"height":1066.0,"offsetWidth":3462.0,"offsetHeight":7.0,"isMaximized":true,"isFullscreen":false}'

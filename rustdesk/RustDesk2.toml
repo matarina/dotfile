@@ -1,7 +1,9 @@
-rendezvous_server = 'rs-ny.rustdesk.com:21116'
+rendezvous_server = '47.243.250.213:21116'
 nat_type = 1
 serial = 0
 
 [options]
 verification-method = 'use-permanent-password'
+key = '123456'
+custom-rendezvous-server = '47.243.250.213'
 local-ip-addr = '172.10.1.213'

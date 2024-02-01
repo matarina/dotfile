@@ -1,12 +1,12 @@
 {
 	"install": {
-		"description": "版本：7.1.0-Release.31218 日期：2023.12.18\n变更说明：\n1、【体验】容器性能优化\n2、【问题】修复若干bug&稳定性问题", 
+		"description": "版本：7.1.0-Release.31120 日期：2023.11.20\n变更说明：\n1、【体验】增加投屏功能（arm64 & amd64)\n2、【体验】登录体验优化\n3、【体验】组织列表体验优化\n4、【体验】个人资料页改版\n5、【问题】修复若干bug&稳定性问题", 
 		"package": {
-			"url": "https://dtapp-pub.dingtalk.com/dingtalk-desktop/xc_dingtalk_update/linux_deb/Release/com.alibabainc.dingtalk_7.1.0.31218_amd64.deb", 
+			"url": "https://dtapp-pub.dingtalk.com/dingtalk-desktop/xc_dingtalk_update/linux_deb/Release/com.alibabainc.dingtalk_7.1.0.31120_amd64.deb", 
 			"force_update": false, 
-			"version": "7.1.0-Release.31218", 
-			"update_version": "7.1.0-Release.31218", 
-			"md5": "aa20f787ff53bf3781d5e1d3db0d033c"
+			"version": "7.1.0-Release.31120", 
+			"update_version": "7.1.0-Release.31120", 
+			"md5": "984acbfd17cb67ad33c9bb052c5cb3de"
 		}
 	}
 }

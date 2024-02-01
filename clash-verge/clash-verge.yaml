@@ -29,14 +29,14 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- name: 剩余流量：45.86 GB
+- name: 剩余流量：62.44 GB
   type: ss
   server: hk01.goodyun.buzz
   port: 30969
   cipher: aes-256-gcm
   password: 5c79ebef-2c92-4b61-a123-488594405e7a
   udp: true
-- name: 距离下次重置剩余：2 天
+- name: 距离下次重置剩余：28 天
   type: ss
   server: hk01.goodyun.buzz
   port: 30969
@@ -420,8 +420,8 @@ proxy-groups:
   proxies:
   - 自动选择(已剔除IPLC)
   - 故障转移
-  - 剩余流量：45.86 GB
-  - 距离下次重置剩余：2 天
+  - 剩余流量：62.44 GB
+  - 距离下次重置剩余：28 天
   - 套餐到期：2024-04-29
   - 🇭🇰[HK]香港01
   - 🇭🇰[HK]香港02
@@ -519,8 +519,8 @@ proxy-groups:
 - name: 故障转移
   type: fallback
   proxies:
-  - 剩余流量：45.86 GB
-  - 距离下次重置剩余：2 天
+  - 剩余流量：62.44 GB
+  - 距离下次重置剩余：28 天
   - 套餐到期：2024-04-29
   - 🇭🇰[HK]香港01
   - 🇭🇰[HK]香港02

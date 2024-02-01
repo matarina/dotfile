@@ -1,6 +1,6 @@
-2024/01/27-22:56:17.296 ac0 Reusing MANIFEST /home/ma/.config/DingTalk/cache/Session Storage/MANIFEST-000001
-2024/01/27-22:56:17.297 ac0 Recovering log #4
-2024/01/27-22:56:17.298 ac0 Reusing old log /home/ma/.config/DingTalk/cache/Session Storage/000004.log 
-2024/01/28-17:51:05.156 35a3f Level-0 table #8: started
-2024/01/28-17:51:05.160 35a3f Level-0 table #8: 21847 bytes OK
-2024/01/28-17:51:05.163 35a3f Delete type=0 #4
+2024/02/01-10:23:15.118 c3f Reusing MANIFEST /home/ma/.config/DingTalk/cache/Session Storage/MANIFEST-000001
+2024/02/01-10:23:15.118 c3f Recovering log #10
+2024/02/01-10:23:15.120 c3f Reusing old log /home/ma/.config/DingTalk/cache/Session Storage/000010.log 
+2024/02/01-17:19:15.108 c3f Level-0 table #14: started
+2024/02/01-17:19:15.110 c3f Level-0 table #14: 22798 bytes OK
+2024/02/01-17:19:15.112 c3f Delete type=0 #10

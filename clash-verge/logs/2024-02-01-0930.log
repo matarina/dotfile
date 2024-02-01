@@ -1,0 +1,12 @@
+2024-02-01 09:30:23 ERROR - failed to create the pid file
+2024-02-01 09:30:23 INFO - [clash]: level=info msg="Start initial compatible provider 自动选择(已剔除IPLC)"
+2024-02-01 09:30:23 INFO - [clash]: level=info msg="Start initial compatible provider TaiShan Net"
+2024-02-01 09:30:23 INFO - [clash]: level=info msg="Start initial compatible provider 故障转移"
+2024-02-01 09:30:23 INFO - [clash]: level=error msg="External controller listen error: listen tcp 127.0.0.1:9090: bind: address already in use"
+2024-02-01 09:30:24 INFO - [clash]: level=warning msg="[CacheFile] can't open cache file: timeout"
+2024-02-01 09:30:24 INFO - [clash]: level=error msg="create addr 127.0.0.1:7890 tcp listener error. err:listen tcp 127.0.0.1:7890: bind: address already in use"
+2024-02-01 09:31:08 ERROR - error sending request for url (https://jp.taishan.pro/api/v1/client/subscribe?token=150cc22381276d4640e90dd963faada3): error trying to connect: Connection reset by peer (os error 104)
+2024-02-01 09:31:12 ERROR - error sending request for url (https://jp.taishan.pro/api/v1/client/subscribe?token=150cc22381276d4640e90dd963faada3): error trying to connect: Connection reset by peer (os error 104)
+2024-02-01 09:31:13 ERROR - error sending request for url (https://jp.taishan.pro/api/v1/client/subscribe?token=150cc22381276d4640e90dd963faada3): error trying to connect: Connection reset by peer (os error 104)
+2024-02-01 09:31:33 ERROR - error sending request for url (https://jp.taishan.pro/api/v1/client/subscribe?token=150cc22381276d4640e90dd963faada3): error trying to connect: Connection reset by peer (os error 104)
+2024-02-01 09:31:35 ERROR - error sending request for url (https://jp.taishan.pro/api/v1/client/subscribe?token=150cc22381276d4640e90dd963faada3): error trying to connect: Connection reset by peer (os error 104)

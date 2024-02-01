@@ -14,12 +14,12 @@ items:
   url: https://jp.taishan.pro/api/v1/client/subscribe?token=150cc22381276d4640e90dd963faada3
   selected:
   - name: GLOBAL
-    now: 🇺🇸[US]凤凰城03
+    now: 🇸🇬[SG]新加坡04
   extra:
-    upload: 397231738
-    download: 19079133513
+    upload: 78219351
+    download: 1599016206
     total: 68719476736
     expire: 1714358624
-  updated: 1706353596
+  updated: 1706750653
   option:
     update_interval: 1440

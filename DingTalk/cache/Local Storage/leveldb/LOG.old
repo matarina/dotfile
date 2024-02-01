@@ -1,3 +1,18 @@
-2024/01/26-04:06:41.335 5cc Reusing MANIFEST /home/ma/.config/DingTalk/cache/Local Storage/leveldb/MANIFEST-000001
-2024/01/26-04:06:41.335 5cc Recovering log #21
-2024/01/26-04:06:41.336 5cc Reusing old log /home/ma/.config/DingTalk/cache/Local Storage/leveldb/000021.log 
+2024/02/01-09:01:34.985 2c1cf Reusing MANIFEST /home/ma/.config/DingTalk/cache/Local Storage/leveldb/MANIFEST-000001
+2024/02/01-09:01:34.986 2c1cf Recovering log #34
+2024/02/01-09:01:34.988 2c1cf Reusing old log /home/ma/.config/DingTalk/cache/Local Storage/leveldb/000034.log 
+2024/02/01-09:01:48.858 2c1cf Level-0 table #38: started
+2024/02/01-09:01:48.866 2c1cf Level-0 table #38: 116181 bytes OK
+2024/02/01-09:01:48.870 2c1cf Delete type=0 #34
+2024/02/01-09:31:57.910 2c1cf Level-0 table #40: started
+2024/02/01-09:31:57.913 2c1cf Level-0 table #40: 18290 bytes OK
+2024/02/01-09:31:57.916 2c1cf Delete type=0 #37
+2024/02/01-09:31:57.917 2c1cf Compacting 4@0 + 1@1 files
+2024/02/01-09:31:57.934 2c1cf Generated table #41@0: 228 keys, 624633 bytes
+2024/02/01-09:31:57.934 2c1cf Compacted 4@0 + 1@1 files => 624633 bytes
+2024/02/01-09:31:57.936 2c1cf compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/02/01-09:31:57.937 2c1cf Delete type=2 #32
+2024/02/01-09:31:57.937 2c1cf Delete type=2 #35
+2024/02/01-09:31:57.937 2c1cf Delete type=2 #30
+2024/02/01-09:31:57.937 2c1cf Delete type=2 #38
+2024/02/01-09:31:57.937 2c1cf Delete type=2 #40
