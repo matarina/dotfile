@@ -1,0 +1,28 @@
+[2/5/2024, 9:27:14 AM][INFO] 不存在 /home/ma/.config/QQ/versions/config.json，将自动创建。内容为：
+{
+  "baseVersion": "3.2.5-21357",
+  "curVersion": "3.2.5-21357",
+  "prevVersion": "",
+  "onErrorVersions": [],
+  "buildId": "21357"
+}
+[2/5/2024, 9:27:14 AM][INFO] /home/ma/.config/QQ/versions/3.2.5-21357.zip 不存在，无法执行解压操作
+[2/5/2024, 9:27:14 AM][INFO] 从安装目录加载主进程代码: /tmp/.mount_linuxqPamiCu/resources/app/application/background.js
+[2/5/2024, 9:27:14 AM][INFO] 
+---------- 华丽的分割线 ----------
+
+
+[2/5/2024, 10:09:45 AM][INFO] /home/ma/.config/QQ/versions/config.json 存在
+[2/5/2024, 10:09:45 AM][INFO] /home/ma/.config/QQ/versions/3.2.5-21357.zip 不存在，无法执行解压操作
+[2/5/2024, 10:09:45 AM][INFO] 从安装目录加载主进程代码: /tmp/.mount_linuxqU6GSaJ/resources/app/application/background.js
+[2/5/2024, 10:09:45 AM][INFO] 
+---------- 华丽的分割线 ----------
+
+
+[2/5/2024, 10:30:21 AM][INFO] /home/ma/.config/QQ/versions/config.json 存在
+[2/5/2024, 10:30:21 AM][INFO] /home/ma/.config/QQ/versions/3.2.5-21357.zip 不存在，无法执行解压操作
+[2/5/2024, 10:30:21 AM][INFO] 从安装目录加载主进程代码: /tmp/.mount_linuxqBr6MRG/resources/app/application/background.js
+[2/5/2024, 10:30:21 AM][INFO] 
+---------- 华丽的分割线 ----------
+
+

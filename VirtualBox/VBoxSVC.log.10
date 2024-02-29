@@ -1,0 +1,148 @@
+00:00:00.000141 main     VirtualBox XPCOM Server 7.0.14 r161095 linux.amd64 (Jan 19 2024 13:54:29) release log
+00:00:00.000143 main     Log opened 2024-02-18T05:26:10.920144000Z
+00:00:00.000143 main     Build Type: release
+00:00:00.000144 main     OS Product: Linux
+00:00:00.000144 main     OS Release: 6.7.3-arch1-2
+00:00:00.000144 main     OS Version: #1 SMP PREEMPT_DYNAMIC Fri, 02 Feb 2024 17:03:55 +0000
+00:00:00.000154 main     DMI Product Name: System Product Name
+00:00:00.000157 main     DMI Product Version: System Version
+00:00:00.000159 main     Firmware type: UEFI
+00:00:00.000326 main     Secure Boot: Disabled
+00:00:00.000340 main     Host RAM: 31840MB (31.0GB) total, 27984MB (27.3GB) available
+00:00:00.000341 main     Executable: /usr/lib/virtualbox/VBoxSVC
+00:00:00.000342 main     Process ID: 1022533
+00:00:00.000342 main     Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.001589 main     IPC socket path: /tmp/.vbox-ma-ipc/ipcd
+00:00:00.108100 nspr-2   VirtualBox: object creation starts
+00:00:00.108274 nspr-2   Home directory: '/home/ma/.config/VirtualBox'
+00:00:00.108996 nspr-2   Loading settings file "/home/ma/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:00.111685 nspr-2   Successfully initialised host USB using sysfs
+00:00:00.112507 nspr-2   HostDnsMonitor: initializing
+00:00:00.112681 nspr-2   NAT: resolv.conf: nameserver 223.5.5.5
+00:00:00.112685 nspr-2   HostDnsMonitor: updating information
+00:00:00.112697 nspr-2   HostDnsMonitor: old information
+00:00:00.112698 nspr-2     no server entries
+00:00:00.112699 nspr-2     no domain set
+00:00:00.112700 nspr-2     no search string entries
+00:00:00.112701 nspr-2   HostDnsMonitor: new information
+00:00:00.112701 nspr-2     server 1: 223.5.5.5
+00:00:00.112703 nspr-2     no domain set
+00:00:00.112703 nspr-2     no search string entries
+00:00:00.114389 nspr-2   VD: VDInit finished with VINF_SUCCESS
+00:00:00.117725 nspr-2   Loading settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+00:00:00.119578 nspr-2   OCI: Local config file '/home/ma/.config/VirtualBox/oci_config' does not exist
+00:00:00.119591 nspr-2   OCI: Original config file '/home/ma/.oci/config' does not exist
+00:00:00.119592 nspr-2   OCI: Reading profiles finished with status NS_OK
+00:00:00.119600 nspr-2   ExtPack: Created cloud provider 'OCI' (hrc=NS_OK)
+00:00:00.119638 nspr-2   VirtualBox: object created
+00:00:00.583849 nspr-5   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
+00:00:01.412926 nspr-5   Saving settings file "/home/ma/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:01.415522 nspr-5   Finished saving settings file "/home/ma/.config/VirtualBox/VirtualBox.xml"
+00:00:12.235462 nspr-3   Launched VM: 805311936 pid: 1024733 (0xfa2dd) frontend: headless name: win
+00:00:12.279383 nspr-4   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
+00:00:12.318879 nspr-4   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Starting)}, preserve=false aResultDetail=0
+00:00:12.553322 nspr-5   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Property 'CRYPT/KeyId' does not exist}, preserve=false aResultDetail=0
+00:00:12.553827 nspr-5   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Property 'CRYPT/KeyId' does not exist}, preserve=false aResultDetail=0
+00:00:12.579158 nspr-3   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
+00:00:16.735096 nspr-5   Launched VM: 805316512 pid: 1025755 (0xfa6db) frontend: separate name: win
+00:00:16.786374 nspr-6   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
+00:00:16.908261 nspr-5   ERROR [COM]: aRC=VBOX_E_INVALID_OBJECT_STATE (0x80bb0007) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine 'win' is already locked by a session (or being locked or unlocked)}, preserve=false aResultDetail=0
+00:00:17.221669 nspr-5   Load [/usr/lib/virtualbox/ExtensionPacks/Oracle_VM_VirtualBox_Extension_Pack/linux.amd64/VBoxHostWebcam.so] vrc=VINF_SUCCESS
+00:00:17.254309 nspr-8   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
+00:00:18.108673 nspr-4   Saving settings file "/home/ma/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:18.110019 nspr-4   Finished saving settings file "/home/ma/.config/VirtualBox/VirtualBox.xml"
+00:00:18.209312 nspr-8   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+00:00:18.213392 nspr-8   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+00:00:18.219051 nspr-7   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
+00:00:29.410163 nspr-3   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+00:00:29.411607 nspr-3   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+00:00:30.315504 nspr-7   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+00:00:30.317257 nspr-7   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+00:00:32.714654 nspr-8   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+00:00:32.717416 nspr-8   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+00:00:33.548919 nspr-3   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+00:00:33.551241 nspr-3   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+00:00:35.286267 nspr-8   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+00:00:35.288886 nspr-8   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+00:00:35.925888 nspr-6   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+00:00:35.928357 nspr-6   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+00:01:33.315896 nspr-4   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+00:01:33.317964 nspr-4   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+00:01:33.331914 nspr-9   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+00:01:33.334063 nspr-9   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+00:01:33.664476 nspr-10  Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+00:01:33.666670 nspr-10  Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+00:01:33.743887 nspr-5   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+00:01:33.746084 nspr-5   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+00:03:20.774928 nspr-10  Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+00:03:20.777476 nspr-10  Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+00:03:21.209964 nspr-9   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+00:03:21.212934 nspr-9   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+00:05:20.036770 nspr-8   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+00:05:20.039238 nspr-8   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+00:05:20.520097 nspr-2   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+00:05:20.522956 nspr-2   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+00:18:32.018847 nspr-4   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+00:18:32.020904 nspr-4   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+00:18:32.510282 nspr-6   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+00:18:32.511694 nspr-6   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+00:18:50.621195 nspr-10  Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+00:18:50.622768 nspr-10  Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+00:18:51.115466 nspr-10  Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+00:18:51.117775 nspr-10  Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+00:18:54.199287 nspr-8   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+00:18:54.201507 nspr-8   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+00:18:54.716517 nspr-10  Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+00:18:54.719004 nspr-10  Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+01:22:43.791605 nspr-7   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+01:22:43.794282 nspr-7   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+01:22:44.295881 nspr-5   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+01:22:44.299213 nspr-5   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+01:22:48.402608 nspr-6   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+01:22:48.405101 nspr-6   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+01:46:20.382812 nspr-10  Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+01:46:20.385542 nspr-10  Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+01:46:20.410394 nspr-6   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+01:46:20.411915 nspr-6   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+01:53:29.187140 nspr-9   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+01:53:29.189272 nspr-9   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+01:53:29.709252 nspr-5   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+01:53:29.711588 nspr-5   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+01:54:07.886955 nspr-10  Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+01:54:07.889545 nspr-10  Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+01:54:08.389650 nspr-9   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+01:54:08.392166 nspr-9   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+01:57:10.510821 nspr-3   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+01:57:10.512407 nspr-3   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+01:57:11.016986 nspr-4   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+01:57:11.019711 nspr-4   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+01:57:35.810066 nspr-4   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+01:57:35.812070 nspr-4   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+01:57:36.316651 nspr-4   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+01:57:36.319174 nspr-4   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+02:06:43.686532 nspr-4   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+02:06:43.688019 nspr-4   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+02:06:44.180855 nspr-2   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+02:06:44.182630 nspr-2   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+02:08:18.053452 nspr-5   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+02:08:18.055023 nspr-5   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+02:08:18.540092 nspr-5   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+02:08:18.542592 nspr-5   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+03:23:56.095665 nspr-3   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+03:23:56.097611 nspr-3   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+03:23:56.608793 nspr-4   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+03:23:56.611725 nspr-4   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+03:31:16.837627 nspr-8   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+03:31:16.840297 nspr-8   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+03:31:17.316533 nspr-7   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+03:31:17.318906 nspr-7   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+04:48:16.872619 nspr-3   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+04:48:16.874705 nspr-3   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+04:48:17.336641 nspr-3   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+04:48:17.339659 nspr-3   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+04:48:19.317371 nspr-9   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+04:48:19.320238 nspr-9   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+04:48:24.924265 nspr-8   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+04:48:24.926598 nspr-8   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+04:48:24.956250 nspr-4   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+04:48:24.957728 nspr-4   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"

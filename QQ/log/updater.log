@@ -1,0 +1,168 @@
+[2024-02-05 09:27:44.400] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-05 09:27:44.402] [info]  [hot update] hotUpdateApi start clearOldVersions
+[2024-02-05 09:27:44.435] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-05 09:27:44.436] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-05 09:27:44.437] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-05 10:09:52.879] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-05 10:09:52.881] [info]  [hot update] hotUpdateApi start clearOldVersions
+[2024-02-05 10:09:52.932] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-05 10:09:52.933] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-05 10:09:52.933] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-05 11:09:53.152] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-05 11:09:53.153] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-05 11:09:53.153] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-05 12:09:53.163] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-05 12:09:53.164] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-05 12:09:53.164] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-05 13:09:53.167] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-05 13:09:53.168] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-05 13:09:53.170] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-05 14:09:53.171] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-05 14:09:53.173] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-05 14:09:53.174] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-05 15:10:11.169] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-05 15:10:11.171] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-05 15:10:11.172] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-05 16:10:11.163] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-05 16:10:11.164] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-05 16:10:11.164] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-05 17:10:11.161] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-05 17:10:11.162] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-05 17:10:11.163] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-05 18:10:11.175] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-05 18:10:11.177] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-05 18:10:11.178] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-05 19:10:11.167] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-05 19:10:11.168] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-05 19:10:11.168] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-05 20:10:11.157] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-05 20:10:11.159] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-05 20:10:11.160] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-05 21:10:11.161] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-05 21:10:11.162] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-05 21:10:11.163] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-05 22:10:11.162] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-05 22:10:11.164] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-05 22:10:11.165] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-05 23:10:11.166] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-05 23:10:11.168] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-05 23:10:11.168] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-06 00:10:11.165] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-06 00:10:11.167] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-06 00:10:11.168] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-06 01:10:11.157] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-06 01:10:11.158] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-06 01:10:11.159] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-06 02:10:11.151] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-06 02:10:11.151] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-06 02:10:11.152] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-06 03:10:11.164] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-06 03:10:11.166] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-06 03:10:11.167] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-06 04:10:11.153] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-06 04:10:11.153] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-06 04:10:11.154] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-06 05:10:11.170] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-06 05:10:11.172] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-06 05:10:11.172] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-06 06:10:11.149] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-06 06:10:11.150] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-06 06:10:11.150] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-06 07:10:11.159] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-06 07:10:11.160] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-06 07:10:11.160] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-06 08:10:11.159] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-06 08:10:11.160] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-06 08:10:11.160] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-18 08:59:27.976] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-18 08:59:27.981] [info]  [hot update] hotUpdateApi start clearOldVersions
+[2024-02-18 08:59:28.026] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-18 08:59:28.027] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-18 08:59:28.028] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-18 09:32:47.028] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-18 09:32:47.031] [info]  [hot update] hotUpdateApi start clearOldVersions
+[2024-02-18 09:32:47.059] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-18 09:32:47.060] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-18 09:32:47.061] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-18 10:32:47.164] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-18 10:32:47.166] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-18 10:32:47.166] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-18 10:57:52.641] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-18 10:57:52.642] [info]  [hot update] hotUpdateApi start clearOldVersions
+[2024-02-18 10:57:52.665] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-18 10:57:52.665] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-18 10:57:52.665] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-19 10:38:29.029] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-19 10:38:29.030] [info]  [hot update] hotUpdateApi start clearOldVersions
+[2024-02-19 10:38:29.058] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-19 10:38:29.058] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-19 10:38:29.059] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-19 11:38:29.068] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-19 11:38:29.070] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-19 11:38:29.071] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-19 12:38:29.067] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-19 12:38:29.068] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-19 12:38:29.068] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-22 13:19:32.604] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-22 13:19:32.605] [info]  [hot update] hotUpdateApi start clearOldVersions
+[2024-02-22 13:19:32.628] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-22 13:19:32.628] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-22 13:19:32.628] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-22 13:49:03.168] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-22 13:49:03.170] [info]  [hot update] hotUpdateApi start clearOldVersions
+[2024-02-22 13:49:03.209] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-22 13:49:03.211] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-22 13:49:03.211] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-23 11:41:00.543] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-23 11:41:00.544] [info]  [hot update] hotUpdateApi start clearOldVersions
+[2024-02-23 11:41:00.574] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-23 11:41:00.574] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-23 11:41:00.575] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-23 12:41:00.599] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-23 12:41:00.601] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-23 12:41:00.602] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-26 09:45:37.835] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-26 09:45:37.836] [info]  [hot update] hotUpdateApi start clearOldVersions
+[2024-02-26 09:45:37.868] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-26 09:45:37.869] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-26 09:45:37.869] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-26 13:14:23.295] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-26 13:14:23.298] [info]  [hot update] hotUpdateApi start clearOldVersions
+[2024-02-26 13:14:23.337] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-26 13:14:23.339] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-26 13:14:23.340] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-26 14:14:24.155] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-26 14:14:24.156] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-26 14:14:24.156] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-26 15:14:24.162] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-26 15:14:24.162] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-26 15:14:24.163] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-26 16:14:24.153] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-26 16:14:24.154] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-26 16:14:24.154] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-26 17:14:24.162] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-26 17:14:24.163] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-26 17:14:24.164] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-26 18:14:30.169] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-26 18:14:30.170] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-26 18:14:30.171] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-27 09:41:48.891] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-27 09:41:48.893] [info]  [hot update] hotUpdateApi start clearOldVersions
+[2024-02-27 09:41:48.937] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-27 09:41:48.938] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-27 09:41:48.939] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-27 14:45:32.978] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-27 14:45:32.980] [info]  [hot update] hotUpdateApi start clearOldVersions
+[2024-02-27 14:45:33.021] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-27 14:45:33.024] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-27 14:45:33.026] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-27 17:32:35.313] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-27 17:32:35.315] [info]  [hot update] hotUpdateApi start clearOldVersions
+[2024-02-27 17:32:35.355] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-27 17:32:35.356] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-27 17:32:35.357] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-02-28 13:16:59.949] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-28 13:16:59.952] [info]  [hot update] hotUpdateApi start clearOldVersions
+[2024-02-28 13:16:59.981] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-02-28 13:16:59.982] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.5-21159
+[2024-02-28 13:16:59.982] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false

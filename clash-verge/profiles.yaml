@@ -15,11 +15,29 @@ items:
   selected:
   - name: GLOBAL
     now: 🇸🇬[SG]新加坡04
+  - name: TaiShan Net
+    now: 🇺🇸[US]圣何塞02
   extra:
-    upload: 78219351
-    download: 1599016206
+    upload: 0
+    download: 0
     total: 68719476736
     expire: 1714358624
-  updated: 1706750653
+  updated: 1709168811
+  option:
+    update_interval: 1440
+- uid: rgQsA82BfflR
+  type: remote
+  name: Remote File
+  file: rgQsA82BfflR.yaml
+  url: https://api.sanfen013.xyz/api/v1/client/subscribe?token=c247160079424d0699160766bc4354f9&flag=clash
+  selected:
+  - name: 三分机场
+    now: 自动选择
+  extra:
+    upload: 155314697
+    download: 20050909691
+    total: 214748364800
+    expire: 1710596229
+  updated: 1709168258
   option:
     update_interval: 1440

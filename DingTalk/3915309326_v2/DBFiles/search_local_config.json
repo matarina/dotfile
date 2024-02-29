@@ -1,0 +1,4 @@
+{
+    "is_already_hit_enable_udf": true,
+    "new_udf_policy_hit_ut_key": "local_bucket_512MB"
+}

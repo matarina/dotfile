@@ -1,0 +1,47 @@
+--- --- --- --- --- --- --- Bugly NDK testbuildnum --- --- --- --- --- --- --- 
+ABI: x86_64
+time: 2024-02-28 14:00:47
+pid: 1994565, tid: 1994565, name: main_1994565  >>> /tmp/.mount_linuxqZtgrfZ/qq_1994565 <<<
+signal: 5 (SIGTRAP), code: 128 (UNKNOWN_SIGTRAP) fault addr: (nil)
+si_errno:0, si_errnoMsg:Success, sending pid:0, sending uid:0
+CustomInfo: 
+
+    r8: 0x0000000000000000  r9: 0x0000000000000000  r10: 0x0000000000000000
+    r11: 0x0000000000000246  r12: 0x00007ffc9e8dfc61  r13: 0x000064338d5c4533
+    r14: 0x00007ffc9e8dfc80  r15: 0x00007ffc9e8e0108  rdi: 0x0000643396beb0e0
+    rsi: 0x0000000000000000  rbp: 0x00007ffc9e8e00e0  rbx: 0x00007ffc9e8e00f8
+    rdx: 0x0000000000000000  rax: 0x0000643396b0f2d8  rcx: 0x0000000000000000
+    rsp: 0x00007ffc9e8dfbd0  rip: 0x00006433921252a8  eflags: 0x0000000000000246
+    cs: 0x002b000000000033  err: 0x0000000000000000  trapno: 0x0000000000000003
+    oldmask: 0x0000000000000000  cr2: 0x0000000000000000
+        $$00    pc 0000000005c132a8    /tmp/.mount_linuxqZtgrfZ/qq [x86_64::418b5e6470d9b4ead85fd19f1a6b7c0a]
+        $$01    pc 0000000004e2f38a    /tmp/.mount_linuxqZtgrfZ/qq [x86_64::418b5e6470d9b4ead85fd19f1a6b7c0a]
+        $$02    pc 0000000004e2c0e8    /tmp/.mount_linuxqZtgrfZ/qq [x86_64::418b5e6470d9b4ead85fd19f1a6b7c0a]
+        $$03    pc 0000000004e2aeeb    /tmp/.mount_linuxqZtgrfZ/qq [x86_64::418b5e6470d9b4ead85fd19f1a6b7c0a]
+        $$04    pc 0000000004e36f72    /tmp/.mount_linuxqZtgrfZ/qq [x86_64::418b5e6470d9b4ead85fd19f1a6b7c0a]
+        $$05    pc 0000000004e384f7    /tmp/.mount_linuxqZtgrfZ/qq [x86_64::418b5e6470d9b4ead85fd19f1a6b7c0a]
+        $$06    pc 0000000004c546ef    /tmp/.mount_linuxqZtgrfZ/qq [x86_64::418b5e6470d9b4ead85fd19f1a6b7c0a]
+        $$07    pc 0000000004cc1ccf    /tmp/.mount_linuxqZtgrfZ/qq [x86_64::418b5e6470d9b4ead85fd19f1a6b7c0a]
+        $$08    pc 0000000004cc1fa1    /tmp/.mount_linuxqZtgrfZ/qq [x86_64::418b5e6470d9b4ead85fd19f1a6b7c0a]
+        $$09    pc 0000000005c5eb4d    /tmp/.mount_linuxqZtgrfZ/qq [x86_64::418b5e6470d9b4ead85fd19f1a6b7c0a]
+        $$10    pc 0000000005c7a5c1    /tmp/.mount_linuxqZtgrfZ/qq [x86_64::418b5e6470d9b4ead85fd19f1a6b7c0a]
+        $$11    pc 0000000005c7abd5    /tmp/.mount_linuxqZtgrfZ/qq [x86_64::418b5e6470d9b4ead85fd19f1a6b7c0a]
+        $$12    pc 0000000005cd9a0e    /tmp/.mount_linuxqZtgrfZ/qq [x86_64::418b5e6470d9b4ead85fd19f1a6b7c0a]
+        $$13    pc 0000000000059f69    /usr/lib/libglib-2.0.so.0.7800.4 [x86_64::81298387baa7b55fa88c9ba80b3283a6]
+        $$14    pc 00000000000b83a7    /usr/lib/libglib-2.0.so.0.7800.4 [x86_64::81298387baa7b55fa88c9ba80b3283a6]
+        $$15    pc 0000000000058162    /usr/lib/libglib-2.0.so.0.7800.4 (g_main_context_iteration+50) [x86_64::81298387baa7b55fa88c9ba80b3283a6]
+        $$16    pc 0000000005cd90b5    /tmp/.mount_linuxqZtgrfZ/qq [x86_64::418b5e6470d9b4ead85fd19f1a6b7c0a]
+        $$17    pc 0000000005c7b335    /tmp/.mount_linuxqZtgrfZ/qq [x86_64::418b5e6470d9b4ead85fd19f1a6b7c0a]
+        $$18    pc 0000000005c40aaa    /tmp/.mount_linuxqZtgrfZ/qq [x86_64::418b5e6470d9b4ead85fd19f1a6b7c0a]
+        $$19    pc 0000000004c715ff    /tmp/.mount_linuxqZtgrfZ/qq [x86_64::418b5e6470d9b4ead85fd19f1a6b7c0a]
+        $$20    pc 0000000004c73452    /tmp/.mount_linuxqZtgrfZ/qq [x86_64::418b5e6470d9b4ead85fd19f1a6b7c0a]
+        $$21    pc 0000000004c6eab9    /tmp/.mount_linuxqZtgrfZ/qq [x86_64::418b5e6470d9b4ead85fd19f1a6b7c0a]
+        $$22    pc 00000000027ae3b4    /tmp/.mount_linuxqZtgrfZ/qq [x86_64::418b5e6470d9b4ead85fd19f1a6b7c0a]
+        $$23    pc 00000000027b119e    /tmp/.mount_linuxqZtgrfZ/qq [x86_64::418b5e6470d9b4ead85fd19f1a6b7c0a]
+        $$24    pc 00000000027b0f86    /tmp/.mount_linuxqZtgrfZ/qq [x86_64::418b5e6470d9b4ead85fd19f1a6b7c0a]
+        $$25    pc 00000000027a744d    /tmp/.mount_linuxqZtgrfZ/qq [x86_64::418b5e6470d9b4ead85fd19f1a6b7c0a]
+        $$26    pc 00000000027a7556    /tmp/.mount_linuxqZtgrfZ/qq [x86_64::418b5e6470d9b4ead85fd19f1a6b7c0a]
+        $$27    pc 00000000024933b9    /tmp/.mount_linuxqZtgrfZ/qq [x86_64::418b5e6470d9b4ead85fd19f1a6b7c0a]
+        $$28    pc 0000000000025cd0    /usr/lib/libc.so.6 [x86_64::709d3369ee575fcd7d7d0b0fc48733af]
+        $$29    pc 0000000000025d8a    /usr/lib/libc.so.6 (__libc_start_main+138) [x86_64::709d3369ee575fcd7d7d0b0fc48733af]
+        $$30    pc 000000000209d02a    /tmp/.mount_linuxqZtgrfZ/qq (_start+42) [x86_64::418b5e6470d9b4ead85fd19f1a6b7c0a]

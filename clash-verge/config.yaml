@@ -3,6 +3,6 @@
 mixed-port: 7890
 log-level: info
 allow-lan: false
-mode: global
+mode: rule
 external-controller: 127.0.0.1:9090
 secret: ''

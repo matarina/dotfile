@@ -1,18 +1,24 @@
-2024/02/01-09:01:34.985 2c1cf Reusing MANIFEST /home/ma/.config/DingTalk/cache/Local Storage/leveldb/MANIFEST-000001
-2024/02/01-09:01:34.986 2c1cf Recovering log #34
-2024/02/01-09:01:34.988 2c1cf Reusing old log /home/ma/.config/DingTalk/cache/Local Storage/leveldb/000034.log 
-2024/02/01-09:01:48.858 2c1cf Level-0 table #38: started
-2024/02/01-09:01:48.866 2c1cf Level-0 table #38: 116181 bytes OK
-2024/02/01-09:01:48.870 2c1cf Delete type=0 #34
-2024/02/01-09:31:57.910 2c1cf Level-0 table #40: started
-2024/02/01-09:31:57.913 2c1cf Level-0 table #40: 18290 bytes OK
-2024/02/01-09:31:57.916 2c1cf Delete type=0 #37
-2024/02/01-09:31:57.917 2c1cf Compacting 4@0 + 1@1 files
-2024/02/01-09:31:57.934 2c1cf Generated table #41@0: 228 keys, 624633 bytes
-2024/02/01-09:31:57.934 2c1cf Compacted 4@0 + 1@1 files => 624633 bytes
-2024/02/01-09:31:57.936 2c1cf compacted to: files[ 0 1 1 0 0 0 0 ]
-2024/02/01-09:31:57.937 2c1cf Delete type=2 #32
-2024/02/01-09:31:57.937 2c1cf Delete type=2 #35
-2024/02/01-09:31:57.937 2c1cf Delete type=2 #30
-2024/02/01-09:31:57.937 2c1cf Delete type=2 #38
-2024/02/01-09:31:57.937 2c1cf Delete type=2 #40
+2024/02/27-08:55:11.369 1f7b Reusing MANIFEST /home/ma/.config/DingTalk/cache/Local Storage/leveldb/MANIFEST-000001
+2024/02/27-08:55:11.370 1f7b Recovering log #116
+2024/02/27-08:55:11.372 1f7b Reusing old log /home/ma/.config/DingTalk/cache/Local Storage/leveldb/000116.log 
+2024/02/27-08:55:30.126 1f80 Level-0 table #120: started
+2024/02/27-08:55:30.131 1f80 Level-0 table #120: 112271 bytes OK
+2024/02/27-08:55:30.133 1f80 Delete type=0 #116
+2024/02/27-17:54:41.289 1f80 Level-0 table #122: started
+2024/02/27-17:54:41.291 1f80 Level-0 table #122: 18035 bytes OK
+2024/02/27-17:54:41.292 1f80 Delete type=0 #119
+2024/02/27-18:00:45.922 1f80 Level-0 table #124: started
+2024/02/27-18:00:45.925 1f80 Level-0 table #124: 16889 bytes OK
+2024/02/27-18:00:45.927 1f80 Delete type=0 #121
+2024/02/27-18:00:45.928 1f80 Compacting 4@0 + 1@1 files
+2024/02/27-18:00:45.951 1f80 Generated table #125@0: 354 keys, 998534 bytes
+2024/02/27-18:00:45.951 1f80 Compacted 4@0 + 1@1 files => 998534 bytes
+2024/02/27-18:00:45.952 1f80 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/02/27-18:00:45.952 1f80 Delete type=2 #115
+2024/02/27-18:00:45.952 1f80 Delete type=2 #122
+2024/02/27-18:00:45.952 1f80 Delete type=2 #117
+2024/02/27-18:00:45.952 1f80 Delete type=2 #124
+2024/02/27-18:00:45.952 1f80 Delete type=2 #120
+2024/02/27-18:02:45.196 1f80 Level-0 table #127: started
+2024/02/27-18:02:45.199 1f80 Level-0 table #127: 17671 bytes OK
+2024/02/27-18:02:45.203 1f80 Delete type=0 #123

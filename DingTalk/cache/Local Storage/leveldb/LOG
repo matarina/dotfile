@@ -1,3 +1,6 @@
-2024/02/01-10:23:14.665 c3f Reusing MANIFEST /home/ma/.config/DingTalk/cache/Local Storage/leveldb/MANIFEST-000001
-2024/02/01-10:23:14.665 c3f Recovering log #39
-2024/02/01-10:23:14.666 c3f Reusing old log /home/ma/.config/DingTalk/cache/Local Storage/leveldb/000039.log 
+2024/02/29-08:57:53.309 1e4e Reusing MANIFEST /home/ma/.config/DingTalk/cache/Local Storage/leveldb/MANIFEST-000001
+2024/02/29-08:57:53.311 1e4e Recovering log #126
+2024/02/29-08:57:53.314 1e4e Reusing old log /home/ma/.config/DingTalk/cache/Local Storage/leveldb/000126.log 
+2024/02/29-08:58:19.397 1e4f Level-0 table #130: started
+2024/02/29-08:58:19.403 1e4f Level-0 table #130: 114282 bytes OK
+2024/02/29-08:58:19.405 1e4f Delete type=0 #126

@@ -3,14 +3,14 @@
 app_singleton_port: null
 app_log_level: null
 language: en
-theme_mode: system
+theme_mode: dark
 theme_blur: false
 traffic_graph: true
 enable_memory_usage: true
 enable_tun_mode: null
-enable_auto_launch: false
+enable_auto_launch: true
 enable_silent_start: false
-enable_system_proxy: true
+enable_system_proxy: false
 enable_proxy_guard: false
 system_proxy_bypass: null
 proxy_guard_duration: 30

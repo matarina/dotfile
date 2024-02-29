@@ -1,0 +1,36 @@
+flutter: launch args: []
+flutter: initializing FFI main
+flutter: _appType:main,info1-id:e1f6f72653b745c295d410df6415b01c,info2-name:Arch Linux,dir:/home/ma/Documents
+flutter: _globalFFI init
+flutter: _globalFFI init end
+flutter: registerEventHandler native_ui native_ui
+flutter: pullAb, force:true, quiet:false
+flutter: registerEventHandler callback_query_onlines recent peer
+flutter: registerEventHandler load_recent_peers recent peer
+flutter: pullAb, force:true, quiet:false
+flutter: restore lpos: 371.0/1066.0, offset:3462.0/7.0
+flutter: handled by uni links: false
+flutter: [MultiWindowHandler] active window changed: {0}
+flutter: [MultiWindowHandler] active window changed: {}
+flutter: Saving frame: null: 371.0/1066.0, offset:3462.0/7.0, isMaximized:true, isFullscreen:false
+flutter: Start closing RustDesk...
+
+(rustdesk:282391): Gtk-CRITICAL **: 09:31:08.334: gtk_window_get_position: assertion 'GTK_IS_WINDOW (window)' failed
+
+(rustdesk:282391): Gtk-CRITICAL **: 09:31:08.334: gtk_window_get_size: assertion 'GTK_IS_WINDOW (window)' failed
+
+(rustdesk:282391): Gtk-CRITICAL **: 09:31:08.334: gtk_widget_hide: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(rustdesk:282391): Gtk-CRITICAL **: 09:31:08.334: gtk_window_move: assertion 'GTK_IS_WINDOW (window)' failed
+
+(rustdesk:282391): Gtk-CRITICAL **: 09:31:08.334: gtk_window_resize: assertion 'GTK_IS_WINDOW (window)' failed
+
+(rustdesk:282391): Gtk-CRITICAL **: 09:31:08.334: gtk_window_get_position: assertion 'GTK_IS_WINDOW (window)' failed
+
+(rustdesk:282391): Gtk-CRITICAL **: 09:31:08.334: gtk_window_get_size: assertion 'GTK_IS_WINDOW (window)' failed
+
+(rustdesk:282391): Gtk-CRITICAL **: 09:31:08.334: gtk_widget_hide: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(rustdesk:282391): Gtk-CRITICAL **: 09:31:08.334: gtk_window_move: assertion 'GTK_IS_WINDOW (window)' failed
+
+(rustdesk:282391): Gtk-CRITICAL **: 09:31:08.334: gtk_window_resize: assertion 'GTK_IS_WINDOW (window)' failed
