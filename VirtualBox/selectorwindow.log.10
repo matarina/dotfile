@@ -1,21 +1,21 @@
-00:00:00.264807 VirtualBox GUI VM Selector Window 7.0.14 r161095 linux.amd64 (Jan 19 2024 13:54:29) release log
-00:00:00.264812 Log opened 2024-02-07T07:46:57.123470000Z
-00:00:00.264815 Build Type: release
-00:00:00.264819 OS Product: Linux
-00:00:00.264822 OS Release: 6.7.3-arch1-2
-00:00:00.264824 OS Version: #1 SMP PREEMPT_DYNAMIC Fri, 02 Feb 2024 17:03:55 +0000
-00:00:00.264880 DMI Product Name: System Product Name
-00:00:00.264903 DMI Product Version: System Version
-00:00:00.264914 Firmware type: UEFI
-00:00:00.265215 Secure Boot: Disabled
-00:00:00.265301 Host RAM: 31840MB (31.0GB) total, 27481MB (26.8GB) available
-00:00:00.265309 Executable: /usr/lib/virtualbox/VirtualBox
-00:00:00.265310 Process ID: 469592
-00:00:00.265311 Package type: LINUX_64BITS_GENERIC (OSE)
-00:00:00.265376 Qt version: 5.15.12
-00:00:00.266652 GUI: UIMediumEnumerator: Initial medium-enumeration finished!
-00:00:00.273012 GUI: UIMediumEnumerator: Medium-enumeration started...
-00:00:00.617125 GUI: UIMediumEnumerator: Medium-enumeration finished!
-00:00:00.636863 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 2400x-40 x 960x540
-00:00:00.638201 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 1 work area is actually resized to: 2400x-48 x 960x540
-00:00:04.982101 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:00.105376 VirtualBox GUI VM Selector Window 7.0.14 r161095 linux.amd64 (Jan 19 2024 13:54:29) release log
+00:00:00.105380 Log opened 2024-02-29T05:15:37.003733000Z
+00:00:00.105381 Build Type: release
+00:00:00.105384 OS Product: Linux
+00:00:00.105385 OS Release: 6.7.6-arch1-1
+00:00:00.105386 OS Version: #1 SMP PREEMPT_DYNAMIC Fri, 23 Feb 2024 16:31:48 +0000
+00:00:00.105420 DMI Product Name: System Product Name
+00:00:00.105434 DMI Product Version: System Version
+00:00:00.105441 Firmware type: UEFI
+00:00:00.105687 Secure Boot: Disabled
+00:00:00.105735 Host RAM: 31841MB (31.0GB) total, 21611MB (21.1GB) available
+00:00:00.105740 Executable: /usr/lib/virtualbox/VirtualBox
+00:00:00.105741 Process ID: 2935829
+00:00:00.105742 Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.105780 Qt version: 5.15.12
+00:00:00.106498 GUI: UIMediumEnumerator: Initial medium-enumeration finished!
+00:00:00.118962 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:00.438114 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:00.449936 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 2400x-107 x 960x540
+00:00:00.451304 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 1 work area is actually resized to: 2400x-125 x 960x540
+00:00:03.335794 GUI: UIMediumEnumerator: Medium-enumeration finished!

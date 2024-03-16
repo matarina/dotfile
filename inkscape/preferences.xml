@@ -154,7 +154,9 @@
          style="fill:red;"
          end="0"
          start="0"
-         usecurrent="1" />
+         usecurrent="1"
+         rx="44.2420550969641"
+         ry="42.3459655281126" />
       <eventcontext
          id="star"
          magnitude="5"
@@ -330,8 +332,8 @@
        live_outline="1"
        live_objects="1"
        show_helperpath="0"
-       x="0"
-       y="0"
+       x="225.57812789188"
+       y="529.582031496449"
        edit_clipping_paths="0"
        edit_masks="0" />
     <eventcontext
@@ -517,7 +519,7 @@
   </group>
   <group
      id="colorselector"
-     page="1"
+     page="CMYK"
      switcher="1">
     <group
        id="RGB"
@@ -595,7 +597,8 @@
        state="1" />
     <group
        id="preferences"
-       state="1" />
+       state="1"
+       page="1" />
     <group
        id="gradienteditor" />
     <group
@@ -616,7 +619,7 @@
     </group>
     <group
        id="save_as"
-       default="org.inkscape.output.svg.inkscape"
+       default="org.inkscape.output.pdf.cairorenderer"
        append_extension="1"
        enable_preview="1"
        path=""
@@ -639,7 +642,8 @@
        ask_svg="1"
        link="embed"
        scale="auto"
-       forcexdpi="0" />
+       forcexdpi="0"
+       import_mode_svg="include" />
     <group
        id="debug"
        redirect="0" />
@@ -694,7 +698,9 @@
   </group>
   <group
      id="options"
-     rotationlock="1">
+     rotationlock="1"
+     onungroup="0"
+     onimport="0">
     <group
        id="renderingcache"
        size="512" />
@@ -867,7 +873,8 @@
     <group
        id="maskobject"
        topmost="1"
-       remove="1" />
+       remove="1"
+       grouping="0" />
     <group
        id="blurquality"
        value="0" />
@@ -949,7 +956,8 @@
        partialdynamic="0" />
     <group
        id="font"
-       unitType="2" />
+       unitType="2"
+       scaleLineHeightFromFontSIze="1" />
     <group
        id="boot"
        theme="colorful"
@@ -969,12 +977,13 @@
      id="extensions"
      org.inkscape.output.png.inkscape.png_bitdepth="99"
      org.inkscape.output.png.inkscape.png_compression="6"
-     org.inkscape.output.png.inkscape.png_antialias="2" />
+     org.inkscape.output.png.inkscape.png_antialias="2"
+     org.inkscape.output.pdf.cairorenderer.PDFversion="PDF-1.5" />
   <group
      id="desktop"
-     style="fill:#000000">
+     style="fill:#000000;-inkscape-font-specification:'Arial, Normal';font-family:Arial;font-size:16px">
     <group
-       width="1045"
+       width="1036"
        height="1066"
        x="0"
        y="0"
@@ -1111,4 +1120,13 @@
        symbolicWarningColor="4279865599"
        symbolicErrorColor="10086143" />
   </group>
+  <group
+     id="color_scales"
+     wheel_vis_hsl="0" />
+  <group
+     id="gradient-edit"
+     stoplist="1" />
+  <group
+     id="pattern-edit"
+     currentSet="0" />
 </inkscape>

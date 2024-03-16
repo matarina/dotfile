@@ -1,15 +1,15 @@
 updateInfoAdded=true
 
 [ark.upd]
-ctime=1708321932
+ctime=1709890565
 done=add-hamburgermenu-to-toolbar
-mtime=1707909544
+mtime=1708595112
 
 [dolphin_detailsmodesettings.upd]
-ctime=1708321932
-mtime=1707902946
+ctime=1709890566
+mtime=1708586285
 
 [filepicker.upd]
-ctime=1708321932
+ctime=1709890567
 done=filepicker-remove-old-previews-entry
-mtime=1706981421
+mtime=1708550509

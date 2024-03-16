@@ -1,6 +1,9 @@
 [$Version]
 update_info=filepicker.upd:filepicker-remove-old-previews-entry
 
+[KDE]
+ShowDeleteCommand=false
+
 [KFileDialog Settings]
 Allow Expansion=false
 Automatically select filename extension=true
@@ -20,3 +23,9 @@ Sort hidden files last=false
 Sort reversed=false
 Speedbar Width=147
 View Style=DetailTree
+
+[KShortcutsDialog Settings]
+Dialog Size=600,480
+
+[PreviewSettings]
+MaximumRemoteSize=0

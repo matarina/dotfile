@@ -1,6 +1,6 @@
 [ExtractDialog]
 2 screens: Window-Maximized=true
-DirHistory[$e]=$HOME/Downloads/
+DirHistory[$e]=$HOME/Downloads/,$HOME/ubshare/
 
 [General]
 LockSidebar=true
@@ -8,11 +8,17 @@ ShowSidebar=true
 
 [KFileDialog Settings]
 Recent Files[$e]=file:$HOME
-Recent URLs[$e]=file:$HOME/Downloads/,file:$HOME/
+Recent URLs[$e]=file:$HOME/Downloads/,file:$HOME/,file:$HOME/ubshare/
 detailViewIconSize=16
 
 [MainWindow]
 2 screens: Window-Maximized=true
-State=AAAA/wAAAAD9AAAAAQAAAAEAAACmAAACMvwCAAAAAfsAAAAWAGEAcgBrAF8AcwBpAGQAZQBiAGEAcgEAAAAmAAACMgAAAGAA///+AAADCQAAAjIAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
+StatusBar=Disabled
+ToolBarsMovable=Disabled
+splitterSizes=360,180
+
+[Viewer]
+2 screens: Window-Maximized=true
+State=AAAA/wAAAAD9AAAAAAAAAiMAAACPAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 StatusBar=Disabled
 ToolBarsMovable=Disabled

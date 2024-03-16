@@ -1,0 +1,105 @@
+[308521:308521:2024/03/04 16:49:23:INFO:sync_module_impl.cc(24)] [Sync_module]ModuleMount
+[308521:308521:2024/03/04 16:49:23:INFO:contact_module.cc(29)] [contact_module] ModuleMount
+[308521:308521:2024/03/04 16:49:23:INFO:dt_foundation_initializer.cpp(107)] NestEngine::CreateNestEngine and InitThread
+[308521:308521:2024/03/04 16:49:23:INFO:application_context.cpp(76)] [AppCtx]  init app-ctx start
+[308521:308521:2024/03/04 16:49:23:INFO:application_path.cpp(201)] RegisterPathProvider root:/home/ma/.config/DingTalk
+[308521:308521:2024/03/04 16:49:23:ERROR:util_bridge.cpp(82)] BridgeFunc get_http_file_server_func_ not register!
+[308521:308521:2024/03/04 16:49:23:INFO:storage.cpp(65)] open storage time=0 ,name=GlobalStorage
+[308521:308521:2024/03/04 16:49:23:INFO:application_context.cpp(115)] [AppCtx]  init app-ctx end
+[308521:308521:2024/03/04 16:49:23:INFO:application_pref.cpp(70)] ApplicationPref::GetAppLocale() by system: zh_CN
+[308521:308521:2024/03/04 16:49:23:INFO:app_launcher_linux.cpp(840)] [app_launcher] user agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5414.120 Safari/537.36 dingtalk-win/1.0.0 nw(0.14.7) DingTalk(7.5.0-Release.40221) Mojo/1.0.0 Native AppType(release) Channel/202100 (Linux6.7.6-arch1-17.5.0-Release.40221)
+
+[308521:308521:2024/03/04 16:49:23:INFO:app_launcher_linux.cpp(767)] [app_launcher] InitGlobalDB() /home/ma/.config/DingTalk/userdata
+[308521:308521:2024/03/04 16:49:24:INFO:gray_sdk_manager.cpp(539)] [gray_sdk] GraySdkManager::GetGrayInitParam get GrayInitParam from db
+[308521:308521:2024/03/04 16:49:24:INFO:gray_sdk_manager.cpp(444)] [gray_sdk] GraySdkManager::InitGrayStorage path:/home/ma/.config/DingTalk/3915309326_v2/GrayStorage
+[308521:308521:2024/03/04 16:49:24:INFO:local_gray_switch.cpp(397)] kEnableNestGrayStorage is_enable:0
+[308521:308521:2024/03/04 16:49:24:INFO:storage.cpp(65)] open storage time=0 ,name=GrayStorage
+[308521:308554:2024/03/04 16:49:24:INFO:gray_config_service_impl.cpp(24)] [gray_sdk] GetRemoteIndexConfigVersion current_version:0
+[308521:308554:2024/03/04 16:49:24:INFO:gray_config_service_impl.cpp(34)] [gray_sdk] GetRemoteIndexConfigVersion current_version:
+[308521:308521:2024/03/04 16:49:24:INFO:gray_sdk_manager.cpp(142)] [gray_sdk] GraySdkManager::SetServiceStatus status:1
+[308521:308521:2024/03/04 16:49:24:INFO:i18n_manager.cpp(36)] I18NManager::Init start!
+[308521:308521:2024/03/04 16:49:24:WARNING:core_plugin_bridge.cc(59)] register sync
+[308521:308521:2024/03/04 16:49:24:INFO:dt_nest_log_handler.cc(25)] [dt_nest] [INFO:nest_engine_impl.cc(96)] engine start
+
+[308521:308521:2024/03/04 16:49:24:INFO:dt_nest_log_handler.cc(25)] [dt_nest] [INFO:nest_engine_impl.cc(71)] NestEngineImpl::PreInit
+
+[308521:308521:2024/03/04 16:49:24:INFO:dt_nest_log_handler.cc(25)] [dt_nest] [INFO:nest_engine_impl.cc(73)] NestEngineImpl::PreInit has init.
+
+[308521:308521:2024/03/04 16:49:24:INFO:dt_nest_log_handler.cc(16)] [dt_nest] [DEBUG:nest_service_creator_manager_impl.cc(34)] Register service success, service_name=N4nest11core_plugin34NestModuleSharedDBServiceInterfaceE
+
+[308521:308521:2024/03/04 16:49:24:INFO:dt_nest_log_handler.cc(16)] [dt_nest] [DEBUG:nest_service_creator_manager_impl.cc(34)] Register service success, service_name=N4nest11core_plugin22NestUserListenerHelperE
+
+[308521:308521:2024/03/04 16:49:24:INFO:dt_nest_log_handler.cc(25)] [dt_nest] [INFO:wave_card_main.cc(13)] invoke nest_wave_card main
+
+[308521:308521:2024/03/04 16:49:24:INFO:dt_nest_log_handler.cc(16)] [dt_nest] [DEBUG:nest_engine_impl.cc(283)] notify engine started
+
+[308521:308521:2024/03/04 16:49:24:INFO:dt_nest_log_handler.cc(25)] [dt_nest] [INFO:event_bus_impl.cc(101)] [event][core]subscribe 0
+
+[308521:308521:2024/03/04 16:49:24:INFO:dt_nest_log_handler.cc(25)] [dt_nest] [INFO:token_manager.cc(37)] [eventbus][token]addtoken 0 of Event.Legacy.ProxyChanged0x6393b4c323d0 1
+
+[308521:308521:2024/03/04 16:49:24:INFO:dt_nest_log_handler.cc(25)] [dt_nest] [INFO:event_bus_impl.cc(101)] [event][core]subscribe 0
+
+[308521:308521:2024/03/04 16:49:24:INFO:dt_nest_log_handler.cc(25)] [dt_nest] [INFO:token_manager.cc(37)] [eventbus][token]addtoken 0 of Event.Legacy.AppLoginSuccess0x6393b4c7bc70 1
+
+[308521:308521:2024/03/04 16:49:24:INFO:dt_nest_log_handler.cc(25)] [dt_nest] [INFO:event_bus_impl.cc(101)] [event][core]subscribe 0
+
+[308521:308521:2024/03/04 16:49:24:INFO:dt_nest_log_handler.cc(25)] [dt_nest] [INFO:token_manager.cc(37)] [eventbus][token]addtoken 0 of Event.Legacy.AppLoginFailed0x6393b4c94290 1
+
+[308521:308521:2024/03/04 16:49:24:INFO:dt_nest_log_handler.cc(25)] [dt_nest] [INFO:event_bus_impl.cc(101)] [event][core]subscribe 0
+
+[308521:308521:2024/03/04 16:49:24:INFO:dt_nest_log_handler.cc(25)] [dt_nest] [INFO:token_manager.cc(37)] [eventbus][token]addtoken 0 of Event.Legacy.AppWillLogout0x6393b4c3b5f0 1
+
+[308521:308521:2024/03/04 16:49:24:INFO:dt_nest_log_handler.cc(25)] [dt_nest] [INFO:event_bus_impl.cc(101)] [event][core]subscribe 0
+
+[308521:308521:2024/03/04 16:49:24:INFO:dt_nest_log_handler.cc(25)] [dt_nest] [INFO:token_manager.cc(37)] [eventbus][token]addtoken 0 of Event.Legacy.Appogout0x6393b4c941c0 1
+
+[308521:308521:2024/03/04 16:49:24:INFO:dt_nest_log_handler.cc(25)] [dt_nest] [INFO:event_bus_impl.cc(101)] [event][core]subscribe 0
+
+[308521:308521:2024/03/04 16:49:24:INFO:dt_nest_log_handler.cc(25)] [dt_nest] [INFO:token_manager.cc(37)] [eventbus][token]addtoken 0 of Event.Legacy.ConnectStatusChanged0x6393b4c94240 1
+
+[308521:308521:2024/03/04 16:49:24:INFO:app_context_legacy.cpp(97)] [AppContextLegacy] init end
+[308521:308521:2024/03/04 16:49:24:INFO:theme_helper.cc(110)] [ThemeHelper]  InitializeNewThemeColor
+[308521:308521:2024/03/04 16:49:24:INFO:theme_service.cc(58)] [ThemeColorService]  SetTheme new_theme_type:0
+[308521:308521:2024/03/04 16:49:24:INFO:sync_manager_bridge_impl.cpp(706)] [sync_sdk]ReadLastModeFromFile,last_mode=2
+[308521:308521:2024/03/04 16:49:24:INFO:sync_manager_bridge_impl.cpp(76)] [sync_sdk]setSupportTopics
+[308521:308521:2024/03/04 16:49:24:INFO:sync_manager_bridge_impl.cpp(81)] [sync_sdk]setSupportTopics,enable syncsdk synca=1
+[308521:308521:2024/03/04 16:49:24:INFO:sync_manager_bridge_impl.cpp(83)] [sync_sdk]setSupportTopics,enable syncsdk syncb0
+[308521:308521:2024/03/04 16:49:24:INFO:sync_manager_bridge_impl.cpp(85)] [sync_sdk]setSupportTopics,enable syncsdk unitfo0
+[308521:308521:2024/03/04 16:49:24:INFO:i18n_manager.cpp(36)] I18NManager::Init start!
+[308521:308521:2024/03/04 16:49:24:WARNING:i18n_manager.cpp(39)] [I18NManager] init, dict_string_dic_ has initialized
+[308521:308521:2024/03/04 16:49:24:INFO:application_net_setting.cpp(415)] [base_login] WukongLoggerFactory init success.
+[308521:308554:2024/03/04 16:49:24:INFO:gray_sdk_manager.cpp(851)] [gray_sdk] OnConfigChanged
+module:fastconfig, key:fastconfig, value:, has_key:0
+
+[308521:308521:2024/03/04 16:49:24:INFO:application_net_setting.cpp(798)] [Net]  set_env_scm_project:
+[308521:308521:2024/03/04 16:49:24:ERROR:util_bridge.cpp(54)] BridgeFunc get_lwp_main_server_func_ not register!
+[308521:308521:2024/03/04 16:49:24:INFO:application_net_setting.cpp(556)] channel_lwp_main_server is: 
+[308521:308521:2024/03/04 16:49:24:ERROR:util_bridge.cpp(68)] BridgeFunc get_lwp_file_server_func_ not register!
+[308521:308521:2024/03/04 16:49:24:INFO:application_net_setting.cpp(559)] channel_lwp_file_server is: 
+[308521:308521:2024/03/04 16:49:24:INFO:app_proxy_linux.cpp(28)] [base_login] AppProxyLinux::InitProxy
+[308521:308521:2024/03/04 16:49:24:INFO:app_proxy_linux.cpp(76)] [proxy log] AppProxyLinux::GetBrowserProxy kNoProxy
+[308521:308521:2024/03/04 16:49:24:INFO:app_proxy_linux.cpp(48)] [base_login] AppProxyLinux::InitProxy GetAppProxySetting
+[308521:308521:2024/03/04 16:49:24:WARNING:app_proxy_linux.cpp(188)] Set proxy to wukong:Type=0, CurlProxyType=-1, address=, port=0, username=, bypass_list=, bigCustomerByPassList=, password len=0
+[308521:308521:2024/03/04 16:49:24:INFO:app_proxy_linux.cpp(76)] [proxy log] AppProxyLinux::GetBrowserProxy kNoProxy
+[308521:308521:2024/03/04 16:49:24:INFO:application_net_setting.cpp(145)] ProxySetting init:Type=0, CurlProxyType=-1, address=, port=0, username=, bypass_list=, bigCustomerByPassList=, password len=0
+[308521:308521:2024/03/04 16:49:24:INFO:application_net_setting.cpp(451)] [Net] umid_token=P1gARU-2-mlS2HddLFatrD1SZddgu9Z2Yql_vD09WwxlhqSuNvqx9HODTu8AKp7667L2BZVrzHc-nW-BinLBRu8f
+[308521:308521:2024/03/04 16:49:24:INFO:application_net_setting.cpp(644)] [Net]  set_tzid:Asia/Shanghai
+[308521:308521:2024/03/04 16:49:24:INFO:login_context_impl.cpp(72)] [login_context] LoginContextImpl::Initialize login_type:0, is_auto:1
+[308521:308521:2024/03/04 16:49:24:INFO:wukong_delegate.cpp(57)] [wk_delegate] WKAladdinServiceDelegateImpl uid=3915309326@dingding,org_id=6418392,conn_env=online
+[308521:308521:2024/03/04 16:49:24:INFO:dt_nest_log_handler.cc(25)] [dt_nest] [INFO:event_bus_impl.cc(101)] [event][core]subscribe 0
+
+[308521:308521:2024/03/04 16:49:24:INFO:dt_nest_log_handler.cc(25)] [dt_nest] [INFO:token_manager.cc(37)] [eventbus][token]addtoken 0 of app.active.status0x6393b4ccd0d0 1
+
+[308521:308521:2024/03/04 16:49:24:INFO:launcher.cpp(132)] wukong multiple thread is enabled
+[308521:308521:2024/03/04 16:49:24:INFO:sync_unit_helper.cpp(500)] [SYNC_UNIT] AddSyncDataHandler, topic=sync
+[308521:308521:2024/03/04 16:49:24:INFO:sync_manager.cpp(539)] [SYNC] addSyncDataHandler, topic=sync
+[308521:308521:2024/03/04 16:49:24:INFO:app_appliaction_adapter.cpp(88)] [APP_ADAPT]OnMajorRoute,event=App.LaunchFinished
+[308521:308521:2024/03/04 16:49:24:INFO:app_channel.cpp(61)] AppChannelgetRealmI18nPolicyResourceContent read error
+[308521:308571:2024/03/04 16:49:24:INFO:application_context.cpp(135)] [AppCtx]  set_kuki len:68
+[308521:308571:2024/03/04 16:49:24:INFO:application_context.cpp(126)] [AppCtx]  connection status changed! connected:1
+[308521:308571:2024/03/04 16:49:24:INFO:dt_nest_log_handler.cc(25)] [dt_nest] [INFO:event_bus_impl.cc(184)] [event][core]post event Event.Legacy.ConnectStatusChanged
+
+[308521:308571:2024/03/04 16:49:24:INFO:dt_nest_log_handler.cc(25)] [dt_nest] [INFO:event_bus_impl.cc(221)] [event][core][dispatch]async dispatch:Event.Legacy.ConnectStatusChanged
+
+[308521:308571:2024/03/04 16:49:24:ERROR:dt_nest_log_handler.cc(19)] [dt_nest] [ERROR:module_interface_impl.cc(76)] ContentManager is null skip notify reg succeed
+

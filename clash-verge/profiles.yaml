@@ -18,11 +18,11 @@ items:
   - name: TaiShan Net
     now: 🇺🇸[US]圣何塞02
   extra:
-    upload: 0
-    download: 0
+    upload: 239418824
+    download: 47889975093
     total: 68719476736
     expire: 1714358624
-  updated: 1709168811
+  updated: 1710466747
   option:
     update_interval: 1440
 - uid: rgQsA82BfflR
@@ -34,10 +34,10 @@ items:
   - name: 三分机场
     now: 自动选择
   extra:
-    upload: 155314697
-    download: 20050909691
+    upload: 180054824
+    download: 22275457327
     total: 214748364800
     expire: 1710596229
-  updated: 1709168258
+  updated: 1710291667
   option:
     update_interval: 1440

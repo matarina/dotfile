@@ -1,2 +1,3 @@
-2024/02/23-15:13:43.482 cccb1 Creating DB /home/ma/.config/DingTalk/cache/shared_proto_db since it was missing.
-2024/02/23-15:13:43.486 cccb1 Reusing MANIFEST /home/ma/.config/DingTalk/cache/shared_proto_db/MANIFEST-000001
+2024/02/29-15:11:13.415 e75f Reusing MANIFEST /home/ma/.config/DingTalk/cache/shared_proto_db/MANIFEST-000001
+2024/02/29-15:11:13.415 e75f Recovering log #3
+2024/02/29-15:11:13.415 e75f Reusing old log /home/ma/.config/DingTalk/cache/shared_proto_db/000003.log 

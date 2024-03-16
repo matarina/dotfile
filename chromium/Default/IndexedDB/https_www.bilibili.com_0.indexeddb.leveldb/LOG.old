@@ -1,0 +1,34 @@
+2024/02/29-12:22:26.495 20deb2 Reusing MANIFEST /home/ma/.config/chromium/Default/IndexedDB/https_www.bilibili.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/02/29-12:22:26.495 20deb2 Recovering log #3
+2024/02/29-12:22:26.501 20deb2 Reusing old log /home/ma/.config/chromium/Default/IndexedDB/https_www.bilibili.com_0.indexeddb.leveldb/000003.log 
+2024/02/29-12:23:08.264 20deb3 Level-0 table #5: started
+2024/02/29-12:23:08.275 20deb3 Level-0 table #5: 3037172 bytes OK
+2024/02/29-12:23:08.276 20deb3 Delete type=0 #3
+2024/02/29-12:25:46.240 20deb3 Level-0 table #7: started
+2024/02/29-12:25:46.253 20deb3 Level-0 table #7: 3415190 bytes OK
+2024/02/29-12:25:46.254 20deb3 Delete type=0 #4
+2024/02/29-12:26:06.914 20deb3 Compacting 1@1 + 1@2 files
+2024/02/29-12:26:06.920 20deb3 Generated table #8@1: 282 keys, 2116895 bytes
+2024/02/29-12:26:06.923 20deb3 Generated table #9@1: 101 keys, 2152375 bytes
+2024/02/29-12:26:06.931 20deb3 Generated table #10@1: 2250 keys, 1850437 bytes
+2024/02/29-12:26:06.931 20deb3 Compacted 1@1 + 1@2 files => 6119707 bytes
+2024/02/29-12:26:06.932 20deb3 compacted to: files[ 0 0 3 0 0 0 0 ]
+2024/02/29-13:14:33.908 20deb3 Level-0 table #12: started
+2024/02/29-13:14:33.920 20deb3 Level-0 table #12: 1864280 bytes OK
+2024/02/29-13:14:33.922 20deb3 Delete type=0 #6
+2024/02/29-13:14:33.922 20deb3 Delete type=2 #7
+2024/02/29-13:14:33.923 20deb3 Delete type=2 #5
+2024/02/29-13:14:33.925 20deb3 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2024/02/29-13:14:33.925 20deb3 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x02\x02 \x03\x00`\x1f\xe61\xdfxB\x00\x01/\x00j\x00h\x00j\x00k\x00j\x00l\x00j\x00i\x00j\x00j\x00j\x00i\x00j\x00m\x00j\x00j\x00j\x00j\x00j\x00h\x00i\x00t\x00j\x00h\x00i\x00t\x00j\x00j\x00j\x00g\x00j\x00i\x00j\x00j\x00j\x00i\x00i\x00u\x00m\x00t\x00j\x00k\x00n\x00j\x00.\x00n\x00c' @ 20722 : 1
+2024/02/29-13:14:33.925 20deb3 Compacting 1@1 + 3@2 files
+2024/02/29-13:14:33.931 20deb3 Generated table #13@1: 279 keys, 2116465 bytes
+2024/02/29-13:14:33.935 20deb3 Generated table #14@1: 106 keys, 2152742 bytes
+2024/02/29-13:14:33.939 20deb3 Generated table #15@1: 110 keys, 2150763 bytes
+2024/02/29-13:14:33.946 20deb3 Generated table #16@1: 2208 keys, 1464458 bytes
+2024/02/29-13:14:33.947 20deb3 Compacted 1@1 + 3@2 files => 7884428 bytes
+2024/02/29-13:14:33.947 20deb3 compacted to: files[ 0 0 4 0 0 0 0 ]
+2024/02/29-13:14:33.948 20deb3 Delete type=2 #12
+2024/02/29-13:14:33.948 20deb3 Delete type=2 #9
+2024/02/29-13:14:33.948 20deb3 Delete type=2 #10
+2024/02/29-13:14:33.948 20deb3 Delete type=2 #8
+2024/02/29-13:14:33.950 20deb3 Manual compaction at level-1 from '\x00\x02\x02 \x03\x00`\x1f\xe61\xdfxB\x00\x01/\x00j\x00h\x00j\x00k\x00j\x00l\x00j\x00i\x00j\x00j\x00j\x00i\x00j\x00m\x00j\x00j\x00j\x00j\x00j\x00h\x00i\x00t\x00j\x00h\x00i\x00t\x00j\x00j\x00j\x00g\x00j\x00i\x00j\x00j\x00j\x00i\x00i\x00u\x00m\x00t\x00j\x00k\x00n\x00j\x00.\x00n\x00c' @ 20722 : 1 .. (end); will stop at (end)

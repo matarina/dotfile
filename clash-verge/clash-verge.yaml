@@ -29,7 +29,14 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- name: 剩余流量：64 GB
+- name: 剩余流量：19.18 GB
+  type: ss
+  server: hk01.goodyun.buzz
+  port: 30969
+  cipher: aes-256-gcm
+  password: 5c79ebef-2c92-4b61-a123-488594405e7a
+  udp: true
+- name: 距离下次重置剩余：14 天
   type: ss
   server: hk01.goodyun.buzz
   port: 30969
@@ -172,7 +179,7 @@ proxies:
 - name: 🇯🇵[JP]东京07
   type: ss
   server: jp07.goodyun.buzz
-  port: 32007
+  port: 32117
   cipher: aes-256-gcm
   password: 5c79ebef-2c92-4b61-a123-488594405e7a
   udp: true
@@ -413,7 +420,8 @@ proxy-groups:
   proxies:
   - 自动选择
   - 故障转移
-  - 剩余流量：64 GB
+  - 剩余流量：19.18 GB
+  - 距离下次重置剩余：14 天
   - 套餐到期：2024-04-29
   - 🇭🇰[HK]香港01
   - 🇭🇰[HK]香港02
@@ -470,7 +478,8 @@ proxy-groups:
 - name: 自动选择
   type: url-test
   proxies:
-  - 剩余流量：64 GB
+  - 剩余流量：19.18 GB
+  - 距离下次重置剩余：14 天
   - 套餐到期：2024-04-29
   - 🇭🇰[HK]香港01
   - 🇭🇰[HK]香港02
@@ -529,7 +538,8 @@ proxy-groups:
 - name: 故障转移
   type: fallback
   proxies:
-  - 剩余流量：64 GB
+  - 剩余流量：19.18 GB
+  - 距离下次重置剩余：14 天
   - 套餐到期：2024-04-29
   - 🇭🇰[HK]香港01
   - 🇭🇰[HK]香港02
@@ -586,7 +596,7 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
   interval: 7200
 rules:
-- DOMAIN,de.taishan.pro,DIRECT
+- DOMAIN,tsjp0321.taishan1.pro,DIRECT
 - DOMAIN-SUFFIX,services.googleapis.cn,TaiShan Net
 - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,TaiShan Net
 - DOMAIN,safebrowsing.urlsec.qq.com,DIRECT

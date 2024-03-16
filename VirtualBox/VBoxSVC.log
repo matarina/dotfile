@@ -1,51 +1,65 @@
-00:00:00.000163 main     VirtualBox XPCOM Server 7.0.14 r161095 linux.amd64 (Jan 19 2024 13:54:29) release log
-00:00:00.000164 main     Log opened 2024-02-29T01:32:39.630633000Z
-00:00:00.000164 main     Build Type: release
-00:00:00.000165 main     OS Product: Linux
-00:00:00.000166 main     OS Release: 6.7.6-arch1-1
-00:00:00.000166 main     OS Version: #1 SMP PREEMPT_DYNAMIC Fri, 23 Feb 2024 16:31:48 +0000
-00:00:00.000176 main     DMI Product Name: System Product Name
-00:00:00.000179 main     DMI Product Version: System Version
-00:00:00.000181 main     Firmware type: UEFI
-00:00:00.000346 main     Secure Boot: Disabled
-00:00:00.000360 main     Host RAM: 31841MB (31.0GB) total, 28155MB (27.4GB) available
-00:00:00.000361 main     Executable: /usr/lib/virtualbox/VBoxSVC
-00:00:00.000361 main     Process ID: 401004
-00:00:00.000361 main     Package type: LINUX_64BITS_GENERIC (OSE)
-00:00:00.001056 main     IPC socket path: /tmp/.vbox-ma-ipc/ipcd
-00:00:00.103865 nspr-2   VirtualBox: object creation starts
-00:00:00.103959 nspr-2   Home directory: '/home/ma/.config/VirtualBox'
-00:00:00.104452 nspr-2   Loading settings file "/home/ma/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
-00:00:00.105789 nspr-2   Successfully initialised host USB using sysfs
-00:00:00.106394 nspr-2   HostDnsMonitor: initializing
-00:00:00.106574 nspr-2   NAT: resolv.conf: nameserver 223.5.5.5
-00:00:00.106590 nspr-2   HostDnsMonitor: updating information
-00:00:00.106608 nspr-2   HostDnsMonitor: old information
-00:00:00.106611 nspr-2     no server entries
-00:00:00.106613 nspr-2     no domain set
-00:00:00.106615 nspr-2     no search string entries
-00:00:00.106616 nspr-2   HostDnsMonitor: new information
-00:00:00.106618 nspr-2     server 1: 223.5.5.5
-00:00:00.106620 nspr-2     no domain set
-00:00:00.106621 nspr-2     no search string entries
-00:00:00.111613 nspr-2   VD: VDInit finished with VINF_SUCCESS
-00:00:00.116886 nspr-2   Loading settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
-00:00:00.118301 nspr-2   OCI: Local config file '/home/ma/.config/VirtualBox/oci_config' does not exist
-00:00:00.118308 nspr-2   OCI: Original config file '/home/ma/.oci/config' does not exist
-00:00:00.118309 nspr-2   OCI: Reading profiles finished with status NS_OK
-00:00:00.118313 nspr-2   ExtPack: Created cloud provider 'OCI' (hrc=NS_OK)
-00:00:00.118337 nspr-2   VirtualBox: object created
-00:00:00.578347 nspr-5   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
-00:00:01.620537 nspr-5   Launched VM: 3422561168 pid: 401318 (0x61fa6) frontend: GUI/Qt name: win
-00:00:01.650813 nspr-4   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
-00:00:01.825104 nspr-3   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
-00:00:02.134660 nspr-5   Load [/usr/lib/virtualbox/ExtensionPacks/Oracle_VM_VirtualBox_Extension_Pack/linux.amd64/VBoxHostWebcam.so] vrc=VINF_SUCCESS
-00:00:02.147722 nspr-5   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
-00:00:02.174450 nspr-7   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Starting)}, preserve=false aResultDetail=0
-00:00:02.342664 nspr-2   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Property 'CRYPT/KeyId' does not exist}, preserve=false aResultDetail=0
-00:00:02.343124 nspr-2   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Property 'CRYPT/KeyId' does not exist}, preserve=false aResultDetail=0
-00:00:02.367109 nspr-8   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:00:03.116556 nspr-5   Saving settings file "/home/ma/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
-00:00:03.120088 nspr-5   Finished saving settings file "/home/ma/.config/VirtualBox/VirtualBox.xml"
-00:00:08.598736 nspr-2   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
-00:00:08.603165 nspr-2   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+00:00:00.000566 main     VirtualBox XPCOM Server 7.0.14 r161095 linux.amd64 (Jan 19 2024 13:54:29) release log
+00:00:00.000568 main     Log opened 2024-03-11T08:24:18.414858000Z
+00:00:00.000568 main     Build Type: release
+00:00:00.000569 main     OS Product: Linux
+00:00:00.000569 main     OS Release: 6.7.8-arch1-1
+00:00:00.000570 main     OS Version: #1 SMP PREEMPT_DYNAMIC Sun, 03 Mar 2024 00:30:36 +0000
+00:00:00.000583 main     DMI Product Name: System Product Name
+00:00:00.000586 main     DMI Product Version: System Version
+00:00:00.000589 main     Firmware type: UEFI
+00:00:00.000758 main     Secure Boot: Disabled
+00:00:00.000774 main     Host RAM: 31841MB (31.0GB) total, 28927MB (28.2GB) available
+00:00:00.000775 main     Executable: /usr/lib/virtualbox/VBoxSVC
+00:00:00.000775 main     Process ID: 15523
+00:00:00.000775 main     Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.001482 main     IPC socket path: /tmp/.vbox-ma-ipc/ipcd
+00:00:00.105169 nspr-2   VirtualBox: object creation starts
+00:00:00.105343 nspr-2   Home directory: '/home/ma/.config/VirtualBox'
+00:00:00.106168 nspr-2   Loading settings file "/home/ma/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:00.108432 nspr-2   Successfully initialised host USB using sysfs
+00:00:00.109396 nspr-2   HostDnsMonitor: initializing
+00:00:00.110139 nspr-2   NAT: resolv.conf: nameserver 223.5.5.5
+00:00:00.110211 nspr-2   HostDnsMonitor: updating information
+00:00:00.110252 nspr-2   HostDnsMonitor: old information
+00:00:00.110255 nspr-2     no server entries
+00:00:00.110259 nspr-2     no domain set
+00:00:00.110261 nspr-2     no search string entries
+00:00:00.110264 nspr-2   HostDnsMonitor: new information
+00:00:00.110267 nspr-2     server 1: 223.5.5.5
+00:00:00.110271 nspr-2     no domain set
+00:00:00.110273 nspr-2     no search string entries
+00:00:00.114507 nspr-2   VD: VDInit finished with VINF_SUCCESS
+00:00:00.119468 nspr-2   Loading settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+00:00:00.121841 nspr-2   OCI: Local config file '/home/ma/.config/VirtualBox/oci_config' does not exist
+00:00:00.121857 nspr-2   OCI: Original config file '/home/ma/.oci/config' does not exist
+00:00:00.121859 nspr-2   OCI: Reading profiles finished with status NS_OK
+00:00:00.121868 nspr-2   ExtPack: Created cloud provider 'OCI' (hrc=NS_OK)
+00:00:00.121911 nspr-2   VirtualBox: object created
+00:00:00.611761 nspr-4   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
+00:00:01.506605 nspr-5   Saving settings file "/home/ma/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:01.509185 nspr-5   Finished saving settings file "/home/ma/.config/VirtualBox/VirtualBox.xml"
+00:00:01.577019 nspr-3   Launched VM: 4160759824 pid: 15803 (0x3dbb) frontend: GUI/Qt name: win
+00:00:01.607336 nspr-6   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
+00:00:01.778468 nspr-3   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
+00:00:02.096479 nspr-5   Load [/usr/lib/virtualbox/ExtensionPacks/Oracle_VM_VirtualBox_Extension_Pack/linux.amd64/VBoxHostWebcam.so] vrc=VINF_SUCCESS
+00:00:02.106966 nspr-5   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
+00:00:02.130627 nspr-4   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Starting)}, preserve=false aResultDetail=0
+00:00:02.341458 nspr-4   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Property 'CRYPT/KeyId' does not exist}, preserve=false aResultDetail=0
+00:00:02.342542 nspr-4   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Property 'CRYPT/KeyId' does not exist}, preserve=false aResultDetail=0
+00:00:02.388174 nspr-7   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
+00:00:03.093056 nspr-2   Saving settings file "/home/ma/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:03.095014 nspr-2   Finished saving settings file "/home/ma/.config/VirtualBox/VirtualBox.xml"
+19:23:03.157260 nspr-5   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Paused)}, preserve=false aResultDetail=0
+19:23:04.807621 nspr-7   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Stopping)}, preserve=false aResultDetail=0
+19:23:04.919831 nspr-5   Saving settings file "/home/ma/VirtualBox VMs/win/win.vbox" with version "1.19-linux"
+19:23:04.938220 nspr-5   Finished saving settings file "/home/ma/VirtualBox VMs/win/win.vbox"
+19:23:04.962898 nspr-4   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
+19:23:06.477024 nspr-3   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
+19:23:07.234636 nspr-7   Saving settings file "/home/ma/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+19:23:07.237764 nspr-7   Finished saving settings file "/home/ma/.config/VirtualBox/VirtualBox.xml"
+19:23:14.265926 main     VirtualBox: object deletion starts
+19:23:14.266571 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/ma/VirtualBox VMs/win/win.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+19:23:14.268488 main     HostDnsMonitor: shutting down ...
+19:23:14.268576 main     HostDnsMonitor: shut down
+19:23:14.280024 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={7682d5eb-f00e-44f1-8ca2-99d08b1cd607} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+19:23:14.280444 main     VirtualBox: object deleted

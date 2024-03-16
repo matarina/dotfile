@@ -1,2 +1,3 @@
-2024/02/29-08:57:46.314 1872 Creating DB /home/ma/.config/DingTalk/cache since it was missing.
-2024/02/29-08:57:46.383 1872 Reusing MANIFEST /home/ma/.config/DingTalk/cache/MANIFEST-000001
+2024/03/16-12:59:13.181 365c9 Reusing MANIFEST /home/ma/.config/DingTalk/cache/MANIFEST-000001
+2024/03/16-12:59:13.182 365c9 Recovering log #3
+2024/03/16-12:59:13.182 365c9 Reusing old log /home/ma/.config/DingTalk/cache/000003.log 
