@@ -58,3 +58,38 @@
 [2024-07-17 20:30:39.121] [info]  [hot update] hotUpdateApi start check  3.2.10-25765  IsOnErrorVersion
 [2024-07-17 20:30:39.122] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion result: false
 [2024-07-17 20:30:39.122] [info]  [hot update] [startUpdate] 无需更新
+[2024-07-17 21:30:39.051] [info]  [hot update] ----- startUpdate -----
+[2024-07-17 21:30:39.054] [info]  [hot update] hotUpdateApi checkHasMultipleQQ:  false
+[2024-07-17 21:30:39.054] [info]  [hot update] hotUpdateApi start check  3.2.10-25765  IsOnErrorVersion
+[2024-07-17 21:30:39.055] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion result: false
+[2024-07-17 21:30:39.055] [info]  [hot update] [startUpdate] 无需更新
+[2024-07-17 22:30:39.056] [info]  [hot update] ----- startUpdate -----
+[2024-07-17 22:30:39.059] [info]  [hot update] hotUpdateApi checkHasMultipleQQ:  false
+[2024-07-17 22:30:39.060] [info]  [hot update] hotUpdateApi start check  3.2.10-25765  IsOnErrorVersion
+[2024-07-17 22:30:39.060] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion result: false
+[2024-07-17 22:30:39.060] [info]  [hot update] [startUpdate] 无需更新
+[2024-07-17 23:30:39.047] [info]  [hot update] ----- startUpdate -----
+[2024-07-17 23:30:39.050] [info]  [hot update] hotUpdateApi checkHasMultipleQQ:  false
+[2024-07-17 23:30:39.050] [info]  [hot update] hotUpdateApi start check  3.2.10-25765  IsOnErrorVersion
+[2024-07-17 23:30:39.050] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion result: false
+[2024-07-17 23:30:39.051] [info]  [hot update] [startUpdate] 无需更新
+[2024-07-18 00:30:39.047] [info]  [hot update] ----- startUpdate -----
+[2024-07-18 00:30:39.050] [info]  [hot update] hotUpdateApi checkHasMultipleQQ:  false
+[2024-07-18 00:30:39.051] [info]  [hot update] hotUpdateApi start check  3.2.10-25765  IsOnErrorVersion
+[2024-07-18 00:30:39.051] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion result: false
+[2024-07-18 00:30:39.051] [info]  [hot update] [startUpdate] 无需更新
+[2024-07-18 01:30:39.048] [info]  [hot update] ----- startUpdate -----
+[2024-07-18 01:30:39.051] [info]  [hot update] hotUpdateApi checkHasMultipleQQ:  false
+[2024-07-18 01:30:39.051] [info]  [hot update] hotUpdateApi start check  3.2.10-25765  IsOnErrorVersion
+[2024-07-18 01:30:39.052] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion result: false
+[2024-07-18 01:30:39.052] [info]  [hot update] [startUpdate] 无需更新
+[2024-07-18 02:30:39.044] [info]  [hot update] ----- startUpdate -----
+[2024-07-18 02:30:39.047] [info]  [hot update] hotUpdateApi checkHasMultipleQQ:  false
+[2024-07-18 02:30:39.047] [info]  [hot update] hotUpdateApi start check  3.2.10-25765  IsOnErrorVersion
+[2024-07-18 02:30:39.047] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion result: false
+[2024-07-18 02:30:39.048] [info]  [hot update] [startUpdate] 无需更新
+[2024-07-18 03:31:07.200] [info]  [hot update] ----- startUpdate -----
+[2024-07-18 03:31:07.202] [info]  [hot update] hotUpdateApi checkHasMultipleQQ:  false
+[2024-07-18 03:31:07.203] [info]  [hot update] hotUpdateApi start check  3.2.10-25765  IsOnErrorVersion
+[2024-07-18 03:31:07.203] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion result: false
+[2024-07-18 03:31:07.203] [info]  [hot update] [startUpdate] 无需更新
