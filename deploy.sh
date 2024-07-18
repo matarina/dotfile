@@ -112,3 +112,18 @@ sudo dpkg -i clash-verge_1.7.3_amd64.deb
 rm clash-verge_1.7.3_amd64.deb
 mkdir /home/ma/.config
 mv ./* /home/ma/.config
+
+
+# wechat install
+wget -c -O atzlinux-v12-archive-keyring_lastest_all.deb https://www.atzlinux.com/atzlinux/pool/main/a/atzlinux-archive-keyring/atzlinux-v12-archive-keyring_lastest_all.deb
+sudo apt -y install ./atzlinux-v12-archive-keyring_lastest_all.deb
+
+sudo apt update
+
+sudo cp /etc/lsb-release /etc/lsb-release.Ubuntu
+
+sudo apt -y install com.tencent.wechat
+
+sudo apt -y install electronic-wechat-icons-atzlinux
+
+sudo cp /etc/lsb-release /etc/lsb-release.wechat
