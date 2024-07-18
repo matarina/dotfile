@@ -1,0 +1,60 @@
+[2024-05-19 09:19:59.606] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-05-19 09:19:59.607] [info]  [hot update] hotUpdateApi start clearOldVersions
+[2024-05-19 09:19:59.997] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-05-19 09:19:59.997] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.7-23159
+[2024-05-19 09:19:59.998] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-05-19 13:50:09.259] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-05-19 13:50:09.260] [info]  [hot update] hotUpdateApi start clearOldVersions
+[2024-05-19 13:50:09.403] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-05-19 13:50:09.419] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.7-23159
+[2024-05-19 13:50:09.419] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-05-19 14:12:10.696] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-05-19 14:12:10.697] [info]  [hot update] hotUpdateApi start clearOldVersions
+[2024-05-19 14:12:10.754] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-05-19 14:12:10.754] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.7-23159
+[2024-05-19 14:12:10.754] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-05-19 14:12:33.536] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-05-19 14:12:33.536] [info]  [hot update] hotUpdateApi start clearOldVersions
+[2024-05-19 14:12:33.611] [info]  [hot update] hotUpdateApi checkHasMultipleQQ false
+[2024-05-19 14:12:33.611] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion 3.2.7-23159
+[2024-05-19 14:12:33.611] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion res is false
+[2024-07-17 00:17:54.894] [info]  [hot update] 
+
+------------ app 启动分界线 ------------
+
+[2024-07-17 00:17:54.909] [info]  [hot update] hotUpdateApi checkHasMultipleQQ:  false
+[2024-07-17 00:17:54.909] [info]  [hot update] hotUpdateApi clearOldVersions start
+[2024-07-17 00:17:54.910] [info]  [hot update] {
+  "baseVersion": "3.2.10-25765",
+  "curVersion": "3.2.10-25765",
+  "prevVersion": "",
+  "onErrorVersions": [],
+  "buildId": "25765",
+  "unzipRetryCount": 0
+}
+[2024-07-17 00:17:54.910] [info]  [hot update] start update check
+[2024-07-17 00:17:55.045] [info]  [hot update] ----- startUpdate -----
+[2024-07-17 00:17:55.050] [info]  [hot update] hotUpdateApi checkHasMultipleQQ:  false
+[2024-07-17 00:17:55.050] [info]  [hot update] hotUpdateApi start check  3.2.10-25765  IsOnErrorVersion
+[2024-07-17 00:17:55.050] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion result: false
+[2024-07-17 00:17:55.051] [info]  [hot update] [startUpdate] 无需更新
+[2024-07-17 20:30:39.003] [info]  [hot update] 
+
+------------ app 启动分界线 ------------
+
+[2024-07-17 20:30:39.012] [info]  [hot update] hotUpdateApi checkHasMultipleQQ:  false
+[2024-07-17 20:30:39.012] [info]  [hot update] hotUpdateApi clearOldVersions start
+[2024-07-17 20:30:39.013] [info]  [hot update] start update check
+[2024-07-17 20:30:39.014] [info]  [hot update] {
+  "baseVersion": "3.2.10-25765",
+  "curVersion": "3.2.10-25765",
+  "prevVersion": "",
+  "onErrorVersions": [],
+  "buildId": "25765",
+  "unzipRetryCount": 0
+}
+[2024-07-17 20:30:39.116] [info]  [hot update] ----- startUpdate -----
+[2024-07-17 20:30:39.121] [info]  [hot update] hotUpdateApi checkHasMultipleQQ:  false
+[2024-07-17 20:30:39.121] [info]  [hot update] hotUpdateApi start check  3.2.10-25765  IsOnErrorVersion
+[2024-07-17 20:30:39.122] [info]  [hot update] hotUpdateApi checkIsOnErrorVersion result: false
+[2024-07-17 20:30:39.122] [info]  [hot update] [startUpdate] 无需更新

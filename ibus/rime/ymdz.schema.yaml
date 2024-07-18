@@ -1,0 +1,318 @@
+# Rime schema settings
+# encoding: utf-8
+# "i"引导拼音反查
+
+schema:
+  schema_id: ymdz
+  name: 逸码·单
+  version: "alpha"
+  author:
+    - 小泥巴
+    - 方案设计｜单单
+  description: |
+    单字二码顶
+  dependencies:
+    - pinyin_simp
+    - bihua #笔画反查
+    - ymjm
+    - ymfh    
+    - ymfc
+
+
+switches: 
+  - name: ascii_mode
+    reset: 0
+    states: [ 中, 英 ]
+  - name: full_shape
+    reset: 0
+    states: [ 全, 半 ]
+  - name: zh_simp
+    reset: 0
+    states: [ 简, 繁 ]
+  - name: YMPrompt_division
+    states: [ 🈚, 拆 ]       #🈚
+    reset: 0
+  #- name: YMPrompt_pinyin_suggestion
+    #states: [ 音关, 音开 ]
+    #reset: 0
+  - name: phrase_prediction     #联想词
+    states: [ 隐, 显 ]          # [ 🈶, 🈚 ]
+    reset: 0                    # 1为默认开启
+
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - affix_segmentor@reverse_lookup
+    - affix_segmentor@pinyin_lookup
+    - affix_segmentor@bihua_lookup
+    - affix_segmentor@division_lookup
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - reverse_lookup_translator
+    - table_translator
+    - table_translator@ymjm
+    - table_translator@ymfh
+    - script_translator@pinyin_lookup
+    - script_translator@bihua_lookup
+    - script_translator@division_lookup
+  filters:
+    - simplifier
+    - uniquifier
+    - simplifier@YMPrompt_pinyin_suggestion
+    - simplifier@YMPrompt_division 
+    - simplifier@emoji_suggestion
+    - simplifier@phrase_prediction    
+    - reverse_lookup_filter@pinyin_reverse_lookup
+    - reverse_lookup_filter@bihua_reverse_lookup
+    - reverse_lookup_filter@division_reverse_lookup
+    - simplifier@zh_simp
+
+
+speller:
+  alphabet: "qwertyuiopasdfghjkl;zxcvbnm"
+  initials: "qwertyuiopasdfghjklzxcvbnm;"
+  finals: " "
+  auto_select: true  #顶字上屏
+  auto_select_qnique_candidate: true #空码自动顶   
+  algebra: 
+    - derive/^.(.*)$/`$1/
+    - derive/^(.).(.*)$/$1`$2/
+    - derive/^(..).(.*)$/$1`$2/
+    - derive/^(...).(.*)$/$1`$2/
+    - derive/^(....).(.*)$/$1`$2/
+    - derive/^(.....)./$1`/
+    
+
+# 主翻译器
+translator:
+  dictionary: ymdz
+  enable_encoder: false
+  enable_completion: true
+  enable_sentence: false
+  enable_user_dict: false
+
+# 滤镜
+YMPrompt_division:
+  opencc_config: division.json
+  option_name: YMPrompt_division
+  tips: all
+  show_in_comment: true
+  comment_format:
+    - xform/^/〔/
+    - xform/$/〕/
+  tags:
+    - abc
+
+YMPrompt_pinyin_suggestion:
+  opencc_config: pinyin.json
+  option_name: YMPrompt_pinyin_suggestion
+  tips: all
+  show_in_comment: true
+  comment_format:
+    - xform/^/〔/
+    - xform/$/〕/
+  tags:
+    - abc
+
+phrase_prediction:
+  opencc_config: phrase.json
+  option_name: phrase_prediction
+  tips: none
+  tags:
+    - abc
+    
+zh_simp:
+  opencc_config: s2t.json
+  option_name: zh_simp
+
+emoji_suggestion:
+  opencc_config: emoji.json
+  option_name: emoji_suggestion
+  tips: all
+  tags:
+    - abc
+    - pinyin_lookup
+
+# 副翻译器
+
+ymjm:
+  dictionary: ymjm
+  enable_user_dict: false
+  enable_encoder: false          
+  enable_sentence: false         
+  enable_completion: true 
+  strict_spelling: true  
+  enable_commit_history: false
+
+ymfh:
+  dictionary: ymfh
+  enable_user_dict: false
+  enable_encoder: false          
+  enable_sentence: false         
+  enable_completion: true 
+  strict_spelling: true  
+  enable_commit_history: false
+
+#反查
+reverse_lookup: 
+  tag: reverse_lookup
+  prefix: "i"     #設定此翻譯器的前綴標識
+  # suffix:   # 反查关闭符，暂不定义
+  tips: "【反查：拼音+eioru笔画】"
+  extra_tags:
+    - pinyin_lookup
+    - bihua_lookup
+    - division_lookup  
+
+pinyin_lookup:
+  tag: pinyin_lookup
+  dictionary: pinyin_simp
+  tips: "〔拼音〕"
+
+bihua_lookup:
+  tag: bihua_lookup
+  dictionary: bihua
+  tips: 【笔画】
+  preedit_format:
+    #- xlit/hspnz/一丨丿丶乙/
+    - xlit/eioru/一丨丿丶乙/
+
+division_lookup:
+  tag: division_lookup
+  dictionary: ymfc
+  tips: "〔拆分〕"
+
+pinyin_reverse_lookup:
+  tags: [ pinyin_lookup ]
+  overwrite_comment: true
+  dictionary: ymfc          
+  comment_format:
+    - "xform//〕/"
+    - "xform/^/〔/" 
+
+bihua_reverse_lookup:
+  tags: [ bihua_lookup ] 
+  overwrite_comment: true
+  dictionary: ymfc  
+  comment_format:
+    - "xform/$/〕/"
+    - "xform/^/〔/"
+    - "xform/~//"
+
+division_reverse_lookup:
+  tags: [ division_lookup ]
+  overwrite_comment: true
+  dictionary: ymfc
+  comment_format:
+    - "xform//〕/"
+    - "xform/^/〔/"
+    - "xform/ /, /"
+
+
+# 标点
+punctuator:
+  import_preset: symbols_for_ym       
+  full_shape:
+    ' ' : { commit: '　' }
+    ',' : { commit: ， }
+    '.' : { commit: 。 }
+    '<' : [ 《, 〈, «, ‹ ]
+    '>' : [ 》, 〉, », › ]
+    '?' : { commit: ？ }
+    '/' : [ 、, '/', ／, ÷ ]
+    #'/' : { commit: ？ }
+    ';' : { commit: ； }
+    ':' : { commit: ： }
+    '''' : { pair: [ '‘', '’' ] }
+    '"' : { pair: [ '“', '”' ] }
+    '\' : [ 、, ＼ ]
+    '|' : [ ·, ｜, '§', '¦' ]
+    '`' : ｀
+    '~' : ～
+    '!' : { commit: ！ }
+    '@' : ＠
+    '#' : ＃
+    '%' : [ ％, '°', '℃' ]
+    '$' : [ ￥, '$', '€', '£', '¥', '¢', '¤' ]
+    '^' : { commit: …… }
+    '&' : ＆
+    '*' : [ ＊, ·, ・, ×, ※, ❂ ]
+    '(' : （
+    ')' : ）
+    '-' : '-'
+    '_' : ——
+    '+' : '+'
+    '=' : '='
+    '[' : [ 「, 【, 〔, ［ ]
+    ']' : [ 」, 】, 〕, ］ ]
+    '{' : [ 『, 〖, ｛ ]
+    '}' : [ 』, 〗, ｝ ]
+
+  half_shape:
+    ',' : { commit: ， }
+    '.' : { commit: 。 }
+    '<' : [ 《, 〈, «, ‹ ]
+    '>' : [ 》, 〉, », › ]
+    #'/' : [ 、, '/', ／, ÷ ]
+    #'?' : { commit: ？ }
+    #';' : { commit: ； }
+    '?' : [ 、, '/', ／, ÷ ]
+    '/' : { commit: ？ }
+    ':' : { commit: ： }
+    '''' : { pair: [ '‘', '’' ] }
+    '"' : { pair: [ '“', '”' ] }
+    '\' : [ 、, '\', ＼ ]
+    '|' : [ ·, '|', ｜, '§', '¦' ]
+    '`' : '`'
+    '~' : [ '~', ～ ]
+    '!' : { commit: ！ }
+    '@' : '@'
+    '#' : '#'
+    '%' : [ '%', ％, '°', '℃' ]
+    '$' : [ ￥, '$', '€', '£', '¥', '¢', '¤' ]
+    '^' : { commit: …… }
+    '&' : '&'
+    '*' : [ '*', ＊, ·, ・, ×, ※, ❂ ]
+    '(' : （
+    ')' : ）
+    '-' : '-'
+    '_' : ——
+    '+' : '+'
+    '=' : '='
+    '[' : [ 「, 【, 〔, ［ ]
+    ']' : [ 」, 】, 〕,  ］ ]
+    '{' : [ 『, 〖, ｛ ]
+    '}' : [ 』, 〗, ｝ ]
+  
+key_binder:
+  bindings:
+    - { when: paging, accept: minus, send: Page_Up }
+    - { when: has_menu, accept: equal, send: Page_Down }
+    - { when: always, accept: "Control+Shift+L", toggle: phrase_prediction }     
+    - { when: always, accept: "Control+Shift+C", toggle: YMPrompt_division } 
+   
+    
+recognizer:
+  patterns:
+    reverse_lookup: "^i([a-z]+'?)*$"
+    punct: '^([e][a-z;]{1}|[eou]([0-9]0?|[a-z]+))$'           
+    #punct: "^/([0-9]0?|[a-z]+)$"
+    #retention: "^[abcdfghjklmnpqstvwxyz;][a-z;][eruio]{0,3}$"   
+
+
+menu:
+  page_size: 6

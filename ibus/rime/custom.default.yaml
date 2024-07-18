@@ -1,0 +1,6 @@
+patch:
+    schema_list:
+        - schema: ymdz
+        - schema: luna_pinyin
+        - schema: luna_pinyin_fluency
+        - schema: luna_pinyin_simp

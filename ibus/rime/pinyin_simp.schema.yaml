@@ -1,0 +1,138 @@
+# Rime schema
+# encoding: utf-8
+
+schema:
+  schema_id: pinyin_simp
+  name: 简拼
+  version: "0.8"
+  author:
+    - 佚名
+  description: |
+    源自 Android 拼音
+  dependencies:
+    - stroke
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 中文, 西文 ]
+  - name: full_shape
+    states: [ 半角, 全角 ]
+  - name: ascii_punct
+    states: [ 。，, ．， ]
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    #- lua_translator@date_translator  #加载日期脚本(rime.lua)
+    #- lua_translator@number_translator  #加载数字脚本(rime.lua)
+    #- lua_translator@time_translator  #加载时间脚本      
+    - script_translator
+    - reverse_lookup_translator
+
+
+speller:
+  alphabet: "qwertyuiopasdfghjkl;zxcvbnm,."
+  initials: "qwertyuiopasdfghjklzxcvbnm;"
+  delimiter: " '"
+  algebra:
+    - abbrev/^([a-z]).+$/$1/
+    - abbrev/^([zcs]h).+$/$1/
+    - derive/^([nl])ue$/$1ve/
+    - derive/^([jqxy])u/$1v/
+    - derive/un$/uen/
+    - derive/ui$/uei/
+    - derive/iu$/iou/
+    - derive/([aeiou])ng$/$1gn/
+    - derive/([dtngkhrzcs])o(u|ng)$/$1o/
+    - derive/ong$/on/
+    - derive/ao$/oa/
+    - derive/([iu])a(o|ng?)$/a$1$2/
+
+translator:
+  dictionary: pinyin_simp
+  enable_completion: true              #逐码提示
+  disable_user_dict_for_patterns:
+    - "^.*$"
+  preedit_format:
+    - xform/([nl])v/$1ü/
+    - xform/([nl])ue/$1üe/
+    - xform/([jqxy])v/$1u/
+
+
+reverse_lookup:
+  dictionary: stroke
+  enable_completion: true
+  prefix: "i"
+  suffix: "'"
+  tips: 〔笔画〕
+  preedit_format:
+    - xlit/hspnz/一丨丿丶乙/
+
+punctuator:
+  import_preset: symbols_for_ym
+  half_shape:
+    ',' : { commit: ， }
+    '.' : { commit: 。 }
+    '<' : [ 《, 〈, «, ‹ ]
+    '>' : [ 》, 〉, », › ]
+    '?' : { commit: ？ }
+    '/' : { commit: ？ }
+    ';' : { commit: ； }
+    ':' : { commit: ： }
+    '''' : { pair: [ '‘', '’' ] }
+    '"' : { pair: [ '“', '”' ] }
+    '\' : [ 、, '\', ＼ ]
+    '|' : [ ·, '|', ｜, '§', '¦' ]
+    '`' : '`'
+    '~' : [ '~', ～ ]
+    '!' : { commit: ！ }
+    '@' : '@'
+    '#' : '#'
+    '%' : [ '%', ％, '°', '℃' ]
+    '$' : [ ￥, '$', '€', '£', '¥', '¢', '¤' ]
+    '^' : { commit: …… }
+    '&' : '&'
+    '*' : [ '*', ＊, ·, ・, ×, ※, ❂ ]
+    '(' : （
+    ')' : ）
+    '-' : '-'
+    '_' : ——
+    '+' : '+'
+    '=' : '='
+    '[' : [ 「, 【, 〔, ［ ]
+    ']' : [ 」, 】, 〕,  ］ ]
+    '{' : [ 『, 〖, ｛ ]
+    '}' : [ 』, 〗, ｝ ]
+
+key_binder:
+  bindings:
+    - { when: paging, accept: minus, send: Page_Up }
+    - { when: has_menu, accept: equal, send: Page_Down }
+    - { when: has_menu, accept: "8", send: Control+4 }
+    - { when: has_menu, accept: "9", send: Control+5 }
+    - { when: has_menu, accept: "0", send: Control+6 }  
+    
+recognizer:
+  patterns:
+    reverse_lookup: "i[a-z]*'?$"
+    #punct: '^/([0-9]0?|[A-Za-z]+)$'
+    punct: "^[;uo]([0-9]0?|[a-z]+)$"
+
+menu:
+  page_size: 6      #選單每䈎顯示個數

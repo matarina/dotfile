@@ -1,0 +1,6 @@
+[Default Applications]
+x-scheme-handler/clash=clash-verge.desktop
+
+[Added Associations]
+application/pdf=libreoffice-draw.desktop;
+image/webp=libreoffice-draw.desktop;

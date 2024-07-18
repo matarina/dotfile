@@ -1,0 +1,90 @@
+super + Return
+    kitty
+
+super + e
+    thunar
+super + a
+    rofi -show run
+
+super + alt + p
+    shutdown now
+
+super + shift + u
+    firefox
+
+super + alt + r
+    bspc wm -r
+
+super + {1-9,0}
+    bspc desktop -f '^{1-9,10}'
+
+super + f
+   bspc node -t fullscreen
+
+super + h
+    bspc node -f west
+
+super + j
+    bspc node -f south
+
+super + k
+    bspc node -f north
+
+super + l
+    bspc node -f east
+
+super + q
+    bspc node -c
+
+super + shift + h
+    bspc node -s west
+
+super + shift + j
+    bspc node -s south
+
+super + shift + k
+    bspc node -s north
+
+super + shift + l
+    bspc node -s east
+
+super + alt + {h,j,k,l}
+  bspc node -z {left -20 0 || bspc node -z right -20 0, \
+                bottom 0 20 || bspc node -z top 0 20,\
+                top 0 -20 || bspc node -z bottom 0 -20,\
+                right 20 0 || bspc node -z left 20 0}
+
+
+# Move the focused window to desktop 1
+super + shift + 1
+    bspc node -d '^1'
+# Move the focused window to desktop 2
+super + shift + 2
+    bspc node -d '^2'
+# Move the focused window to desktop 3
+super + shift + 3
+    bspc node -d '^3'
+# Move the focused window to desktop 4
+super + shift + 4
+    bspc node -d '^4'
+# Move the focused window to desktop 5
+super + shift + 5
+    bspc node -d '^5'
+# Move the focused window to desktop 6
+super + shift + 6
+    bspc node -d '^6'
+# Move the focused window to desktop 7
+super + shift + 7
+    bspc node -d '^7'
+# Move the focused window to desktop 8
+super + shift + 8
+    bspc node -d '^8'
+# Move the focused window to desktop 9
+super + shift + 9
+    bspc node -d '^9'
+# Move the focused window to desktop 10
+super + shift + 0
+    bspc node -d '^10'
+
+super + p
+    bash ~/.config/polybar/toggle.sh

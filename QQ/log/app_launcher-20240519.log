@@ -1,0 +1,35 @@
+[5/19/2024, 9:19:31 AM][INFO] 不存在 /home/ma/.config/QQ/versions/config.json，将自动创建。内容为：
+{
+  "baseVersion": "3.2.7-23361",
+  "curVersion": "3.2.7-23361",
+  "prevVersion": "",
+  "onErrorVersions": [],
+  "buildId": "23361"
+}
+[5/19/2024, 9:19:31 AM][INFO] /home/ma/.config/QQ/versions/3.2.7-23361.zip 不存在，无法执行解压操作
+[5/19/2024, 9:19:31 AM][INFO] 从安装目录加载主进程代码: /opt/QQ/resources/app/application/background.js
+[5/19/2024, 9:19:31 AM][INFO] 
+---------- 华丽的分割线 ----------
+
+
+[5/19/2024, 1:50:04 PM][INFO] /home/ma/.config/QQ/versions/config.json 存在
+[5/19/2024, 1:50:04 PM][INFO] /home/ma/.config/QQ/versions/3.2.7-23361.zip 不存在，无法执行解压操作
+[5/19/2024, 1:50:04 PM][INFO] 从安装目录加载主进程代码: /opt/QQ/resources/app/application/background.js
+[5/19/2024, 1:50:04 PM][INFO] 
+---------- 华丽的分割线 ----------
+
+
+[5/19/2024, 2:12:05 PM][INFO] /home/ma/.config/QQ/versions/config.json 存在
+[5/19/2024, 2:12:05 PM][INFO] /home/ma/.config/QQ/versions/3.2.7-23361.zip 不存在，无法执行解压操作
+[5/19/2024, 2:12:05 PM][INFO] 从安装目录加载主进程代码: /opt/QQ/resources/app/application/background.js
+[5/19/2024, 2:12:05 PM][INFO] 
+---------- 华丽的分割线 ----------
+
+
+[5/19/2024, 2:12:28 PM][INFO] /home/ma/.config/QQ/versions/config.json 存在
+[5/19/2024, 2:12:28 PM][INFO] /home/ma/.config/QQ/versions/3.2.7-23361.zip 不存在，无法执行解压操作
+[5/19/2024, 2:12:28 PM][INFO] 从安装目录加载主进程代码: /opt/QQ/resources/app/application/background.js
+[5/19/2024, 2:12:28 PM][INFO] 
+---------- 华丽的分割线 ----------
+
+

@@ -1,0 +1,22 @@
+__build_info:
+  rime_version: 1.8.5
+  timestamps:
+    default: 1721269283
+    default.custom: 0
+    ymjm.custom: 0
+    ymjm.schema: 1651198962
+menu:
+  page_size: 5
+schema:
+  author:
+    - "小泥巴"
+  description: |
+    伪方案，不能打字。
+    不要选我，不要修改本方案及配套词典。
+    仅用于辅助注解方案实现注解功能。
+
+  name: "【无须勾选】分号简码辅助"
+  schema_id: ymjm
+  version: 0.5
+translator:
+  dictionary: ymjm

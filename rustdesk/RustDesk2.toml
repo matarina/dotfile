@@ -1,0 +1,6 @@
+rendezvous_server = '1.94.105.129:21116'
+nat_type = 0
+serial = 0
+
+[options]
+custom-rendezvous-server = '1.94.105.129'

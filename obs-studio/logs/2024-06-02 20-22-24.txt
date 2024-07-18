@@ -1,0 +1,441 @@
+20:22:24.339: Using EGL/X11
+20:22:24.339: CPU Name: AMD Ryzen 5 7500F 6-Core Processor
+20:22:24.339: CPU Speed: 5039.842MHz
+20:22:24.340: Physical Cores: 6, Logical Cores: 12
+20:22:24.340: Physical Memory: 31538MB Total, 17220MB Free
+20:22:24.340: Kernel Version: Linux 6.8.10-300.fc40.x86_64
+20:22:24.340: Distribution: "Fedora Linux" 40
+20:22:24.340: Session Type: tty
+20:22:24.340: Window System: X11.0, Vendor: The X.Org Foundation, Version: 1.20.14
+20:22:24.340: Qt Version: 6.7.1 (runtime), 6.7.0 (compiled)
+20:22:24.340: Portable mode: false
+20:22:24.356: OBS 30.1.1 (linux)
+20:22:24.356: ---------------------------------
+20:22:24.356: ---------------------------------
+20:22:24.356: audio settings reset:
+20:22:24.356: 	samples per sec: 48000
+20:22:24.356: 	speakers:        2
+20:22:24.356: 	max buffering:   960 milliseconds
+20:22:24.356: 	buffering type:  dynamically increasing
+20:22:24.363: ---------------------------------
+20:22:24.363: Initializing OpenGL...
+20:22:24.412: Loading up OpenGL on adapter AMD AMD Radeon RX 7800 XT (radeonsi, navi32, LLVM 18.1.1, DRM 3.57, 6.8.10-300.fc40.x86_64)
+20:22:24.412: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 24.0.8, shading language 4.60
+20:22:24.488: ---------------------------------
+20:22:24.488: video settings reset:
+20:22:24.488: 	base resolution:   1920x1080
+20:22:24.488: 	output resolution: 1280x720
+20:22:24.488: 	downscale filter:  Bicubic
+20:22:24.488: 	fps:               30/1
+20:22:24.488: 	format:            NV12
+20:22:24.488: 	YUV mode:          Rec. 709/Partial
+20:22:24.488: NV12 texture support enabled
+20:22:24.488: P010 texture support not available
+20:22:24.490: Audio monitoring device:
+20:22:24.490: 	name: Default
+20:22:24.490: 	id: default
+20:22:24.490: ---------------------------------
+20:22:24.500: Failed to load 'en-US' text for module: 'decklink-captions.so'
+20:22:24.510: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+20:22:24.519: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+20:22:24.519: Failed to initialize module 'decklink.so'
+20:22:24.657: [pipewire] No captures available
+20:22:24.688: v4l2loopback not installed, virtual camera disabled
+20:22:24.735: [obs-browser]: Version 2.23.4
+20:22:24.735: [obs-browser]: CEF Version 103.0.5060.134 (runtime), 103.0.0+g17f8588+chromium-103.0.5060.134 (compiled)
+20:22:24.877: VAAPI: API version 1.21
+20:22:24.878: FFmpeg VAAPI H264 encoding not supported
+20:22:24.883: FFmpeg VAAPI AV1 encoding supported
+20:22:24.887: FFmpeg VAAPI HEVC encoding not supported
+20:22:25.018: [obs-websocket] [obs_module_load] you can haz websockets (Version: 5.4.2 | RPC Version: 1)
+20:22:25.018: [obs-websocket] [obs_module_load] Qt version (compile-time): 6.7.0 | Qt version (run-time): 6.7.1
+20:22:25.018: [obs-websocket] [obs_module_load] Linked ASIO Version: 102801
+20:22:25.018: [obs-websocket] [Config::Load] (FirstLoad) Generating new server password.
+20:22:25.022: [obs-websocket] [obs_module_load] Module loaded.
+20:22:25.054: [vlc-video]: VLC 3.0.20 Vetinari found, VLC video source enabled
+20:22:25.054: ---------------------------------
+20:22:25.054:   Loaded Modules:
+20:22:25.054:     vlc-video.so
+20:22:25.054:     text-freetype2.so
+20:22:25.054:     rtmp-services.so
+20:22:25.054:     obs-websocket.so
+20:22:25.054:     obs-webrtc.so
+20:22:25.054:     obs-webkitgtk.so
+20:22:25.054:     obs-vst.so
+20:22:25.054:     obs-transitions.so
+20:22:25.054:     obs-qsv11.so
+20:22:25.054:     obs-outputs.so
+20:22:25.054:     obs-libfdk.so
+20:22:25.054:     obs-filters.so
+20:22:25.054:     obs-ffmpeg.so
+20:22:25.054:     obs-browser.so
+20:22:25.054:     linux-v4l2.so
+20:22:25.054:     linux-pulseaudio.so
+20:22:25.054:     linux-pipewire.so
+20:22:25.054:     linux-jack.so
+20:22:25.054:     linux-capture.so
+20:22:25.054:     linux-alsa.so
+20:22:25.054:     image-source.so
+20:22:25.054:     frontend-tools.so
+20:22:25.054:     decklink-output-ui.so
+20:22:25.054:     decklink-captions.so
+20:22:25.054: ---------------------------------
+20:22:25.054: ==== Startup complete ===============================================
+20:22:25.057: No scene file found, creating default scene
+20:22:25.103: All scene data cleared
+20:22:25.103: ------------------------------------------------
+20:22:25.110: pulse-input: Server name: 'PulseAudio (on PipeWire 1.0.7) 15.0.0'
+20:22:25.110: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+20:22:25.110: pulse-input: Started recording from 'alsa_output.pci-0000_12_00.6.analog-stereo.monitor' (default)
+20:22:25.110: pulse-input: Server name: 'PulseAudio (on PipeWire 1.0.7) 15.0.0'
+20:22:25.110: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+20:22:25.110: pulse-input: Started recording from 'alsa_output.pci-0000_12_00.6.analog-stereo.monitor' (default)
+20:22:25.111: Switched to scene 'Scene'
+20:22:25.111: Failed to glob scene collections
+20:22:25.850: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Desktop Audio)
+20:22:25.850: 
+20:22:26.370: [rtmp-services plugin] Successfully updated file 'services.json' (version 254)
+20:22:26.370: [rtmp-services plugin] Successfully updated package (version 254)
+20:23:57.690: adding 21 milliseconds of audio buffering, total audio buffering is now 42 milliseconds (source: Mic/Aux)
+20:23:57.690: 
+20:24:37.772: xshm-input: Geometry 2560x1440 @ 0,0
+20:24:37.776: User added source 'Screen Capture (XSHM)' (xshm_input) to scene 'Scene'
+20:26:54.288:   OpenType support missing for "Open Sans", script 11
+20:26:54.289:   OpenType support missing for "Open Sans", script 12
+20:26:54.289:   OpenType support missing for "Noto Sans", script 12
+20:26:54.290:   OpenType support missing for "DejaVu Sans", script 12
+20:26:54.290:   OpenType support missing for "Nimbus Sans", script 12
+20:26:54.290:   OpenType support missing for "URW Gothic", script 12
+20:26:54.291:   OpenType support missing for "Nimbus Sans Narrow", script 12
+20:26:54.291:   OpenType support missing for "Carlito", script 12
+20:26:54.291:   OpenType support missing for "Mingzat", script 12
+20:26:54.291:   OpenType support missing for "Droid Arabic Kufi", script 12
+20:26:54.291:   OpenType support missing for "Droid Sans Armenian", script 12
+20:26:54.291:   OpenType support missing for "Droid Sans Devanagari", script 12
+20:26:54.291:   OpenType support missing for "Droid Sans Ethiopic", script 12
+20:26:54.292:   OpenType support missing for "Droid Sans Fallback", script 12
+20:26:54.292:   OpenType support missing for "Droid Sans Georgian", script 12
+20:26:54.292:   OpenType support missing for "Droid Sans Hebrew", script 12
+20:26:54.292:   OpenType support missing for "Droid Sans Japanese", script 12
+20:26:54.292:   OpenType support missing for "Droid Sans Tamil", script 12
+20:26:54.292:   OpenType support missing for "Droid Sans Thai", script 12
+20:26:54.292:   OpenType support missing for "OpenSymbol", script 12
+20:26:54.293:   OpenType support missing for "Hack Nerd Font", script 12
+20:26:54.293:   OpenType support missing for "Hack Nerd Font Mono", script 12
+20:26:54.293:   OpenType support missing for "Hack Nerd Font Propo", script 12
+20:26:54.293:   OpenType support missing for "Liberation Mono", script 12
+20:26:54.293:   OpenType support missing for "Liberation Sans", script 12
+20:26:54.293:   OpenType support missing for "Liberation Serif", script 12
+20:26:54.294:   OpenType support missing for "Source Code Pro", script 12
+20:26:54.294:   OpenType support missing for "Noto Sans Mono", script 12
+20:26:54.294:   OpenType support missing for "Noto Serif", script 12
+20:26:54.294:   OpenType support missing for "Source Han Sans CN", script 12
+20:26:54.295:   OpenType support missing for "Source Han Serif CN", script 12
+20:26:54.295:   OpenType support missing for "D050000L", script 12
+20:26:54.295:   OpenType support missing for "Standard Symbols PS", script 12
+20:26:54.296:   OpenType support missing for "Caladea", script 12
+20:26:54.296:   OpenType support missing for "Droid Sans", script 12
+20:26:54.296:   OpenType support missing for "C059", script 12
+20:26:54.296:   OpenType support missing for "Nimbus Mono PS", script 12
+20:26:54.296:   OpenType support missing for "Nimbus Roman", script 12
+20:26:54.296:   OpenType support missing for "P052", script 12
+20:26:54.296:   OpenType support missing for "Cantarell", script 12
+20:26:54.297:   OpenType support missing for "URW Bookman", script 12
+20:26:54.297:   OpenType support missing for "Z003", script 12
+20:26:54.297:   OpenType support missing for "", script 12
+20:26:54.298:   OpenType support missing for "", script 12
+20:26:54.298:   OpenType support missing for "", script 12
+20:26:54.298:   OpenType support missing for "", script 12
+20:26:54.298:   OpenType support missing for "", script 12
+20:26:54.298:   OpenType support missing for "", script 12
+20:26:54.298:   OpenType support missing for "", script 12
+20:26:54.298:   OpenType support missing for "", script 12
+20:26:54.299:   OpenType support missing for "", script 12
+20:26:54.299:   OpenType support missing for "Noto Sans", script 12
+20:26:54.299:   OpenType support missing for "DejaVu Sans", script 12
+20:26:54.299:   OpenType support missing for "Nimbus Sans", script 12
+20:26:54.299:   OpenType support missing for "Open Sans", script 12
+20:26:54.299:   OpenType support missing for "URW Gothic", script 12
+20:26:54.300:   OpenType support missing for "Nimbus Sans Narrow", script 12
+20:26:54.300:   OpenType support missing for "Carlito", script 12
+20:26:54.300:   OpenType support missing for "Mingzat", script 12
+20:26:54.300:   OpenType support missing for "Droid Arabic Kufi", script 12
+20:26:54.301:   OpenType support missing for "Droid Sans Armenian", script 12
+20:26:54.301:   OpenType support missing for "Droid Sans Devanagari", script 12
+20:26:54.301:   OpenType support missing for "Droid Sans Ethiopic", script 12
+20:26:54.301:   OpenType support missing for "Droid Sans Fallback", script 12
+20:26:54.301:   OpenType support missing for "Droid Sans Georgian", script 12
+20:26:54.301:   OpenType support missing for "Droid Sans Hebrew", script 12
+20:26:54.301:   OpenType support missing for "Droid Sans Japanese", script 12
+20:26:54.301:   OpenType support missing for "Droid Sans Tamil", script 12
+20:26:54.302:   OpenType support missing for "Droid Sans Thai", script 12
+20:26:54.302:   OpenType support missing for "OpenSymbol", script 12
+20:26:54.302:   OpenType support missing for "Hack Nerd Font", script 12
+20:26:54.302:   OpenType support missing for "Hack Nerd Font Mono", script 12
+20:26:54.302:   OpenType support missing for "Hack Nerd Font Propo", script 12
+20:26:54.302:   OpenType support missing for "Liberation Mono", script 12
+20:26:54.302:   OpenType support missing for "Liberation Sans", script 12
+20:26:54.303:   OpenType support missing for "Liberation Serif", script 12
+20:26:54.303:   OpenType support missing for "Source Code Pro", script 12
+20:26:54.303:   OpenType support missing for "Noto Sans Mono", script 12
+20:26:54.303:   OpenType support missing for "Noto Serif", script 12
+20:26:54.303:   OpenType support missing for "Source Han Sans CN", script 12
+20:26:54.304:   OpenType support missing for "Source Han Serif CN", script 12
+20:26:54.304:   OpenType support missing for "D050000L", script 12
+20:26:54.304:   OpenType support missing for "Standard Symbols PS", script 12
+20:26:54.304:   OpenType support missing for "Caladea", script 12
+20:26:54.305:   OpenType support missing for "Droid Sans", script 12
+20:26:54.305:   OpenType support missing for "C059", script 12
+20:26:54.305:   OpenType support missing for "Nimbus Mono PS", script 12
+20:26:54.305:   OpenType support missing for "Nimbus Roman", script 12
+20:26:54.305:   OpenType support missing for "P052", script 12
+20:26:54.305:   OpenType support missing for "Cantarell", script 12
+20:26:54.306:   OpenType support missing for "URW Bookman", script 12
+20:26:54.306:   OpenType support missing for "Z003", script 12
+20:26:54.306:   OpenType support missing for "", script 12
+20:26:54.306:   OpenType support missing for "", script 12
+20:26:54.307:   OpenType support missing for "", script 12
+20:26:54.307:   OpenType support missing for "", script 12
+20:26:54.307:   OpenType support missing for "", script 12
+20:26:54.307:   OpenType support missing for "", script 12
+20:26:54.307:   OpenType support missing for "", script 12
+20:26:54.307:   OpenType support missing for "", script 12
+20:26:54.308:   OpenType support missing for "", script 12
+20:26:54.308:   OpenType support missing for "", script 12
+20:26:54.308:   OpenType support missing for "Open Sans", script 16
+20:26:54.308:   OpenType support missing for "Open Sans", script 20
+20:26:54.309:   OpenType support missing for "Noto Sans", script 20
+20:26:54.309:   OpenType support missing for "DejaVu Sans", script 20
+20:26:54.309:   OpenType support missing for "Nimbus Sans", script 20
+20:26:54.309:   OpenType support missing for "URW Gothic", script 20
+20:26:54.310:   OpenType support missing for "Nimbus Sans Narrow", script 20
+20:26:54.310:   OpenType support missing for "Carlito", script 20
+20:26:54.310:   OpenType support missing for "Mingzat", script 20
+20:26:54.310:   OpenType support missing for "Droid Arabic Kufi", script 20
+20:26:54.310:   OpenType support missing for "Droid Sans Armenian", script 20
+20:26:54.310:   OpenType support missing for "Droid Sans Devanagari", script 20
+20:26:54.311:   OpenType support missing for "Droid Sans Ethiopic", script 20
+20:26:54.311:   OpenType support missing for "Droid Sans Fallback", script 20
+20:26:54.311:   OpenType support missing for "Droid Sans Georgian", script 20
+20:26:54.311:   OpenType support missing for "Droid Sans Hebrew", script 20
+20:26:54.311:   OpenType support missing for "Droid Sans Japanese", script 20
+20:26:54.311:   OpenType support missing for "Droid Sans Tamil", script 20
+20:26:54.311:   OpenType support missing for "Droid Sans Thai", script 20
+20:26:54.311:   OpenType support missing for "OpenSymbol", script 20
+20:26:54.312:   OpenType support missing for "Hack Nerd Font", script 20
+20:26:54.312:   OpenType support missing for "Hack Nerd Font Mono", script 20
+20:26:54.312:   OpenType support missing for "Hack Nerd Font Propo", script 20
+20:26:54.312:   OpenType support missing for "Liberation Mono", script 20
+20:26:54.312:   OpenType support missing for "Liberation Sans", script 20
+20:26:54.312:   OpenType support missing for "Liberation Serif", script 20
+20:26:54.312:   OpenType support missing for "Source Code Pro", script 20
+20:26:54.313:   OpenType support missing for "Noto Sans Mono", script 20
+20:26:54.313:   OpenType support missing for "Noto Serif", script 20
+20:26:54.313:   OpenType support missing for "Source Han Sans CN", script 20
+20:26:54.313:   OpenType support missing for "Source Han Serif CN", script 20
+20:26:54.314:   OpenType support missing for "D050000L", script 20
+20:26:54.314:   OpenType support missing for "Standard Symbols PS", script 20
+20:26:54.314:   OpenType support missing for "Caladea", script 20
+20:26:54.314:   OpenType support missing for "Droid Sans", script 20
+20:26:54.315:   OpenType support missing for "C059", script 20
+20:26:54.315:   OpenType support missing for "Nimbus Mono PS", script 20
+20:26:54.315:   OpenType support missing for "Nimbus Roman", script 20
+20:26:54.315:   OpenType support missing for "P052", script 20
+20:26:54.315:   OpenType support missing for "Cantarell", script 20
+20:26:54.316:   OpenType support missing for "URW Bookman", script 20
+20:26:54.316:   OpenType support missing for "Z003", script 20
+20:26:54.316:   OpenType support missing for "", script 20
+20:26:54.316:   OpenType support missing for "", script 20
+20:26:54.316:   OpenType support missing for "", script 20
+20:26:54.316:   OpenType support missing for "", script 20
+20:26:54.317:   OpenType support missing for "", script 20
+20:26:54.317:   OpenType support missing for "", script 20
+20:26:54.317:   OpenType support missing for "", script 20
+20:26:54.317:   OpenType support missing for "", script 20
+20:26:54.317:   OpenType support missing for "", script 20
+20:26:54.318:   OpenType support missing for "Noto Sans", script 20
+20:26:54.318:   OpenType support missing for "DejaVu Sans", script 20
+20:26:54.318:   OpenType support missing for "Nimbus Sans", script 20
+20:26:54.318:   OpenType support missing for "Open Sans", script 20
+20:26:54.318:   OpenType support missing for "URW Gothic", script 20
+20:26:54.319:   OpenType support missing for "Nimbus Sans Narrow", script 20
+20:26:54.319:   OpenType support missing for "Carlito", script 20
+20:26:54.319:   OpenType support missing for "Mingzat", script 20
+20:26:54.319:   OpenType support missing for "Droid Arabic Kufi", script 20
+20:26:54.319:   OpenType support missing for "Droid Sans Armenian", script 20
+20:26:54.319:   OpenType support missing for "Droid Sans Devanagari", script 20
+20:26:54.319:   OpenType support missing for "Droid Sans Ethiopic", script 20
+20:26:54.319:   OpenType support missing for "Droid Sans Fallback", script 20
+20:26:54.320:   OpenType support missing for "Droid Sans Georgian", script 20
+20:26:54.320:   OpenType support missing for "Droid Sans Hebrew", script 20
+20:26:54.320:   OpenType support missing for "Droid Sans Japanese", script 20
+20:26:54.320:   OpenType support missing for "Droid Sans Tamil", script 20
+20:26:54.320:   OpenType support missing for "Droid Sans Thai", script 20
+20:26:54.320:   OpenType support missing for "OpenSymbol", script 20
+20:26:54.320:   OpenType support missing for "Hack Nerd Font", script 20
+20:26:54.321:   OpenType support missing for "Hack Nerd Font Mono", script 20
+20:26:54.321:   OpenType support missing for "Hack Nerd Font Propo", script 20
+20:26:54.321:   OpenType support missing for "Liberation Mono", script 20
+20:26:54.321:   OpenType support missing for "Liberation Sans", script 20
+20:26:54.321:   OpenType support missing for "Liberation Serif", script 20
+20:26:54.321:   OpenType support missing for "Source Code Pro", script 20
+20:26:54.321:   OpenType support missing for "Noto Sans Mono", script 20
+20:26:54.322:   OpenType support missing for "Noto Serif", script 20
+20:26:54.322:   OpenType support missing for "Source Han Sans CN", script 20
+20:26:54.322:   OpenType support missing for "Source Han Serif CN", script 20
+20:26:54.323:   OpenType support missing for "D050000L", script 20
+20:26:54.323:   OpenType support missing for "Standard Symbols PS", script 20
+20:26:54.323:   OpenType support missing for "Caladea", script 20
+20:26:54.323:   OpenType support missing for "Droid Sans", script 20
+20:26:54.323:   OpenType support missing for "C059", script 20
+20:26:54.323:   OpenType support missing for "Nimbus Mono PS", script 20
+20:26:54.324:   OpenType support missing for "Nimbus Roman", script 20
+20:26:54.324:   OpenType support missing for "P052", script 20
+20:26:54.324:   OpenType support missing for "Cantarell", script 20
+20:26:54.324:   OpenType support missing for "URW Bookman", script 20
+20:26:54.325:   OpenType support missing for "Z003", script 20
+20:26:54.325:   OpenType support missing for "", script 20
+20:26:54.325:   OpenType support missing for "", script 20
+20:26:54.325:   OpenType support missing for "", script 20
+20:26:54.325:   OpenType support missing for "", script 20
+20:26:54.325:   OpenType support missing for "", script 20
+20:26:54.326:   OpenType support missing for "", script 20
+20:26:54.326:   OpenType support missing for "", script 20
+20:26:54.326:   OpenType support missing for "", script 20
+20:26:54.326:   OpenType support missing for "", script 20
+20:26:54.326:   OpenType support missing for "", script 20
+20:27:23.735: Settings changed (stream 1)
+20:27:23.735: ------------------------------------------------
+20:27:27.120: ---------------------------------
+20:27:27.120: [H.264 encoder: 'simple_video_stream'] settings:
+20:27:27.120: 	encoder:      OpenH264
+20:27:27.120: 	rc_mode:      quality
+20:27:27.120: 	bitrate:      2500
+20:27:27.120: 	profile:      main
+20:27:27.120: 	width:        1280
+20:27:27.120: 	height:       720
+20:27:27.120: 	ffmpeg opts:  
+20:27:27.120: 
+20:27:27.124: libfdk_aac encoder created
+20:27:27.124: libfdk_aac bitrate: 160, channels: 2
+20:27:27.125: [ffmpeg muxer: 'simple_file_output'] Using muxer settings:
+20:27:27.125: 	movflags=frag_keyframe+empty_moov+delay_moov
+20:27:27.126: ==== Recording Start ===============================================
+20:27:27.126: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/ma/2024-06-02 20-27-27.mp4'...
+20:27:30.498: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/ma/2024-06-02 20-27-27.mp4' stopped
+20:27:30.498: Output 'simple_file_output': stopping
+20:27:30.498: Output 'simple_file_output': Total frames output: 97
+20:27:30.498: Output 'simple_file_output': Total drawn frames: 101
+20:27:30.498: ==== Recording Stop ================================================
+20:27:30.499: libfdk_aac encoder destroyed
+20:27:46.231: ---------------------------------
+20:27:46.231: [H.264 encoder: 'simple_video_stream'] settings:
+20:27:46.231: 	encoder:      OpenH264
+20:27:46.231: 	rc_mode:      quality
+20:27:46.231: 	bitrate:      2500
+20:27:46.231: 	profile:      main
+20:27:46.231: 	width:        1280
+20:27:46.231: 	height:       720
+20:27:46.231: 	ffmpeg opts:  
+20:27:46.231: 
+20:27:46.232: libfdk_aac encoder created
+20:27:46.232: libfdk_aac bitrate: 160, channels: 2
+20:27:46.232: [ffmpeg muxer: 'simple_file_output'] Using muxer settings:
+20:27:46.232: 	movflags=frag_keyframe+empty_moov+delay_moov
+20:27:46.233: ==== Recording Start ===============================================
+20:27:46.233: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/ma/2024-06-02 20-27-46.mp4'...
+20:28:09.428: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/ma/2024-06-02 20-27-46.mp4' stopped
+20:28:09.428: Output 'simple_file_output': stopping
+20:28:09.428: Output 'simple_file_output': Total frames output: 692
+20:28:09.428: Output 'simple_file_output': Total drawn frames: 696
+20:28:09.429: ==== Recording Stop ================================================
+20:28:09.429: libfdk_aac encoder destroyed
+20:28:12.860: ==== Shutting down ==================================================
+20:28:12.865: pulse-input: Stopped recording from 'alsa_output.pci-0000_12_00.6.analog-stereo.monitor'
+20:28:12.866: pulse-input: Got 13901 packets with 16681200 frames
+20:28:12.866: pulse-input: Stopped recording from 'alsa_output.pci-0000_12_00.6.analog-stereo.monitor'
+20:28:12.866: pulse-input: Got 13899 packets with 16678800 frames
+20:28:12.902: All scene data cleared
+20:28:12.902: ------------------------------------------------
+20:28:12.966: [obs-websocket] [obs_module_unload] Shutting down...
+20:28:12.967: Tried to call obs_frontend_remove_event_callback with no callbacks!
+20:28:12.967: [obs-websocket] [obs_module_unload] Finished shutting down.
+20:28:12.971: [Scripting] Total detached callbacks: 0
+20:28:12.971: Freeing OBS context data
+20:28:12.993: == Profiler Results =============================
+20:28:12.993: run_program_init: 820.054 ms
+20:28:12.993:  ┣OBSApp::AppInit: 3.041 ms
+20:28:12.993:  ┃ ┗OBSApp::InitLocale: 0.43 ms
+20:28:12.993:  ┗OBSApp::OBSInit: 795.349 ms
+20:28:12.993:    ┣obs_startup: 0.954 ms
+20:28:12.993:    ┗OBSBasic::OBSInit: 778.417 ms
+20:28:12.993:      ┣OBSBasic::InitBasicConfig: 0.149 ms
+20:28:12.993:      ┣OBSBasic::ResetAudio: 0.168 ms
+20:28:12.993:      ┣OBSBasic::ResetVideo: 133.301 ms
+20:28:12.993:      ┃ ┗obs_init_graphics: 131.802 ms
+20:28:12.993:      ┃   ┗shader compilation: 75.725 ms
+20:28:12.993:      ┣OBSBasic::InitOBSCallbacks: 0.003 ms
+20:28:12.993:      ┣OBSBasic::InitHotkeys: 0.014 ms
+20:28:12.993:      ┣obs_load_all_modules2: 564.155 ms
+20:28:12.993:      ┃ ┣obs_init_module(decklink-captions.so): 0 ms
+20:28:12.993:      ┃ ┣obs_init_module(decklink-output-ui.so): 0 ms
+20:28:12.993:      ┃ ┣obs_init_module(decklink.so): 0.089 ms
+20:28:12.993:      ┃ ┣obs_init_module(frontend-tools.so): 47.134 ms
+20:28:12.993:      ┃ ┣obs_init_module(image-source.so): 0.005 ms
+20:28:12.993:      ┃ ┣obs_init_module(linux-alsa.so): 0 ms
+20:28:12.993:      ┃ ┣obs_init_module(linux-capture.so): 0.33 ms
+20:28:12.993:      ┃ ┣obs_init_module(linux-jack.so): 0.001 ms
+20:28:12.993:      ┃ ┣obs_init_module(linux-pipewire.so): 8.367 ms
+20:28:12.993:      ┃ ┣obs_init_module(linux-pulseaudio.so): 0.002 ms
+20:28:12.993:      ┃ ┣obs_init_module(linux-v4l2.so): 2.177 ms
+20:28:12.993:      ┃ ┣obs_init_module(obs-browser.so): 0.066 ms
+20:28:12.993:      ┃ ┣obs_init_module(obs-ffmpeg.so): 17.264 ms
+20:28:12.993:      ┃ ┃ ┗nvenc_check: 1.145 ms
+20:28:12.993:      ┃ ┣obs_init_module(obs-filters.so): 0.019 ms
+20:28:12.993:      ┃ ┣obs_init_module(obs-libfdk.so): 0 ms
+20:28:12.993:      ┃ ┣obs_init_module(obs-outputs.so): 0.002 ms
+20:28:12.993:      ┃ ┣obs_init_module(obs-qsv11.so): 10.22 ms
+20:28:12.993:      ┃ ┣obs_init_module(obs-transitions.so): 0.005 ms
+20:28:12.993:      ┃ ┣obs_init_module(obs-vst.so): 0.002 ms
+20:28:12.993:      ┃ ┣obs_init_module(obs-webkitgtk.so): 0.003 ms
+20:28:12.993:      ┃ ┣obs_init_module(obs-webrtc.so): 0.005 ms
+20:28:12.993:      ┃ ┣obs_init_module(obs-websocket.so): 3.264 ms
+20:28:12.994:      ┃ ┣obs_init_module(rtmp-services.so): 0.093 ms
+20:28:12.994:      ┃ ┣obs_init_module(text-freetype2.so): 0.026 ms
+20:28:12.994:      ┃ ┗obs_init_module(vlc-video.so): 1.498 ms
+20:28:12.994:      ┣OBSBasic::InitService: 0.872 ms
+20:28:12.994:      ┣OBSBasic::ResetOutputs: 0.104 ms
+20:28:12.994:      ┣OBSBasic::CreateHotkeys: 0.016 ms
+20:28:12.994:      ┣OBSBasic::InitPrimitives: 0.097 ms
+20:28:12.994:      ┗OBSBasic::Load: 53.99 ms
+20:28:12.994: obs_hotkey_thread(25 ms): min=0.044 ms, median=0.065 ms, max=9.145 ms, 99th percentile=1.239 ms, 100% below 25 ms
+20:28:12.994: audio_thread(Audio): min=0.003 ms, median=0.017 ms, max=10.833 ms, 99th percentile=0.099 ms
+20:28:12.994:  ┗receive_audio: min=0.001 ms, median=0.049 ms, max=5.253 ms, 99th percentile=0.085 ms, 0.0762499 calls per parent call
+20:28:12.994:    ┣buffer_audio: min=0 ms, median=0 ms, max=0.01 ms, 99th percentile=0.001 ms
+20:28:12.994:    ┗do_encode: min=0.03 ms, median=0.048 ms, max=5.252 ms, 99th percentile=0.082 ms
+20:28:12.994:      ┣encode(simple_aac): min=0.029 ms, median=0.045 ms, max=0.092 ms, 99th percentile=0.076 ms
+20:28:12.994:      ┗send_packet: min=0.001 ms, median=0.002 ms, max=5.215 ms, 99th percentile=0.009 ms
+20:28:12.994: obs_graphics_thread(33.3333 ms): min=0.041 ms, median=2.444 ms, max=49.09 ms, 99th percentile=3.695 ms, 99.9904% below 33.333 ms
+20:28:12.994:  ┣tick_sources: min=0 ms, median=2.147 ms, max=40.094 ms, 99th percentile=3.133 ms
+20:28:12.994:  ┣output_frame: min=0.036 ms, median=0.089 ms, max=12.75 ms, 99th percentile=0.351 ms
+20:28:12.994:  ┃ ┣gs_context(video->graphics): min=0.036 ms, median=0.089 ms, max=12.748 ms, 99th percentile=0.201 ms
+20:28:12.994:  ┃ ┃ ┣render_video: min=0.003 ms, median=0.037 ms, max=5.664 ms, 99th percentile=0.111 ms
+20:28:12.994:  ┃ ┃ ┃ ┣render_main_texture: min=0.002 ms, median=0.035 ms, max=0.963 ms, 99th percentile=0.076 ms
+20:28:12.994:  ┃ ┃ ┃ ┣render_output_texture: min=0.011 ms, median=0.014 ms, max=3.68 ms, 99th percentile=0.021 ms, 0.0762388 calls per parent call
+20:28:12.994:  ┃ ┃ ┃ ┣render_convert_texture: min=0.014 ms, median=0.018 ms, max=1.783 ms, 99th percentile=0.026 ms, 0.0762388 calls per parent call
+20:28:12.994:  ┃ ┃ ┃ ┗stage_output_texture: min=0.006 ms, median=0.008 ms, max=0.13 ms, 99th percentile=0.014 ms, 0.0762388 calls per parent call
+20:28:12.994:  ┃ ┃ ┣gs_flush: min=0.001 ms, median=0.001 ms, max=0.008 ms, 99th percentile=0.003 ms
+20:28:12.994:  ┃ ┃ ┗download_frame: min=0 ms, median=0.025 ms, max=0.08 ms, 99th percentile=0.041 ms, 0.0762388 calls per parent call
+20:28:12.994:  ┃ ┗output_video_data: min=0.092 ms, median=0.141 ms, max=2.384 ms, 99th percentile=0.218 ms, 0.0760474 calls per parent call
+20:28:12.994:  ┗render_displays: min=0.001 ms, median=0.192 ms, max=17.407 ms, 99th percentile=0.483 ms
+20:28:12.994: video_thread(video): min=1.391 ms, median=1.793 ms, max=6.722 ms, 99th percentile=3.051 ms
+20:28:12.994:  ┗receive_video: min=1.235 ms, median=1.513 ms, max=5.847 ms, 99th percentile=2.713 ms
+20:28:12.994:    ┗do_encode: min=1.235 ms, median=1.512 ms, max=5.846 ms, 99th percentile=2.712 ms
+20:28:12.994:      ┣encode(simple_video_stream): min=1.233 ms, median=1.509 ms, max=5.84 ms, 99th percentile=2.603 ms
+20:28:12.994:      ┗send_packet: min=0.001 ms, median=0.002 ms, max=3.341 ms, 99th percentile=0.01 ms
+20:28:12.994: =================================================
+20:28:12.994: == Profiler Time Between Calls ==================
+20:28:12.994: obs_hotkey_thread(25 ms): min=25.056 ms, median=25.121 ms, max=34.209 ms, 98.5646% within ±2% of 25 ms (0% lower, 1.43537% higher)
+20:28:12.994: obs_graphics_thread(33.3333 ms): min=17.564 ms, median=33.333 ms, max=49.095 ms, 99.9617% within ±2% of 33.333 ms (0.0191333% lower, 0.0191333% higher)
+20:28:12.994: =================================================
+20:28:12.997: Number of memory leaks: 0

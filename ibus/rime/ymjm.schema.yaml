@@ -1,0 +1,17 @@
+# Rime schema settings
+# encoding: utf-8
+
+schema:
+  schema_id: ymjm
+  name: 【无须勾选】分号简码辅助
+  version: "0.5"
+  author:
+    - 小泥巴
+  description: |
+    伪方案，不能打字。
+    不要选我，不要修改本方案及配套词典。
+    仅用于辅助注解方案实现注解功能。
+
+# 主翻译器
+translator:
+  dictionary: ymjm
