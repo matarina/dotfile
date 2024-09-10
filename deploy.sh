@@ -45,3 +45,14 @@ echo "exec bspwm" > ~/.xinitrc
 # Cleanup
 echo "Cleaning up..."
 rm -rf bspwm sxhkd
+
+
+#install neovim
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
+sudo rm -rf /opt/nvim
+sudo tar -C /opt -xzf nvim-linux64.tar.gz
+echo "export PATH="$PATH:/opt/nvim-linux64/bin"" > ~/.bashrc
+
+#install kitty
+curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
+
