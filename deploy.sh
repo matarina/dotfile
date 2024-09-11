@@ -56,3 +56,6 @@ echo "export PATH="$PATH:/opt/nvim-linux64/bin"" > ~/.bashrc
 #install kitty
 curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 
+wget https://raw.githubusercontent.com/matarina/dotfile/master/clash_terminal.tar.gz | tar -zxvf clash_terminal.tar.gz
+cd clash_terminal
+sh https://sub.cucloud.top/api/v1/client/subscribe?token=1ea98d7b875fff4260fa834ad6f47be9
