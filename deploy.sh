@@ -3,13 +3,14 @@
 # Exit immediately if a command exits with a non-zero status
 set -e
 
+#
 # Update system
 echo "Updating system..."
 sudo apt update && sudo apt upgrade -y
 
 # Install dependencies
 echo "Installing dependencies..."
-sudo apt install -y build-essential git xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev libxcb-xkb-dev libxcb-xrm-dev libxcb-cursor-dev libasound2-dev libpulse-dev i3lock xss-lock
+sudo apt install -y build-essential git xcb libxcb-xinerama0-dev libxcb-util0-dev libxcb-icccm4-dev libxcb-randr0-dev libxcb-ewmh-dev  libxcb-keysyms1-dev  libxcb-shape0-dev xinit
 
 # Clone, compile and install bspwm
 echo "Installing bspwm..."
@@ -27,35 +28,32 @@ make
 sudo make install
 cd ..
 
-# Create config directories
-echo "Creating config directories..."
-mkdir -p ~/.config/{bspwm,sxhkd}
 
 
 
-# Make bspwmrc executable
-chmod +x ~/.config/bspwm/bspwmrc
-
-
-
-# Create .xinitrc file
-echo "Creating .xinitrc..."
-echo "exec bspwm" > ~/.xinitrc
-
-# Cleanup
-echo "Cleaning up..."
-rm -rf bspwm sxhkd
-
-
-#install neovim
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
-sudo rm -rf /opt/nvim
-sudo tar -C /opt -xzf nvim-linux64.tar.gz
-echo "export PATH="$PATH:/opt/nvim-linux64/bin"" > ~/.bashrc
-
-#install kitty
-curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
-
-wget https://raw.githubusercontent.com/matarina/dotfile/master/clash_terminal.tar.gz | tar -zxvf clash_terminal.tar.gz
-cd clash_terminal
-sh https://sub.cucloud.top/api/v1/client/subscribe?token=1ea98d7b875fff4260fa834ad6f47be9
+# Make bspwmrc executablemek
+# chmod +x ~/.config/bspwm/bspwmrc
+#
+#
+#
+# # Create .xinitrc file
+# echo "Creating .xinitrc..."
+# echo "exec bspwm" > ~/.xinitrc
+#
+# # Cleanup
+# echo "Cleaning up..."
+# rm -rf bspwm sxhkd
+#
+#
+# #install neovim
+# curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
+# sudo rm -rf /opt/nvim
+# sudo tar -C /opt -xzf nvim-linux64.tar.gz
+# echo "export PATH="$PATH:/opt/nvim-linux64/bin"" > ~/.bashrc
+#
+# #install kitty
+# curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
+#
+# wget https://raw.githubusercontent.com/matarina/dotfile/master/clash_terminal.tar.gz | tar -zxvf clash_terminal.tar.gz
+# cd clash_terminal
+# sh https://sub.cucloud.top/api/v1/client/subscribe?token=1ea98d7b875fff4260fa834ad6f47be9
