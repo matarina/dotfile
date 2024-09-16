@@ -3,6 +3,7 @@
 # Modified options here
 clash_url="https://huahe.link/link/ug1nhgZZ0d7Wpzua?clash=2"
 myhome="/home/ma"
+ip_interface="enp0s3"
 set -e
 
 # Function to check if the system is Ubuntu
@@ -56,7 +57,7 @@ sudo apt install -y build-essential xcb libx11-xcb-dev libxcb-xinerama0-dev \
 		    libxcb-util0-dev libxcb-icccm4-dev libxcb-randr0-dev libxft-dev \
       		    libxcb-ewmh-dev  x11-xserver-utils libxcb-keysyms1-dev libxcb-shape0-dev \
     		    xinit vim git htop rofi stalonetray feh scrot ibus ibus-rime redshift \
-    		    neovim kitty bc unzip
+    		    neovim kitty bc unzip tmux
 
 # Deploy clash VPN
 echo "Deploying clash VPN"
@@ -118,6 +119,8 @@ export QT_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 
 export PATH=\"\$PATH:/home/ma/.local/lemonbar\"
+
+alias vi="nvim"
 "
 
 # Check if content already exists in .bashrc
@@ -139,7 +142,7 @@ fc-cache -f
 git clone https://github.com/matarina/dotfile.git
 mkdir -p $myhome/.config
 mv dotfile/* $myhome/.config
-
+sed -i '1a\ip_interface='"$ip_interface"'' $myhome/.config/lemonbar/lemon.sh
 
 echo "Setup complete!"
 
