@@ -1,0 +1,858 @@
+# Rime schema settings
+# encoding: utf-8
+# i引导拼音反查
+
+schema:
+  schema_id: ym
+  name: 逸码
+  version: "alpha"
+  author:
+    - 小泥巴
+  description: |
+    逸码·形，单字二码顶，词组四码顶
+  dependencies:
+    - pinyin_simp
+    - bihua #笔画反查
+    - ymjm  #分号简码 
+    - ymfh
+    - ymdz
+    - ymfc
+
+switches: 
+  - name: ascii_mode
+    reset: 0
+    states: [ 中, 西 ]
+  - name: full_shape
+    reset: 0
+    states: [ 半, 全 ]
+  - name: ascii_punct
+    states: [ 。，, ．， ]
+  - name: phrase_prediction     
+    states: [ 隐, 显 ]          # [ 🈶, 🈚 ]
+    reset: 0                    
+  - name: YMPrompt_division
+    states: [ 🈚, 拆 ]          # 😃
+    reset: 0
+
+
+engine:
+  processors:                          
+    - ascii_composer               
+    - recognizer                    
+    - key_binder                    
+    - recognizer                    
+    - selector                      
+    - speller                      
+    - punctuator                   
+    - navigator                     
+    - express_editor               
+  segmentors:                     
+    - ascii_segmentor             
+    - matcher                      
+    - abc_segmentor                 
+    - affix_segmentor@pinyin_lookup
+    - affix_segmentor@bihua_lookup
+    - affix_segmentor@division_lookup
+    - affix_segmentor@reverse_lookup
+    - punct_segmentor                 
+    - fallback_segmentor               
+  translators:                       
+    - punct_translator                 
+    - reverse_lookup_translator
+    - table_translator@ymdz
+    - table_translator@ymjm
+    - table_translator@ymfh
+    - table_translator          
+    - script_translator@pinyin_lookup  
+    - table_translator@bihua_lookup
+    - table_translator@division_lookup
+    #- lua_translator@time_translator
+    #- lua_translator@date_translator
+    #- lua_translator@number_translator
+        
+  filters:
+    - simplifier
+    - uniquifier
+    - simplifier@emoji_suggestion
+    - simplifier@phrase_prediction
+    - simplifier@YMPrompt_division  
+    - reverse_lookup_filter@pinyin_reverse_lookup
+    - reverse_lookup_filter@bihua_reverse_lookup
+    - reverse_lookup_filter@division_reverse_lookup
+         
+
+speller:
+  alphabet: "qwertyuiopasdfghjklzxcvbnm;"
+  initials: "qwertyuiopasdfghjklzxcvbnm;"
+  finals: " "
+  auto_select: true  
+  auto_select_unique_candidate: true
+
+
+# 主翻译器
+translator:
+  dictionary: ymcz
+  initial_quality: 0
+  enable_completion: true        
+  enable_encoder: false          
+  enable_sentence: false         
+  enable_user_dict: false        
+  encode_commit_history: false   
+  strict_spelling: true
+  max_phrase_length: 6          
+  preedit_format:   
+    - xform/^aa(.+)/aa$1 ♨ 微/
+    - xform/^ab(.+)/ab$1 ♨ 夙/
+    - xform/^ac(.+)/ac$1 ♨ 康/
+    - xform/^ad(.+)/ad$1 ♨ 原/
+    - xform/^ae(.+)/ae$1 ♨ 于/
+    - xform/^af(.+)/af$1 ♨ 反/
+    - xform/^ag(.+)/ag$1 ♨ 顾/
+    - xform/^ah(.+)/ah$1 ♨ 风/
+    - xform/^ai(.+)/ai$1 ♨ 由/
+    - xform/^aj(.+)/aj$1 ♨ 道/
+    - xform/^ak(.+)/ak$1 ♨ 关/
+    - xform/^al(.+)/al$1 ♨ 后/
+    - xform/^am(.+)/am$1 ♨ 应/
+    - xform/^an(.+)/an$1 ♨ 并/
+    - xform/^ao(.+)/ao$1 ♨ 几/
+    - xform/^ap(.+)/ap$1 ♨ 质/
+    - xform/^aq(.+)/aq$1 ♨ 验/
+    - xform/^ar(.+)/ar$1 ♨ 前/
+    - xform/^as(.+)/as$1 ♨ 唐/
+    - xform/^at(.+)/at$1 ♨ 店/
+    - xform/^au(.+)/au$1 ♨ 马/
+    - xform/^av(.+)/av$1 ♨ 所/
+    - xform/^aw(.+)/aw$1 ♨ 历/
+    - xform/^ax(.+)/ax$1 ♨ 废/
+    - xform/^ay(.+)/ay$1 ♨ 兰/
+    - xform/^az(.+)/az$1 ♨ 骆/
+    - xform/^ba(.+)/ba$1 ♨ 盯/
+    - xform/^bb(.+)/bb$1 ♨ 多/
+    - xform/^bc(.+)/bc$1 ♨ 县/
+    - xform/^bd(.+)/bd$1 ♨ 索/
+    - xform/^be(.+)/be$1 ♨ 更/
+    - xform/^bf(.+)/bf$1 ♨ 具/
+    - xform/^bg(.+)/bg$1 ♨ 怨/
+    - xform/^bh(.+)/bh$1 ♨ 眼/
+    - xform/^bi(.+)/bi$1 ♨ 目/
+    - xform/^bj(.+)/bj$1 ♨ 夜/
+    - xform/^bk(.+)/bk$1 ♨ 名/
+    - xform/^bl(.+)/bl$1 ♨ 外/
+    - xform/^bm(.+)/bm$1 ♨ 瞧/
+    - xform/^bn(.+)/bn$1 ♨ 死/
+    - xform/^bo(.+)/bo$1 ♨ 长/
+    - xform/^bp(.+)/bp$1 ♨ 然/
+    - xform/^bq(.+)/bq$1 ♨ 眠/
+    - xform/^br(.+)/br$1 ♨ 避/
+    - xform/^bs(.+)/bs$1 ♨ 勃/
+    - xform/^bt(.+)/bt$1 ♨ 瞟/
+    - xform/^bu(.+)/bu$1 ♨ 以/
+    - xform/^bv(.+)/bv$1 ♨ 蛇/
+    - xform/^bw(.+)/bw$1 ♨ 助/
+    - xform/^bx(.+)/bx$1 ♨ 颤/
+    - xform/^by(.+)/by$1 ♨ 市/
+    - xform/^bz(.+)/bz$1 ♨ 睡/
+    - xform/^ca(.+)/ca$1 ♨ 称/
+    - xform/^cb(.+)/cb$1 ♨ 罗/
+    - xform/^cc(.+)/cc$1 ♨ 当/
+    - xform/^cd(.+)/cd$1 ♨ 赏/
+    - xform/^ce(.+)/ce$1 ♨ 丽/
+    - xform/^cf(.+)/cf$1 ♨ 署/
+    - xform/^cg(.+)/cg$1 ♨ 牲/
+    - xform/^ch(.+)/ch$1 ♨ 能/
+    - xform/^ci(.+)/ci$1 ♨ 小/
+    - xform/^cj(.+)/cj$1 ♨ 物/
+    - xform/^ck(.+)/ck$1 ♨ 和/
+    - xform/^cl(.+)/cl$1 ♨ 特/
+    - xform/^cm(.+)/cm$1 ♨ 委/
+    - xform/^cn(.+)/cn$1 ♨ 利/
+    - xform/^co(.+)/co$1 ♨ 公/
+    - xform/^cp(.+)/cp$1 ♨ 灵/
+    - xform/^cq(.+)/cq$1 ♨ 尝/
+    - xform/^cr(.+)/cr$1 ♨ 辽/
+    - xform/^cs(.+)/cs$1 ♨ 尚/
+    - xform/^ct(.+)/ct$1 ♨ 牺/
+    - xform/^cu(.+)/cu$1 ♨ 了/
+    - xform/^cv(.+)/cv$1 ♨ 种/
+    - xform/^cw(.+)/cw$1 ♨ 科/
+    - xform/^cx(.+)/cx$1 ♨ 党/
+    - xform/^cy(.+)/cy$1 ♨ 常/
+    - xform/^cz(.+)/cz$1 ♨ 罪/
+    - xform/^da(.+)/da$1 ♨ 穿/
+    - xform/^db(.+)/db$1 ♨ 夏/
+    - xform/^dc(.+)/dc$1 ♨ 雄/
+    - xform/^dd(.+)/dd$1 ♨ 容/
+    - xform/^de(.+)/de$1 ♨ 石/
+    - xform/^df(.+)/df$1 ♨ 度/
+    - xform/^dg(.+)/dg$1 ♨ 色/
+    - xform/^dh(.+)/dh$1 ♨ 有/
+    - xform/^di(.+)/di$1 ♨ 贝/
+    - xform/^dj(.+)/dj$1 ♨ 个/
+    - xform/^dk(.+)/dk$1 ♨ 的/
+    - xform/^dl(.+)/dl$1 ♨ 在/
+    - xform/^dm(.+)/dm$1 ♨ 会/
+    - xform/^dn(.+)/dn$1 ♨ 则/
+    - xform/^do(.+)/do$1 ♨ 人/
+    - xform/^dp(.+)/dp$1 ♨ 世/
+    - xform/^dq(.+)/dq$1 ♨ 碍/
+    - xform/^dr(.+)/dr$1 ♨ 迫/
+    - xform/^ds(.+)/ds$1 ♨ 全/
+    - xform/^dt(.+)/dt$1 ♨ 某/
+    - xform/^du(.+)/du$1 ♨ 也/
+    - xform/^dv(.+)/dv$1 ♨ 族/
+    - xform/^dw(.+)/dw$1 ♨ 势/
+    - xform/^dx(.+)/dx$1 ♨ 穹/
+    - xform/^dy(.+)/dy$1 ♨ 布/
+    - xform/^dz(.+)/dz$1 ♨ 破/
+    - xform/^fa(.+)/fa$1 ♨ 行/
+    - xform/^fb(.+)/fb$1 ♨ 闹/
+    - xform/^fc(.+)/fc$1 ♨ 莉/
+    - xform/^fd(.+)/fd$1 ♨ 若/
+    - xform/^fe(.+)/fe$1 ♨ 天/
+    - xform/^ff(.+)/ff$1 ♨ 两/
+    - xform/^fg(.+)/fg$1 ♨ 苗/
+    - xform/^fh(.+)/fh$1 ♨ 很/
+    - xform/^fi(.+)/fi$1 ♨ 见/
+    - xform/^fj(.+)/fj$1 ♨ 对/
+    - xform/^fk(.+)/fk$1 ♨ 问/
+    - xform/^fl(.+)/fl$1 ♨ 再/
+    - xform/^fm(.+)/fm$1 ♨ 难/
+    - xform/^fn(.+)/fn$1 ♨ 老/
+    - xform/^fo(.+)/fo$1 ♨ 从/
+    - xform/^fp(.+)/fp$1 ♨ 德/
+    - xform/^fq(.+)/fq$1 ♨ 得/
+    - xform/^fr(.+)/fr$1 ♨ 门/
+    - xform/^fs(.+)/fs$1 ♨ 教/
+    - xform/^ft(.+)/ft$1 ♨ 闲/
+    - xform/^fu(.+)/fu$1 ♨ 又/
+    - xform/^fv(.+)/fv$1 ♨ 苦/
+    - xform/^fw(.+)/fw$1 ♨ 间/
+    - xform/^fx(.+)/fx$1 ♨ 药/
+    - xform/^fy(.+)/fy$1 ♨ 都/
+    - xform/^fz(.+)/fz$1 ♨ 菲/
+    - xform/^ga(.+)/ga$1 ♨ 打/
+    - xform/^gb(.+)/gb$1 ♨ 抗/
+    - xform/^gc(.+)/gc$1 ♨ 摆/
+    - xform/^gd(.+)/gd$1 ♨ 界/
+    - xform/^ge(.+)/ge$1 ♨ 可/
+    - xform/^gf(.+)/gf$1 ♨ 择/
+    - xform/^gg(.+)/gg$1 ♨ 把/
+    - xform/^gh(.+)/gh$1 ♨ 接/
+    - xform/^gi(.+)/gi$1 ♨ 里/
+    - xform/^gj(.+)/gj$1 ♨ 导/
+    - xform/^gk(.+)/gk$1 ♨ 高/
+    - xform/^gl(.+)/gl$1 ♨ 思/
+    - xform/^gm(.+)/gm$1 ♨ 推/
+    - xform/^gn(.+)/gn$1 ♨ 到/
+    - xform/^go(.+)/go$1 ♨ 生/
+    - xform/^gp(.+)/gp$1 ♨ 技/
+    - xform/^gq(.+)/gq$1 ♨ 斯/
+    - xform/^gr(.+)/gr$1 ♨ 选/
+    - xform/^gs(.+)/gs$1 ♨ 提/
+    - xform/^gt(.+)/gt$1 ♨ 护/
+    - xform/^gu(.+)/gu$1 ♨ 已/
+    - xform/^gv(.+)/gv$1 ♨ 按/
+    - xform/^gw(.+)/gw$1 ♨ 报/
+    - xform/^gx(.+)/gx$1 ♨ 挑/
+    - xform/^gy(.+)/gy$1 ♨ 摇/
+    - xform/^gz(.+)/gz$1 ♨ 据/
+    - xform/^ha(.+)/ha$1 ♨ 产/
+    - xform/^hb(.+)/hb$1 ♨ 静/
+    - xform/^hc(.+)/hc$1 ♨ 步/
+    - xform/^hd(.+)/hd$1 ♨ 怕/
+    - xform/^he(.+)/he$1 ♨ 不/
+    - xform/^hf(.+)/hf$1 ♨ 真/
+    - xform/^hg(.+)/hg$1 ♨ 性/
+    - xform/^hh(.+)/hh$1 ♨ 情/
+    - xform/^hi(.+)/hi$1 ♨ 光/
+    - xform/^hj(.+)/hj$1 ♨ 封/
+    - xform/^hk(.+)/hk$1 ♨ 部/
+    - xform/^hl(.+)/hl$1 ♨ 惊/
+    - xform/^hm(.+)/hm$1 ♨ 旁/
+    - xform/^hn(.+)/hn$1 ♨ 刻/
+    - xform/^ho(.+)/ho$1 ♨ 月/
+    - xform/^hp(.+)/hp$1 ♨ 器/
+    - xform/^hq(.+)/hq$1 ♨ 脸/
+    - xform/^hr(.+)/hr$1 ♨ 还/
+    - xform/^hs(.+)/hs$1 ♨ 解/
+    - xform/^ht(.+)/ht$1 ♨ 新/
+    - xform/^hu(.+)/hu$1 ♨ 予/
+    - xform/^hv(.+)/hv$1 ♨ 快/
+    - xform/^hw(.+)/hw$1 ♨ 神/
+    - xform/^hx(.+)/hx$1 ♨ 忙/
+    - xform/^hy(.+)/hy$1 ♨ 帝/
+    - xform/^hz(.+)/hz$1 ♨ 被/
+    - xform/^ja(.+)/ja$1 ♨ 你/
+    - xform/^jb(.+)/jb$1 ♨ 便/
+    - xform/^jc(.+)/jc$1 ♨ 么/
+    - xform/^jd(.+)/jd$1 ♨ 他/
+    - xform/^je(.+)/je$1 ♨ 一/
+    - xform/^jf(.+)/jf$1 ♨ 们/
+    - xform/^jg(.+)/jg$1 ♨ 何/
+    - xform/^jh(.+)/jh$1 ♨ 位/
+    - xform/^ji(.+)/ji$1 ♨ 业/
+    - xform/^jj(.+)/jj$1 ♨ 失/
+    - xform/^jk(.+)/jk$1 ♨ 住/
+    - xform/^jl(.+)/jl$1 ♨ 使/
+    - xform/^jm(.+)/jm$1 ♨ 低/
+    - xform/^jn(.+)/jn$1 ♨ 修/
+    - xform/^jo(.+)/jo$1 ♨ 自/
+    - xform/^jp(.+)/jp$1 ♨ 什/
+    - xform/^jq(.+)/jq$1 ♨ 但/
+    - xform/^jr(.+)/jr$1 ♨ 过/
+    - xform/^js(.+)/js$1 ♨ 信/
+    - xform/^jt(.+)/jt$1 ♨ 体/
+    - xform/^jv(.+)/jv$1 ♨ 做/
+    - xform/^jw(.+)/jw$1 ♨ 为/
+    - xform/^jx(.+)/jx$1 ♨ 无/
+    - xform/^jy(.+)/jy$1 ♨ 传/
+    - xform/^jz(.+)/jz$1 ♨ 作/
+    - xform/^ka(.+)/ka$1 ♨ 吗/
+    - xform/^kb(.+)/kb$1 ♨ 着/
+    - xform/^kc(.+)/kc$1 ♨ 哈/
+    - xform/^kd(.+)/kd$1 ♨ 员/
+    - xform/^ke(.+)/ke$1 ♨ 大/
+    - xform/^kf(.+)/kf$1 ♨ 只/
+    - xform/^kg(.+)/kg$1 ♨ 吧/
+    - xform/^kh(.+)/kh$1 ♨ 品/
+    - xform/^ki(.+)/ki$1 ♨ 口/
+    - xform/^kj(.+)/kj$1 ♨ 太/
+    - xform/^kk(.+)/kk$1 ♨ 美/
+    - xform/^kl(.+)/kl$1 ♨ 感/
+    - xform/^km(.+)/km$1 ♨ 足/
+    - xform/^kn(.+)/kn$1 ♨ 政/
+    - xform/^ko(.+)/ko$1 ♨ 片/
+    - xform/^kp(.+)/kp$1 ♨ 叶/
+    - xform/^kq(.+)/kq$1 ♨ 听/
+    - xform/^kr(.+)/kr$1 ♨ 之/
+    - xform/^ks(.+)/ks$1 ♨ 国/
+    - xform/^kt(.+)/kt$1 ♨ 成/
+    - xform/^ku(.+)/ku$1 ♨ 尺/
+    - xform/^kv(.+)/kv$1 ♨ 吃/
+    - xform/^kw(.+)/kw$1 ♨ 别/
+    - xform/^kx(.+)/kx$1 ♨ 兄/
+    - xform/^ky(.+)/ky$1 ♨ 啊/
+    - xform/^kz(.+)/kz$1 ♨ 呢/
+    - xform/^la(.+)/la$1 ♨ 恐/
+    - xform/^lb(.+)/lb$1 ♨ 算/
+    - xform/^lc(.+)/lc$1 ♨ 答/
+    - xform/^ld(.+)/ld$1 ♨ 地/
+    - xform/^le(.+)/le$1 ♨ 下/
+    - xform/^lf(.+)/lf$1 ♨ 笑/
+    - xform/^lg(.+)/lg$1 ♨ 副/
+    - xform/^lh(.+)/lh$1 ♨ 坏/
+    - xform/^li(.+)/li$1 ♨ 上/
+    - xform/^lj(.+)/lj$1 ♨ 必/
+    - xform/^lk(.+)/lk$1 ♨ 城/
+    - xform/^ll(.+)/ll$1 ♨ 等/
+    - xform/^lm(.+)/lm$1 ♨ 境/
+    - xform/^ln(.+)/ln$1 ♨ 攻/
+    - xform/^lo(.+)/lo$1 ♨ 父/
+    - xform/^lp(.+)/lp$1 ♨ 墙/
+    - xform/^lq(.+)/lq$1 ♨ 策/
+    - xform/^lr(.+)/lr$1 ♨ 心/
+    - xform/^ls(.+)/ls$1 ♨ 事/
+    - xform/^lt(.+)/lt$1 ♨ 场/
+    - xform/^lv(.+)/lv$1 ♨ 管/
+    - xform/^lw(.+)/lw$1 ♨ 功/
+    - xform/^lx(.+)/lx$1 ♨ 就/
+    - xform/^ly(.+)/ly$1 ♨ 聋/
+    - xform/^lz(.+)/lz$1 ♨ 声/
+    - xform/^ma(.+)/ma$1 ♨ 妈/
+    - xform/^mb(.+)/mb$1 ♨ 姐/
+    - xform/^mc(.+)/mc$1 ♨ 始/
+    - xform/^md(.+)/md$1 ♨ 她/
+    - xform/^me(.+)/me$1 ♨ 走/
+    - xform/^mf(.+)/mf$1 ♨ 兴/
+    - xform/^mg(.+)/mg$1 ♨ 起/
+    - xform/^mh(.+)/mh$1 ♨ 赵/
+    - xform/^mi(.+)/mi$1 ♨ 骨/
+    - xform/^mj(.+)/mj$1 ♨ 娘/
+    - xform/^mk(.+)/mk$1 ♨ 如/
+    - xform/^ml(.+)/ml$1 ♨ 意/
+    - xform/^mm(.+)/mm$1 ♨ 楚/
+    - xform/^mn(.+)/mn$1 ♨ 放/
+    - xform/^mo(.+)/mo$1 ♨ 氏/
+    - xform/^mp(.+)/mp$1 ♨ 章/
+    - xform/^mq(.+)/mq$1 ♨ 姬/
+    - xform/^mr(.+)/mr$1 ♨ 方/
+    - xform/^ms(.+)/ms$1 ♨ 好/
+    - xform/^mt(.+)/mt$1 ♨ 集/
+    - xform/^mu(.+)/mu$1 ♨ 女/
+    - xform/^mv(.+)/mv$1 ♨ 姑/
+    - xform/^mw(.+)/mw$1 ♨ 动/
+    - xform/^mx(.+)/mx$1 ♨ 竟/
+    - xform/^my(.+)/my$1 ♨ 趣/
+    - xform/^mz(.+)/mz$1 ♨ 妮/
+    - xform/^na(.+)/na$1 ♨ 派/
+    - xform/^nb(.+)/nb$1 ♨ 看/
+    - xform/^nc(.+)/nc$1 ♨ 消/
+    - xform/^nd(.+)/nd$1 ♨ 没/
+    - xform/^ne(.+)/ne$1 ♨ 开/
+    - xform/^nf(.+)/nf$1 ♨ 觉/
+    - xform/^ng(.+)/ng$1 ♨ 重/
+    - xform/^nh(.+)/nh$1 ♨ 清/
+    - xform/^ni(.+)/ni$1 ♨ 水/
+    - xform/^nj(.+)/nj$1 ♨ 师/
+    - xform/^nk(.+)/nk$1 ♨ 注/
+    - xform/^nl(.+)/nl$1 ♨ 处/
+    - xform/^nm(.+)/nm$1 ♨ 滑/
+    - xform/^nn(.+)/nn$1 ♨ 活/
+    - xform/^no(.+)/no$1 ♨ 手/
+    - xform/^np(.+)/np$1 ♨ 乱/
+    - xform/^nq(.+)/nq$1 ♨ 深/
+    - xform/^nr(.+)/nr$1 ♨ 这/
+    - xform/^ns(.+)/ns$1 ♨ 学/
+    - xform/^nt(.+)/nt$1 ♨ 条/
+    - xform/^nv(.+)/nv$1 ♨ 海/
+    - xform/^nw(.+)/nw$1 ♨ 法/
+    - xform/^nx(.+)/nx$1 ♨ 流/
+    - xform/^ny(.+)/ny$1 ♨ 渐/
+    - xform/^nz(.+)/nz$1 ♨ 波/
+    - xform/^pa(.+)/pa$1 ♨ 黄/
+    - xform/^pb(.+)/pb$1 ♨ 独/
+    - xform/^pc(.+)/pc$1 ♨ 乐/
+    - xform/^pd(.+)/pd$1 ♨ 般/
+    - xform/^pe(.+)/pe$1 ♨ 三/
+    - xform/^pf(.+)/pf$1 ♨ 变/
+    - xform/^pg(.+)/pg$1 ♨ 雷/
+    - xform/^ph(.+)/ph$1 ♨ 散/
+    - xform/^pj(.+)/pj$1 ♨ 印/
+    - xform/^pk(.+)/pk$1 ♨ 狗/
+    - xform/^pl(.+)/pl$1 ♨ 恋/
+    - xform/^pm(.+)/pm$1 ♨ 霍/
+    - xform/^pn(.+)/pn$1 ♨ 烦/
+    - xform/^po(.+)/po$1 ♨ 食/
+    - xform/^pp(.+)/pp$1 ♨ 丝/
+    - xform/^pq(.+)/pq$1 ♨ 烟/
+    - xform/^pr(.+)/pr$1 ♨ 定/
+    - xform/^ps(.+)/ps$1 ♨ 南/
+    - xform/^pt(.+)/pt$1 ♨ 卖/
+    - xform/^pu(.+)/pu$1 ♨ 乙/
+    - xform/^pv(.+)/pv$1 ♨ 馆/
+    - xform/^pw(.+)/pw$1 ♨ 飞/
+    - xform/^px(.+)/px$1 ♨ 犹/
+    - xform/^py(.+)/py$1 ♨ 需/
+    - xform/^pz(.+)/pz$1 ♨ 露/
+    - xform/^qa(.+)/qa$1 ♨ 欣/
+    - xform/^qb(.+)/qb$1 ♨ 粗/
+    - xform/^qc(.+)/qc$1 ♨ 鞘/
+    - xform/^qd(.+)/qd$1 ♨ 贪/
+    - xform/^qe(.+)/qe$1 ♨ 革/
+    - xform/^qf(.+)/qf$1 ♨ 兵/
+    - xform/^qg(.+)/qg$1 ♨ 量/
+    - xform/^qh(.+)/qh$1 ♨ 交/
+    - xform/^qi(.+)/qi$1 ♨ 因/
+    - xform/^qj(.+)/qj$1 ♨ 与/
+    - xform/^qk(.+)/qk$1 ♨ 命/
+    - xform/^ql(.+)/ql$1 ♨ 离/
+    - xform/^qm(.+)/qm$1 ♨ 数/
+    - xform/^qn(.+)/qn$1 ♨ 领/
+    - xform/^qo(.+)/qo$1 ♨ 今/
+    - xform/^qp(.+)/qp$1 ♨ 断/
+    - xform/^qq(.+)/qq$1 ♨ 写/
+    - xform/^qr(.+)/qr$1 ♨ 近/
+    - xform/^qs(.+)/qs$1 ♨ 粉/
+    - xform/^qt(.+)/qt$1 ♨ 余/
+    - xform/^qu(.+)/qu$1 ♨ 民/
+    - xform/^qv(.+)/qv$1 ♨ 舒/
+    - xform/^qw(.+)/qw$1 ♨ 料/
+    - xform/^qx(.+)/qx$1 ♨ 鸩/
+    - xform/^qy(.+)/qy$1 ♨ 军/
+    - xform/^qz(.+)/qz$1 ♨ 鞁/
+    - xform/^sa(.+)/sa$1 ♨ 论/
+    - xform/^sb(.+)/sb$1 ♨ 丹/
+    - xform/^sc(.+)/sc$1 ♨ 孙/
+    - xform/^sd(.+)/sd$1 ♨ 认/
+    - xform/^se(.+)/se$1 ♨ 王/
+    - xform/^sf(.+)/sf$1 ♨ 现/
+    - xform/^sg(.+)/sg$1 ♨ 理/
+    - xform/^sh(.+)/sh$1 ♨ 该/
+    - xform/^si(.+)/si$1 ♨ 是/
+    - xform/^sj(.+)/sj$1 ♨ 语/
+    - xform/^sk(.+)/sk$1 ♨ 说/
+    - xform/^sl(.+)/sl$1 ♨ 同/
+    - xform/^sm(.+)/sm$1 ♨ 谁/
+    - xform/^sn(.+)/sn$1 ♨ 话/
+    - xform/^so(.+)/so$1 ♨ 分/
+    - xform/^sp(.+)/sp$1 ♨ 计/
+    - xform/^sq(.+)/sq$1 ♨ 诉/
+    - xform/^sr(.+)/sr$1 ♨ 言/
+    - xform/^ss(.+)/ss$1 ♨ 调/
+    - xform/^st(.+)/st$1 ♨ 词/
+    - xform/^su(.+)/su$1 ♨ 子/
+    - xform/^sv(.+)/sv$1 ♨ 许/
+    - xform/^sw(.+)/sw$1 ♨ 球/
+    - xform/^sx(.+)/sx$1 ♨ 琉/
+    - xform/^sy(.+)/sy$1 ♨ 那/
+    - xform/^sz(.+)/sz$1 ♨ 谢/
+    - xform/^ta(.+)/ta$1 ♨ 机/
+    - xform/^tb(.+)/tb$1 ♨ 醉/
+    - xform/^tc(.+)/tc$1 ♨ 松/
+    - xform/^td(.+)/td$1 ♨ 枪/
+    - xform/^te(.+)/te$1 ♨ 才/
+    - xform/^tf(.+)/tf$1 ♨ 树/
+    - xform/^tg(.+)/tg$1 ♨ 配/
+    - xform/^th(.+)/th$1 ♨ 根/
+    - xform/^ti(.+)/ti$1 ♨ 此/
+    - xform/^tj(.+)/tj$1 ♨ 本/
+    - xform/^tk(.+)/tk$1 ♨ 样/
+    - xform/^tl(.+)/tl$1 ♨ 司/
+    - xform/^tm(.+)/tm$1 ♨ 要/
+    - xform/^tn(.+)/tn$1 ♨ 点/
+    - xform/^to(.+)/to$1 ♨ 用/
+    - xform/^tp(.+)/tp$1 ♨ 柳/
+    - xform/^tq(.+)/tq$1 ♨ 楼/
+    - xform/^tr(.+)/tr$1 ♨ 通/
+    - xform/^ts(.+)/ts$1 ♨ 李/
+    - xform/^tt(.+)/tt$1 ♨ 书/
+    - xform/^tu(.+)/tu$1 ♨ 加/
+    - xform/^tv(.+)/tv$1 ♨ 梅/
+    - xform/^tw(.+)/tw$1 ♨ 即/
+    - xform/^tx(.+)/tx$1 ♨ 梯/
+    - xform/^ty(.+)/ty$1 ♨ 些/
+    - xform/^tz(.+)/tz$1 ♨ 格/
+    - xform/^va(.+)/va$1 ♨ 宇/
+    - xform/^vb(.+)/vb$1 ♨ 省/
+    - xform/^vc(.+)/vc$1 ♨ 销/
+    - xform/^vd(.+)/vd$1 ♨ 宏/
+    - xform/^ve(.+)/ve$1 ♨ 相/
+    - xform/^vf(.+)/vf$1 ♨ 舞/
+    - xform/^vg(.+)/vg$1 ♨ 室/
+    - xform/^vh(.+)/vh$1 ♨ 家/
+    - xform/^vi(.+)/vi$1 ♨ 中/
+    - xform/^vj(.+)/vj$1 ♨ 年/
+    - xform/^vk(.+)/vk$1 ♨ 知/
+    - xform/^vl(.+)/vl$1 ♨ 想/
+    - xform/^vm(.+)/vm$1 ♨ 安/
+    - xform/^vn(.+)/vn$1 ♨ 它/
+    - xform/^vo(.+)/vo$1 ♨ 气/
+    - xform/^vp(.+)/vp$1 ♨ 错/
+    - xform/^vq(.+)/vq$1 ♨ 宾/
+    - xform/^vs(.+)/vs$1 ♨ 字/
+    - xform/^vt(.+)/vt$1 ♨ 宋/
+    - xform/^vu(.+)/vu$1 ♨ 母/
+    - xform/^vv(.+)/vv$1 ♨ 每/
+    - xform/^vw(.+)/vw$1 ♨ 实/
+    - xform/^vx(.+)/vx$1 ♨ 克/
+    - xform/^vy(.+)/vy$1 ♨ 制/
+    - xform/^vz(.+)/vz$1 ♨ 客/
+    - xform/^wa(.+)/wa$1 ♨ 冯/
+    - xform/^wb(.+)/wb$1 ♨ 冒/
+    - xform/^wc(.+)/wc$1 ♨ 曼/
+    - xform/^wd(.+)/wd$1 ♨ 夹/
+    - xform/^we(.+)/we$1 ♨ 去/
+    - xform/^wf(.+)/wf$1 ♨ 办/
+    - xform/^wg(.+)/wg$1 ♨ 星/
+    - xform/^wh(.+)/wh$1 ♨ 明/
+    - xform/^wi(.+)/wi$1 ♨ 日/
+    - xform/^wj(.+)/wj$1 ♨ 时/
+    - xform/^wk(.+)/wk$1 ♨ 头/
+    - xform/^wl(.+)/wl$1 ♨ 影/
+    - xform/^wm(.+)/wm$1 ♨ 暗/
+    - xform/^wn(.+)/wn$1 ♨ 来/
+    - xform/^wo(.+)/wo$1 ♨ 我/
+    - xform/^wp(.+)/wp$1 ♨ 电/
+    - xform/^wq(.+)/wq$1 ♨ 冷/
+    - xform/^wr(.+)/wr$1 ♨ 边/
+    - xform/^ws(.+)/ws$1 ♨ 照/
+    - xform/^wt(.+)/wt$1 ♨ 果/
+    - xform/^wu(.+)/wu$1 ♨ 力/
+    - xform/^wv(.+)/wv$1 ♨ 决/
+    - xform/^ww(.+)/ww$1 ♨ 却/
+    - xform/^wx(.+)/wx$1 ♨ 免/
+    - xform/^wy(.+)/wy$1 ♨ 最/
+    - xform/^wz(.+)/wz$1 ♨ 昨/
+    - xform/^xa(.+)/xa$1 ♨ 缘/
+    - xform/^xb(.+)/xb$1 ♨ 张/
+    - xform/^xc(.+)/xc$1 ♨ 给/
+    - xform/^xd(.+)/xd$1 ♨ 绝/
+    - xform/^xe(.+)/xe$1 ♨ 丰/
+    - xform/^xf(.+)/xf$1 ♨ 纵/
+    - xform/^xg(.+)/xg$1 ♨ 细/
+    - xform/^xh(.+)/xh$1 ♨ 望/
+    - xform/^xi(.+)/xi$1 ♨ 回/
+    - xform/^xj(.+)/xj$1 ♨ 表/
+    - xform/^xk(.+)/xk$1 ♨ 强/
+    - xform/^xl(.+)/xl$1 ♨ 红/
+    - xform/^xm(.+)/xm$1 ♨ 维/
+    - xform/^xn(.+)/xn$1 ♨ 结/
+    - xform/^xo(.+)/xo$1 ♨ 儿/
+    - xform/^xp(.+)/xp$1 ♨ 经/
+    - xform/^xq(.+)/xq$1 ♨ 继/
+    - xform/^xr(.+)/xr$1 ♨ 弟/
+    - xform/^xs(.+)/xs$1 ♨ 级/
+    - xform/^xt(.+)/xt$1 ♨ 编/
+    - xform/^xu(.+)/xu$1 ♨ 发/
+    - xform/^xv(.+)/xv$1 ♨ 毒/
+    - xform/^xw(.+)/xw$1 ♨ 弱/
+    - xform/^xx(.+)/xx$1 ♨ 统/
+    - xform/^xy(.+)/xy$1 ♨ 帮/
+    - xform/^xz(.+)/xz$1 ♨ 络/
+    - xform/^ya(.+)/ya$1 ♨ 联/
+    - xform/^yb(.+)/yb$1 ♨ 岁/
+    - xform/^yc(.+)/yc$1 ♨ 东/
+    - xform/^yd(.+)/yd$1 ♨ 爱/
+    - xform/^ye(.+)/ye$1 ♨ 而/
+    - xform/^yf(.+)/yf$1 ♨ 受/
+    - xform/^yg(.+)/yg$1 ♨ 阿/
+    - xform/^yh(.+)/yh$1 ♨ 阴/
+    - xform/^yi(.+)/yi$1 ♨ 山/
+    - xform/^yj(.+)/yj$1 ♨ 附/
+    - xform/^yk(.+)/yk$1 ♨ 职/
+    - xform/^yl(.+)/yl$1 ♨ 陆/
+    - xform/^ym(.+)/ym$1 ♨ 防/
+    - xform/^yn(.+)/yn$1 ♨ 峰/
+    - xform/^yo(.+)/yo$1 ♨ 化/
+    - xform/^yp(.+)/yp$1 ♨ 轻/
+    - xform/^yq(.+)/yq$1 ♨ 除/
+    - xform/^yr(.+)/yr$1 ♨ 进/
+    - xform/^ys(.+)/ys$1 ♨ 出/
+    - xform/^yt(.+)/yt$1 ♨ 专/
+    - xform/^yu(.+)/yu$1 ♨ 习/
+    - xform/^yv(.+)/yv$1 ♨ 院/
+    - xform/^yw(.+)/yw$1 ♨ 阳/
+    - xform/^yx(.+)/yx$1 ♨ 隐/
+    - xform/^yy(.+)/yy$1 ♨ 转/
+    - xform/^yz(.+)/yz$1 ♨ 落/
+    - xform/^za(.+)/za$1 ♨ 躲/
+    - xform/^zb(.+)/zb$1 ♨ 将/
+    - xform/^zc(.+)/zc$1 ♨ 躺/
+    - xform/^zd(.+)/zd$1 ♨ 赖/
+    - xform/^ze(.+)/ze$1 ♨ 束/
+    - xform/^zf(.+)/zf$1 ♨ 跃/
+    - xform/^zg(.+)/zg$1 ♨ 屋/
+    - xform/^zh(.+)/zh$1 ♨ 跟/
+    - xform/^zi(.+)/zi$1 ♨ 非/
+    - xform/^zj(.+)/zj$1 ♨ 属/
+    - xform/^zk(.+)/zk$1 ♨ 向/
+    - xform/^zl(.+)/zl$1 ♨ 怎/
+    - xform/^zm(.+)/zm$1 ♨ 层/
+    - xform/^zn(.+)/zn$1 ♨ 整/
+    - xform/^zo(.+)/zo$1 ♨ 身/
+    - xform/^zp(.+)/zp$1 ♨ 展/
+    - xform/^zq(.+)/zq$1 ♨ 奥/
+    - xform/^zr(.+)/zr$1 ♨ 速/
+    - xform/^zs(.+)/zs$1 ♨ 慰/
+    - xform/^zt(.+)/zt$1 ♨ 局/
+    - xform/^zu(.+)/zu$1 ♨ 皮/
+    - xform/^zv(.+)/zv$1 ♨ 居/
+    - xform/^zw(.+)/zw$1 ♨ 尾/
+    - xform/^zx(.+)/zx$1 ♨ 跳/
+    - xform/^zy(.+)/zy$1 ♨ 辈/
+    - xform/^zz(.+)/zz$2 ♨ 路/
+
+
+# 滤镜
+YMPrompt_division:
+  opencc_config: division.json
+  option_name: YMPrompt_division
+  tips: all
+  show_in_comment: true
+  comment_format:
+    - xform/^/〔/
+    - xform/$/〕/
+  tags:
+    - abc
+
+phrase_prediction:
+  opencc_config: phrase.json
+  option_name: phrase_prediction
+  tips: none
+  tags:
+    - abc
+
+zh_simp:
+  opencc_config: s2t.json
+  option_name: zh_simp
+
+
+emoji_suggestion:
+  opencc_config: emoji.json       
+  option_name: emoji_suggestion   
+  tips: all
+  tags:
+    - abc
+    - pinyin_lookup
+
+# 副翻译器
+ymdz:
+  dictionary: ymdz
+  #initial_quality: 10
+  enable_user_dict: false
+  enable_completion: true 
+  enable_encoder: true
+  strict_spelling: true  
+  enable_commit_history: false
+  max_phrase_length: 6          #最大自動成詞詞長
+
+ymjm:
+  dictionary: ymjm
+  enable_user_dict: false
+  enable_encoder: false          
+  enable_sentence: false         
+  enable_completion: true 
+  strict_spelling: true  
+  enable_commit_history: false
+
+ymfh:
+  dictionary: ymfh
+  enable_user_dict: false
+  enable_encoder: false          
+  enable_sentence: false         
+  enable_completion: true 
+  strict_spelling: true  
+  enable_commit_history: false
+
+
+#反查
+reverse_lookup: 
+  tag: reverse_lookup
+  prefix: "i"     #設定此翻譯器的前綴標識
+  # suffix:   # 反查关闭符，暂不定义
+  tips: "【反查：拼音+eioru笔画】"
+  extra_tags:
+    - pinyin_lookup
+    - bihua_lookup
+    - division_lookup  
+
+pinyin_lookup:
+  tag: pinyin_lookup
+  dictionary: pinyin_simp
+  tips: "〔拼音〕"
+
+bihua_lookup:
+  tag: bihua_lookup
+  dictionary: bihua
+  tips: 【笔画】
+  preedit_format:
+    - xlit/eioru/一丨丿丶乙/
+    
+division_lookup:
+  tag: division_lookup
+  dictionary: ymfc
+  tips: "〔拆分〕"
+
+pinyin_reverse_lookup:
+  tags: [ pinyin_lookup ]
+  overwrite_comment: true
+  dictionary: ymfc          
+  comment_format:
+    - "xform/$/〕/"
+    - "xform/^/〔/" 
+
+bihua_reverse_lookup:
+  tags: [ bihua_lookup ] 
+  overwrite_comment: true
+  dictionary: ymfc  
+  comment_format:
+    - "xform/$/〕/"
+    - "xform/^/〔/"
+    - "xform/~//"
+
+division_reverse_lookup:
+  tags: [ division_lookup ]
+  overwrite_comment: true
+  dictionary: ymfc
+  comment_format:
+    - "xform/$/〕/"
+    - "xform/^/〔/"
+    - "xform/ /, /"
+
+# 标点
+punctuator:
+  import_preset: symbols_for_ym        
+  full_shape:
+    ' ' : { commit: '　' }
+    ',' : { commit: ， }
+    '.' : { commit: 。 }
+    '<' : [ 《, 〈, «, ‹ ]
+    '>' : [ 》, 〉, », › ]
+    '?' : { commit: ？ }
+    '/' : [ 、, '/', ／, ÷ ]
+    #'/' : { commit: ？ }
+    ';' : { commit: ； }
+    ':' : { commit: ： }
+    '''' : { pair: [ '‘', '’' ] }
+    '"' : { pair: [ '“', '”' ] }
+    '\' : [ 、, ＼ ]
+    '|' : [ ·, ｜, '§', '¦' ]
+    '`' : ｀
+    '~' : ～
+    '!' : { commit: ！ }
+    '@' : ＠
+    '#' : ＃
+    '%' : [ ％, '°', '℃' ]
+    '$' : [ ￥, '$', '€', '£', '¥', '¢', '¤' ]
+    '^' : { commit: …… }
+    '&' : ＆
+    '*' : [ ＊, ·, ・, ×, ※, ❂ ]
+    '(' : （
+    ')' : ）
+    '-' : '-'
+    '_' : ——
+    '+' : '+'
+    '=' : '='
+    '[' : [ 「, 【, 〔, ［ ]
+    ']' : [ 」, 】, 〕, ］ ]
+    '{' : [ 『, 〖, ｛ ]
+    '}' : [ 』, 〗, ｝ ]
+
+  half_shape:
+    ',' : { commit: ， }
+    '.' : { commit: 。 }
+    '<' : [ 《, 〈, «, ‹ ]
+    '>' : [ 》, 〉, », › ]
+    '/' : [ 、, '/', ／, ÷ ]
+    '?' : { commit: ？ }
+    #';' : { commit: ； }
+    ':' : { commit: ： }
+    '''' : { pair: [ '‘', '’' ] }
+    '"' : { pair: [ '“', '”' ] }
+    '\' : [ 、, '\', ＼ ]
+    '|' : [ ·, '|', ｜, '§', '¦' ]
+    '`' : '`'
+    '~' : [ '~', ～ ]
+    '!' : { commit: ！ }
+    '@' : '@'
+    '#' : '#'
+    '%' : [ '%', ％, '°', '℃' ]
+    '$' : [ ￥, '$', '€', '£', '¥', '¢', '¤' ]
+    '^' : { commit: …… }
+    '&' : '&'
+    '*' : [ '*', ＊, ·, ・, ×, ※, ❂ ]
+    '(' : （
+    ')' : ）
+    '-' : '-'
+    '_' : ——
+    '+' : '+'
+    '=' : '='
+    '[' : [ 「, 【, 〔, ［ ]
+    ']' : [ 」, 】, 〕,  ］ ]
+    '{' : [ 『, 〖, ｛ ]
+    '}' : [ 』, 〗, ｝ ]
+
+            
+
+key_binder:
+  bindings:
+    - { when: paging, accept: minus, send: Page_Up }               #翻䈎用
+    - { when: has_menu, accept: equal, send: Page_Down }
+    - { when: always, accept: "Control+Shift+L", toggle: phrase_prediction }     
+    - { when: always, accept: "Control+Shift+C", toggle: YMPrompt_division } 
+    - { when: has_menu, accept: Shift+Shift_L, send: Control+2 }   #候選項用
+    - { when: has_menu, accept: "8", send: Control+4 }
+    - { when: has_menu, accept: "9", send: Control+5 }
+    - { when: has_menu, accept: "0", send: Control+6 }
+
+# 杂项
+recognizer:
+  patterns:
+    reverse_lookup: "^i([a-z]+'?)*$"
+    punct: '^([e][a-z;]{1}|[eou]([0-9]0?|[a-z]+))$'
+    #retention: "^[abcdfghjklmnpqstvwxyz][a-z][abcdfghjklmnpqstvwxyz][a-z][eruio]{0,2}$" 
+
+
+menu:
+  page_size: 6

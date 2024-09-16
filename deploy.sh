@@ -97,7 +97,6 @@ git clone https://github.com/drscream/lemonbar-xft.git "$myhome/.local/lemonbar-
 
 # Update .bashrc
 
-# Update .bashrc
 content="
 function proxy_on() {
         export http_proxy=http://127.0.0.1:7890
