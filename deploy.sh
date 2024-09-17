@@ -57,7 +57,7 @@ sudo apt install -y build-essential xcb libx11-xcb-dev libxcb-xinerama0-dev \
 		    libxcb-util0-dev libxcb-icccm4-dev libxcb-randr0-dev libxft-dev \
       		libxcb-ewmh-dev  x11-xserver-utils libxcb-keysyms1-dev libxcb-shape0-dev \
     		xinit vim git htop rofi stalonetray feh scrot ibus ibus-rime redshift \
-    		neovim kitty bc unzip tmux dunst nemo dunst 
+    		neovim kitty bc unzip tmux dunst nemo dunst  eza
 
 # Deploy clash VPN
 echo "Deploying clash VPN"
@@ -67,6 +67,7 @@ tar -C "$myhome/.local/" -xvf clash_terminal.tar.gz && rm clash_terminal.tar.gz
 sudo bash "$myhome/.local/clash_terminal/start.sh" -u "$clash_url"
 . /etc/profile.d/clash.sh
 proxy_on
+echo "username ALL=(ALL) NOPASSWD: /home/ma/.local/clash_terminal/start.sh" >> /etc/sudoers
 echo "Proxy config done"
 
 export http_proxy=http://127.0.0.1:7890
@@ -98,20 +99,6 @@ git clone https://github.com/drscream/lemonbar-xft.git "$myhome/.local/lemonbar-
 # Update .bashrc
 
 content="
-function proxy_on() {
-        export http_proxy=http://127.0.0.1:7890
-        export https_proxy=http://127.0.0.1:7890
-        export no_proxy=127.0.0.1,localhost
-        export HTTP_PROXY=http://127.0.0.1:7890
-        export HTTPS_PROXY=http://127.0.0.1:7890
-        export NO_PROXY=127.0.0.1,localhost
-        echo -e \"proxy opened\"
-}
-
-function proxy_off(){
-        unset http_proxy https_proxy no_proxy HTTP_PROXY HTTPS_PROXY NO_PROXY
-        echo -e \"proxy closed\"
-}
 
 export GTK_IM_MODULE=ibus
 export QT_IM_MODULE=ibus
@@ -119,12 +106,12 @@ export XMODIFIERS=@im=ibus
 
 export PATH=\"\$PATH:/home/ma/.local/lemonbar\"
 
-alias vi="nvim"
-alias ls="eza"
+alias vi=\"nvim\"
+alias ls=\"eza\"
 "
 
 # Check if content already exists in .bashrc
-if ! grep -qF "function proxy_on()" "/home/ma/.bashrc"; then
+if ! grep -qF "ibus" "/home/ma/.bashrc"; then
     echo "$content" >> "/home/ma/.bashrc"
     echo "Vars added to .bashrc"
 else

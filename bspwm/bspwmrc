@@ -1,12 +1,12 @@
 #!/bin/sh
 sxhkd &
-dunst &
+(sleep 2 && dunst ) &
 feh --bg-scale /home/ma/.config/wall.png &
-ibus-daemon & 
+/home/ma/.local/clash_terminal/start.sh -u https://huahe.link/link/ug1nhgZZ0d7Wpzua?clash=2 &
 wechat &
 firefox &
 redshift -P -O 4200 &
-sudo bash /home/ma.local/clash_terminal/start.sh -u https://huahe.link/link/ug1nhgZZ0d7Wpzua?clash=2
+(sleep 2 && ibus-daemon -drx) &
 
 bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 

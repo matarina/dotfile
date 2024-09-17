@@ -2,13 +2,13 @@ __build_info:
   rime_version: 1.10.0
   timestamps:
     default: 1649520779
-    default.custom: 1726546870
+    default.custom: 1726560410
     key_bindings: 1649520779
     key_bindings.custom: 0
     punctuation: 1649520779
     punctuation.custom: 0
     ymfh.custom: 0
-    ymfh.schema: 1651219727
+    ymfh.schema: 1726560410
 menu:
   page_size: 5
 schema:

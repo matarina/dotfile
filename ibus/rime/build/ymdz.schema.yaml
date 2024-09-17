@@ -22,15 +22,15 @@ __build_info:
   rime_version: 1.10.0
   timestamps:
     default: 1649520779
-    default.custom: 1726546870
+    default.custom: 1726560410
     key_bindings: 1649520779
     key_bindings.custom: 0
     punctuation: 1649520779
     punctuation.custom: 0
-    symbols_for_ym: 1601111181
+    symbols_for_ym: 1726560410
     symbols_for_ym.custom: 0
     ymdz.custom: 0
-    ymdz.schema: 1651201601
+    ymdz.schema: 1726560410
 bihua_lookup:
   dictionary: bihua
   preedit_format:

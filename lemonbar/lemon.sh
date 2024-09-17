@@ -1,4 +1,5 @@
 #/bin/bash
+ip_interface=enp0s3
 ip_interface="enp0s3"
 
 bspwm() {
