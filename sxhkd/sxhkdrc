@@ -2,7 +2,7 @@ super + Return
     kitty
 
 super + e
-    thunar
+    nemo
 super + a
     rofi -show run
 
@@ -87,4 +87,4 @@ super + shift + 0
     bspc node -d '^10'
 
 super + p
-    bash ~/.config/polybar/toggle.sh
+    bash ~/.config/lemonbar/toggle.sh

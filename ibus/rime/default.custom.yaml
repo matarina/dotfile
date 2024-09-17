@@ -1,7 +1,7 @@
-
 patch:
-  menu:
-    page_size: 9
+  
   schema_list:
-    - schema: ym
+    - schema: ymdz
     - schema: cangjie5
+    - schema: bopomofo
+  

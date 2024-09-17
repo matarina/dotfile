@@ -1,0 +1,26 @@
+__build_info:
+  rime_version: 1.10.0
+  timestamps:
+    default: 1649520779
+    default.custom: 1726546870
+    key_bindings: 1649520779
+    key_bindings.custom: 0
+    punctuation: 1649520779
+    punctuation.custom: 0
+    ymfc.custom: 0
+    ymfc.schema: 1624588491
+menu:
+  page_size: 5
+schema:
+  author:
+    - "小泥巴"
+  description: |
+    伪方案，不能打字。
+    不要选我，不要修改本方案及配套词典。
+    仅用于辅助注解方案实现注解功能。
+
+  name: "【无须勾选】逸码反查"
+  schema_id: ymfc
+  version: alpha
+translator:
+  dictionary: ymfc

@@ -1,4 +1,5 @@
-#!/bin/bash
+#/bin/bash
+ip_interface="enp0s3"
 
 bspwm() {
     local all occupied current
@@ -54,13 +55,13 @@ network() {
     local rx_bytes tx_bytes rx_mb tx_mb
 
     # Read the initial values
-    read rx_bytes tx_bytes <<< $(grep enp2s0 /proc/net/dev | awk '{print $2, $10}')
+    read rx_bytes tx_bytes <<< $(grep $ip_interface /proc/net/dev | awk '{print $2, $10}')
     
     # Wait for 1 second
     sleep 1
     
     # Read the values again
-    read rx_bytes_new tx_bytes_new <<< $(grep enp2s0 /proc/net/dev | awk '{print $2, $10}')
+    read rx_bytes_new tx_bytes_new <<< $(grep $ip_interface /proc/net/dev | awk '{print $2, $10}')
     
     # Calculate the difference and convert to MB/s
     rx_mb=$(echo "scale=2; ($rx_bytes_new - $rx_bytes) / 1024 / 1024" | bc)
@@ -70,6 +71,6 @@ network() {
 
 
 while true; do
-    echo "%{l}$(bspwm)%{c}$(date "+%Y-%m-%d %H:%M:%S")%{r}$(network) | $(mem) | $(cpu)  "
+    echo "%{l}$(bspwm)%{c}$(date "+%H:%M-%d-%m")%{r}$(network) | $(mem) | $(cpu) "
     sleep 0.1
 done
