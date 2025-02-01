@@ -1,14 +1,11 @@
 #!/bin/bash
 
-# Exit on error
 set -e
-
-# Define variables
-USER_HOME="/home/debian"
+USER_HOME="/home/ma"
 FONT_DIR="$USER_HOME/.local/share/fonts"
 CONFIG_DIR="$USER_HOME/.config"
 
-# Install required packages
+####################### Install bspwm
 sudo apt update
 sudo apt install -y \
     fcitx5 \
@@ -29,7 +26,24 @@ sudo apt install -y \
     unzip \
     wget
 
-# Configure fcitx5
+echo "exec bspwm" >> $USER_HOME/.xinitrc
+
+
+
+####################### Install singbox
+sudo curl -fsSL https://sing-box.app/gpg.key -o /etc/apt/keyrings/sagernet.asc
+sudo chmod a+r /etc/apt/keyrings/sagernet.asc
+echo "deb [arch=`dpkg --print-architecture` signed-by=/etc/apt/keyrings/sagernet.asc] https://deb.sagernet.org/ * *" | \
+  sudo tee /etc/apt/sources.list.d/sagernet.list > /dev/null
+sudo apt-get update
+sudo apt-get install sing-box # or sing-box-beta
+
+sing-box run -c $USER_HOME/dotfile/config.json &
+export http_proxy="http://127.0.0.1:7890"
+export https_proxy="http://127.0.0.1:7890" 
+
+
+####################### Install fcitx5
 sudo tee -a /etc/environment << EOF
 GTK_IM_MODULE=fcitx
 QT_IM_MODULE=fcitx
@@ -44,9 +58,9 @@ cat > "$CONFIG_DIR/fcitx5/conf/classicui.conf" << EOF
 Vertical Candidate List=True
 PerScreenDPI=True
 WheelForPaging=True
-Font="Sans Bold 15"
-MenuFont="Sans Bold 15"
-TrayFont="Sans Bold 15"
+Font="Sans Bold 13"
+MenuFont="Sans Bold 13"
+TrayFont="Sans Bold 13"
 TrayOutlineColor=#000000
 TrayTextColor=#ffffff
 PreferTextIcon=False
@@ -84,10 +98,8 @@ if [ -d "$USER_HOME/dotfile/macOS-dark" ]; then
     cp -r "$USER_HOME/dotfile/macOS-dark/" "$USER_HOME/.local/share/fcitx5/themes"
 fi
 
-# Configure X11
-echo "exec bspwm" > "$USER_HOME/.xinitrc"
 
-# Install Kitty terminal
+####################### Install kitty
 curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 
 # Install Neovim
@@ -109,18 +121,5 @@ unzip Hack.zip -d "$FONT_DIR/Hack"
 rm Hack.zip
 fc-cache -f
 
-# Install Dracula theme
-mkdir -p "$USER_HOME/.themes" "$USER_HOME/.icons"
-wget https://github.com/dracula/gtk/archive/master.zip -O dracula-gtk.zip
-unzip dracula-gtk.zip
-mv gtk-master "$USER_HOME/.themes/Dracula"
 
-wget https://github.com/dracula/gtk/files/5214870/Dracula.zip -O dracula-icons.zip
-unzip dracula-icons.zip
-mv Dracula "$USER_HOME/.icons/"
-rm dracula-gtk.zip dracula-icons.zip
-
-
-echo "Setup complete! Please log out and log back in, or run: source ~/.bashrc"
-
-
+cp -r $USER_HOME/dotfile/.config $USER_HOME/

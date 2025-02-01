@@ -1,10 +1,11 @@
 #!/bin/sh
 sxhkd &
+fcitx5 &
+feh --bg-scale /home/ma/.config/wall.png &
+redshift -P -O 4200 &
 #(sleep 2 && dunst ) &
-#feh --bg-scale /home/ma/.config/wall.png &
 #wechat &
 #firefox &
-#redshift -P -O 4200 &
 
 bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 
