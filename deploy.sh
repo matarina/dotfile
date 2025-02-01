@@ -3,10 +3,19 @@
 # Define the target user's home directory
 USER_HOME="/home/debian"
 
-# fcitx5 config
-sudo apt update
-sudo apt install -y fcitx5 fcitx5-rime
 
+#############singbox install
+sudo curl -fsSL https://sing-box.app/gpg.key -o /etc/apt/keyrings/sagernet.asc
+sudo chmod a+r /etc/apt/keyrings/sagernet.asc
+echo "deb [arch=`dpkg --print-architecture` signed-by=/etc/apt/keyrings/sagernet.asc] https://deb.sagernet.org/ * *" | \
+  sudo tee /etc/apt/sources.list.d/sagernet.list > /dev/null
+sudo apt-get update
+sudo apt-get install sing-box # or sing-box-beta
+
+
+#############rime install
+# fcitx5 config
+sudo apt install -y fcitx5 fcitx5-rime
 
 # Append environment variables to the user's profile
 sudo echo "GTK_IM_MODULE=fcitx" >> /etc/environment
@@ -69,10 +78,6 @@ Layout=
 [GroupOrder]
 0=Default
 EOF
-
-
-
-
 
 # Create the directory for rime configuration and copy files
 mkdir -p "$USER_HOME/.local/share/fcitx5/themes"

@@ -1,0 +1,112 @@
+{
+  "log": {
+    "level": "info",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "local",
+        "address": "223.5.5.5",
+        "detour": "direct"
+      },
+      {
+        "tag": "remote",
+        "address": "8.8.8.8",
+        "detour": "auto"
+      }
+    ],
+    "rules": [],
+    "strategy": "ipv4_only",
+    "disable_cache": false,
+    "disable_expire": false
+  },
+  "inbounds": [
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "::",
+      "listen_port": 7890
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "shadowsocks",
+      "tag": "jms-s1",
+      "server": "c83s1.portablesubmarines.com",
+      "server_port": 7858,
+      "method": "aes-256-gcm",
+      "password": "4eM5FxA6hdnMFDyv"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "jms-s2",
+      "server": "c83s2.portablesubmarines.com",
+      "server_port": 7858,
+      "method": "aes-256-gcm",
+      "password": "4eM5FxA6hdnMFDyv"
+    },
+    {
+      "type": "vmess",
+      "tag": "jms-s3",
+      "server": "c83s3.portablesubmarines.com",
+      "server_port": 7858,
+      "uuid": "d072dd85-16aa-40e1-8c1b-4d35bfa40861",
+      "security": "chacha20-poly1305",
+      "alter_id": 0,
+      "network": "tcp"
+    },
+    {
+      "type": "vmess",
+      "tag": "jms-s4",
+      "server": "c83s4.portablesubmarines.com",
+      "server_port": 7858,
+      "uuid": "d072dd85-16aa-40e1-8c1b-4d35bfa40861",
+      "security": "chacha20-poly1305",
+      "alter_id": 0,
+      "network": "tcp"
+    },
+    {
+      "type": "vmess",
+      "tag": "jms-s5",
+      "server": "c83s5.portablesubmarines.com",
+      "server_port": 7858,
+      "uuid": "d072dd85-16aa-40e1-8c1b-4d35bfa40861",
+      "security": "chacha20-poly1305",
+      "alter_id": 0,
+      "network": "tcp"
+    },
+    {
+      "type": "vmess",
+      "tag": "jms-s801",
+      "server": "c83s801.portablesubmarines.com",
+      "server_port": 7858,
+      "uuid": "d072dd85-16aa-40e1-8c1b-4d35bfa40861",
+      "security": "chacha20-poly1305",
+      "alter_id": 0,
+      "network": "tcp"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "inbound": ["mixed-in"],
+        "outbound": "jms-s1"
+      }
+    ],
+    "auto_detect_interface": true,
+    "final": "jms-s1"
+}
+}
