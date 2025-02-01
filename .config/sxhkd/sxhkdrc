@@ -3,6 +3,7 @@ super + Return
 
 super + e
     nemo
+
 super + a
     rofi -show run
 
