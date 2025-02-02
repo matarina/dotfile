@@ -64,7 +64,8 @@
         "domain_suffix": [
           ".cn",
           "baidu.com",
-          "qq.com"
+          "qq.com",
+		"yuque.com"
         ],
         "port": [
 		22,
