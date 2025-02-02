@@ -15,8 +15,7 @@ stalonetray \
     --kludges=force_icons_size \
     --background "#0E0D0D" \
     --icon-gravity NE \
-    --grow-gravity NE 
-    &
+    --grow-gravity NE &
 
 # Keep the script running
 wait

@@ -1,77 +1,114 @@
-#/bin/bash
-ip_interface=enp0s3
-ip_interface="enp0s3"
+#!/bin/bash
 
+# Automatic network interface detection
+get_active_interface() {
+    # Try to find the interface with the default route first
+    local default_iface=$(ip route | awk '/default/ {print $5}')
+    if [[ -n "$default_iface" ]]; then
+        echo "$default_iface"
+        return
+    fi
+    
+    # Fallback to first active interface with RX bytes > 0
+    awk -F: 'NR > 2 {if ($2 > 0) {print $1; exit}}' /proc/net/dev
+}
+
+ip_interface=$(get_active_interface)
+
+# Color definitions
+readonly CD_BACKGROUND="#0E0D0D"
+readonly CD_FOREGROUND="#f8f8ff"
+readonly CD_UNDERLINE="#1d1f21"
+readonly CO_UNDERLINE="#00ff99"
+readonly CF_UNDERLINE="#ff0066"
+readonly CF_BACKGROUND="#ff0066"
+readonly CF_FOREGROUND="#FFFFFF"
+readonly PADDING=" "
+
+# Cache bspc query results
 bspwm() {
-    local all occupied current
-    all=$(bspc query -D)
-    occupied=$(bspc query -D -d .occupied)
-    current=$(bspc query -D -d .focused)
+    local all_desktops occupied_desktops current_desktop
+    all_desktops=$(bspc query -D)
+    occupied_desktops=$(bspc query -D -d .occupied)
+    current_desktop=$(bspc query -D -d .focused)
 
-    local -r cdBACKGROUND="#0E0D0D" cdFOREGROUND="#f8f8ff" cdUNDERLINE="#1d1f21" 
-    local -r coUNDERLINE="#00ff99" cfUNDERLINE="#ff0066"
-    local -r cfBACKGROUND="#ff0066" cfFOREGROUND="#FFFFFF"
-    local -r padding=" "
+    local result="%{B$CD_BACKGROUND}%{F$CD_FOREGROUND}"
 
-    local result="%{B$cdBACKGROUND}%{F$cdFOREGROUND}"
-
-    while read -r line; do
+    while IFS= read -r desktop; do
         local name underline bg fg
-        name=$(bspc query -d "$line" -D --names)
-        if [[ "$current" == "$line" ]]; then
-            underline="$cfUNDERLINE"
-            bg="$cfBACKGROUND"
-            fg="$cfFOREGROUND"
-        elif [[ "$occupied" == *"$line"* ]]; then
-            underline="$coUNDERLINE"
-            bg="$cdBACKGROUND"
-            fg="$cdFOREGROUND"
+        name=$(bspc query -d "$desktop" -D --names)
+        
+        if [[ "$desktop" == "$current_desktop" ]]; then
+            underline="$CF_UNDERLINE"
+            bg="$CF_BACKGROUND"
+            fg="$CF_FOREGROUND"
+        elif [[ "$occupied_desktops" =~ "$desktop" ]]; then
+            underline="$CO_UNDERLINE"
+            bg="$CD_BACKGROUND"
+            fg="$CD_FOREGROUND"
         else
-            underline="$cdUNDERLINE"
-            bg="$cdBACKGROUND"
-            fg="$cdFOREGROUND"
+            underline="$CD_UNDERLINE"
+            bg="$CD_BACKGROUND"
+            fg="$CD_FOREGROUND"
         fi
 
         result+="%{B$bg}%{F$fg}%{U$underline}%{+u}"
-        result+="$padding$name$padding"
+        result+="$PADDING$name$PADDING"
         result+="%{-u}%{B-}%{F-}"
-    done <<< "$all"
+    done <<< "$all_desktops"
 
-    result+="%{B-}%{F-}"
-    echo "$result"
+    echo -n "${result}%{B-}%{F-}"
 }
 
 cpu() {
-    usage=$(awk '/^cpu / {usage=($2+$4)*100/($2+$4+$5); printf "%.1f", usage}' /proc/stat)
-    echo -e '\uf4bc' "$usage%"
+    awk '/^cpu / {usage=($2+$4)*100/($2+$4+$5); printf " %.1f%%", usage}' /proc/stat
 }
 
 mem() {
-    mem_info=$(free -h | awk '/^Mem:/ {print $3 "/" $2}')
-    echo -e '\uf51e' "$mem_info"
+    free -m | awk '/Mem:/ {printf " %s/%sMB", $3, $2}'
 }
-
 
 network() {
-    local rx_bytes tx_bytes rx_mb tx_mb
+    [[ -z "$ip_interface" ]] && { echo " No Interface"; return; }
 
-    # Read the initial values
-    read rx_bytes tx_bytes <<< $(grep $ip_interface /proc/net/dev | awk '{print $2, $10}')
-    
-    # Wait for 1 second
-    sleep 1
-    
-    # Read the values again
-    read rx_bytes_new tx_bytes_new <<< $(grep $ip_interface /proc/net/dev | awk '{print $2, $10}')
-    
-    # Calculate the difference and convert to MB/s
-    rx_mb=$(echo "scale=2; ($rx_bytes_new - $rx_bytes) / 1024 / 1024" | bc)
-    tx_mb=$(echo "scale=2; ($tx_bytes_new - $tx_bytes) / 1024 / 1024" | bc)
-    echo -e '\ueac2' "${rx_mb} MB/s"  '\ueac3' "${tx_mb} MB/s"
+    # Use a temporary file to store previous values
+    local tmp_file="/tmp/network_stats_${ip_interface}"
+    local rx_bytes tx_bytes now
+
+    # Read current values
+    read rx_bytes tx_bytes <<< $(awk -v iface="$ip_interface" '$0 ~ iface ":" {print $2, $10}' /proc/net/dev)
+    now=$(date +%s)
+
+    # Read previous values if they exist
+    if [[ -f "$tmp_file" ]]; then
+        local prev_rx prev_tx prev_time
+        read prev_rx prev_tx prev_time < "$tmp_file"
+        
+        local interval=$((now - prev_time))
+        if (( interval > 0 )); then
+            local rx_rate=$(( (rx_bytes - prev_rx) / interval / 1024 ))
+            local tx_rate=$(( (tx_bytes - prev_tx) / interval / 1024 ))
+            echo " ${rx_rate}KB/s  ${tx_rate}KB/s"
+        fi
+    fi
+
+    # Save current values for next run
+    echo "$rx_bytes $tx_bytes $now" > "$tmp_file"
 }
 
-
 while true; do
-    echo "%{l}$(bspwm)%{c}$(date "+%H:%M-%d-%m")%{r}$(network) | $(mem) | $(cpu) "
-    sleep 0.1
+    # Update network interface periodically (every 60 seconds)
+    (( ${SECONDS} % 60 == 0 )) && ip_interface=$(get_active_interface)
+
+    printf "%%{l}%s%%{c}%s%%{r}%s | %s | %s \n" \
+        "$(bspwm)" \
+        "$(date "+%H:%M-%d-%m")" \
+        "$(network)" \
+        "$(mem)" \
+        "$(cpu)"
+    
+    sleep 1
 done
+
+
+
