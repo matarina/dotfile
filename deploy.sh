@@ -4,12 +4,17 @@ FONT_DIR="$USER_HOME/.local/share/fonts"
 CONFIG_DIR="$USER_HOME/.config"
 
 ####################### Install bspwm
+sudo sed  '/^deb\|^deb-src/ s|$| contrib non-free|' /etc/apt/sources.list
 sudo apt update
+
+if lspci | grep -i nvidia &> /dev/null; then
+    sudo apt install nvidia-driver
 sudo apt install -y \
-    fcitx5 \
+    fcitx5 xclip libnotify-bin\
+    pulseaudio pulseaudio-utils pavucontrol\
     fcitx5-rime \
     build-essential \
-    git \
+    git picom\
     curl \
     tree \
     bspwm \
@@ -18,20 +23,17 @@ sudo apt install -y \
     xinit \
     feh \
     firefox-esr \
-    stalonetray \
     redshift \
     dunst \
-    nemo \
-    unzip \
+    nemo  scrot \
+    unzip papirus-icon-theme \
     wget build-essential pkg-config \
     libxcb1-dev libxcb-xinerama0-dev libxcb-randr0-dev \
-    libxcb-xft-dev libx11-xcb-dev libxft-dev \
+    libx11-xcb-dev libxft-dev \
     libfreetype6-dev libfontconfig1-dev \
     libxinerama-dev libxcb-util0-dev
 
 echo "exec bspwm" >> $USER_HOME/.xinitrc
-
-
 
 ####################### Install singbox
 sudo curl -fsSL https://sing-box.app/gpg.key -o /etc/apt/keyrings/sagernet.asc
@@ -41,30 +43,31 @@ echo "deb [arch=`dpkg --print-architecture` signed-by=/etc/apt/keyrings/sagernet
 sudo apt-get update
 sudo apt-get install sing-box # or sing-box-beta
 
-sing-box run -c $USER_HOME/dotfile/config.json &
-export http_proxy="http://127.0.0.1:7890"
-export https_proxy="http://127.0.0.1:7890" 
-
-
+mkdir -p $USER_HOME/.local/singbox
+curl -fsSL -o $USER_HOME/.local/singbox/config.json 1.94.105.129:8888/config.json
+sing-box run -c $USER_HOME/.local/singbox/config.json &
+git config --global http.proxy "http://127.0.0.1:7890"
+git config --global https.proxy "http://127.0.0.1:7890"
 
 git clone https://github.com/matarina/dotfile.git "$USER_HOME/dotfile"
 
+echo "####################### Install lemonbar"
+if [ ! -d "$USER_HOME/.local/lemonbar-xft" ]; then
+    git clone https://github.com/drscream/lemonbar-xft.git "$USER_HOME/.local/lemonbar-xft"
+    (cd "$USER_HOME/.local/lemonbar-xft" && make && sudo make install)
+fi
 
-####################### Install lemonbar
-git clone https://github.com/drscream/lemonbar-xft.git "$USER_HOME/.local/lemonbar-xft"
-(cd "$USER_HOME/.local/lemonbar-xft" && make && sudo make install)
-
-
-
-
-
-
-
-
-
-
-
-
+echo "####################### Install stalonetray from source"
+git clone https://github.com/kolbusa/stalonetray.git "$USER_HOME/stalonetray"
+cd "$USER_HOME/stalonetray"
+# Install dependencies for building stalonetray
+sudo apt install autoconf automake docbook-xsl libxpm-dev libx11-dev xsltproc
+aclocal && autoheader && autoconf && automake --add-missing
+./configure
+make
+sudo make install
+cd ..
+rm -rf stalonetray
 
 ####################### Install fcitx5
 sudo tee -a /etc/environment << EOF
@@ -121,7 +124,6 @@ if [ -d "$USER_HOME/dotfile/macOS-dark" ]; then
     cp -r "$USER_HOME/dotfile/macOS-dark/" "$USER_HOME/.local/share/fcitx5/themes"
 fi
 
-
 ####################### Install kitty
 curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 
@@ -166,6 +168,7 @@ unzip Hack.zip -d "$FONT_DIR/Hack"
 rm Hack.zip
 fc-cache -f
 
-
 cp -r $USER_HOME/dotfile/.config $USER_HOME/
-rm -r $USER_HOME/dotfile/
+rm -rf $USER_HOME/dotfile/
+
+

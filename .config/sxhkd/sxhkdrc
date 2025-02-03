@@ -1,91 +1,80 @@
+#
+# wm independent hotkeys
+#
+
+# terminal emulator
 super + Return
-    kitty
+        notify-send "Test" "Key combination works"
 
-super + e
-    nemo
-
+# program launcher
 super + a
     rofi -show run
 
-super + alt + p
-    shutdown now
+# file manager
+super + e
+    nemo
 
+# browser
 super + shift + u
     firefox
 
+# screenshot (changed from super + w to Print key)
+# # screenshot
+super + v
+        notify-send "Test" "Key combination works"
+
+#
+# bspwm hotkeys
+#
+
+# quit/restart bspwm
 super + alt + r
     bspc wm -r
 
-super + {1-9,0}
-    bspc desktop -f '^{1-9,10}'
-
-super + f
-   bspc node -t fullscreen
-
-super + h
-    bspc node -f west
-
-super + j
-    bspc node -f south
-
-super + k
-    bspc node -f north
-
-super + l
-    bspc node -f east
-
+# close window
 super + q
     bspc node -c
 
-super + shift + h
-    bspc node -s west
+# toggle fullscreen
+super + f
+   bspc node -t fullscreen
 
-super + shift + j
-    bspc node -s south
+# focus/swap
+super + {h,j,k,l}
+    bspc node -f {west,south,north,east}
 
-super + shift + k
-    bspc node -s north
+super + shift + {h,j,k,l}
+    bspc node -s {west,south,north,east}
 
-super + shift + l
-    bspc node -s east
-
+# resize windows
 super + alt + {h,j,k,l}
-  bspc node -z {left -20 0 || bspc node -z right -20 0, \
-                bottom 0 20 || bspc node -z top 0 20,\
-                top 0 -20 || bspc node -z bottom 0 -20,\
-                right 20 0 || bspc node -z left 20 0}
+    bspc node -z {left -20 0 || bspc node -z right -20 0,\
+                  bottom 0 20 || bspc node -z top 0 20,\
+                  top 0 -20 || bspc node -z bottom 0 -20,\
+                  right 20 0 || bspc node -z left 20 0}
 
+#
+# desktop switching
+#
 
-# Move the focused window to desktop 1
-super + shift + 1
-    bspc node -d '^1'
-# Move the focused window to desktop 2
-super + shift + 2
-    bspc node -d '^2'
-# Move the focused window to desktop 3
-super + shift + 3
-    bspc node -d '^3'
-# Move the focused window to desktop 4
-super + shift + 4
-    bspc node -d '^4'
-# Move the focused window to desktop 5
-super + shift + 5
-    bspc node -d '^5'
-# Move the focused window to desktop 6
-super + shift + 6
-    bspc node -d '^6'
-# Move the focused window to desktop 7
-super + shift + 7
-    bspc node -d '^7'
-# Move the focused window to desktop 8
-super + shift + 8
-    bspc node -d '^8'
-# Move the focused window to desktop 9
-super + shift + 9
-    bspc node -d '^9'
-# Move the focused window to desktop 10
-super + shift + 0
-    bspc node -d '^10'
+# focus desktop
+super + {1-9,0}
+    bspc desktop -f '^{1-9,10}'
 
+# send to desktop
+super + shift + {1-9,0}
+    bspc node -d '^{1-9,10}'
+
+#
+# system controls
+#
+
+# toggle bar
 super + p
     bash ~/.config/lemonbar/toggle.sh
+
+# shutdown
+super + alt + p
+    shutdown nowsuper
+
+

@@ -1,23 +1,138 @@
 configuration {
-    font: "Envy Code R 10";
-    line-margin: 10;
-
-    display-ssh:    "";
-    display-run:    "";
-    display-drun:   "";
-    display-window: "";
-    display-combi:  "";
-    show-icons:     true;
+    modi: "drun,run,window,ssh";
+    font: "Hack Nerd Font 12";
+    show-icons: true;
+    icon-theme: "Papirus";
+    drun-display-format: "{icon} {name}";
+    disable-history: false;
+    sidebar-mode: true;
+    display-drun: "   Apps";
+    display-run: "   Run";
+    display-window: "   Windows";
+    display-ssh: "   SSH";
+    terminal: "alacritty";
 }
 
-
-@theme "~/.config/rofi/nord.rasi"
-
-listview {
-	lines: 6;
-	columns: 2;
+* {
+    /* Colors */
+    bg0:    #2E3440F2;
+    bg1:    #3B4252;
+    bg2:    #4C566A80;
+    bg3:    #88C0D0F2;
+    fg0:    #D8DEE9;
+    fg1:    #ECEFF4;
+    fg2:    #D8DEE9;
+    fg3:    #4C566A;
+    accent: #88C0D0;
+    urgent: #BF616A;
+    
+    /* Base styling */
+    background-color: transparent;
+    text-color: @fg0;
+    spacing: 0;
+    width: 700px;
+    font: inherit;
 }
 
 window {
-	width: 30%;
+    background-color: @bg0;
+    border: 3px;
+    border-color: @bg3;
+    border-radius: 12px;
+    padding: 6px;
+    transparency: "real";
+}
+
+mainbox {
+    padding: 10px;
+}
+
+inputbar {
+    background-color: @bg1;
+    border-radius: 8px;
+    margin: 4px 4px 16px 4px;
+    padding: 8px 12px;
+    spacing: 8px;
+    children: [ icon-search, entry ];
+}
+
+icon-search {
+    expand: false;
+    filename: "search-symbolic";
+    size: 18px;
+}
+
+entry {
+    placeholder: "Search...";
+    placeholder-color: @fg3;
+}
+
+message {
+    margin: 4px;
+    padding: 8px 12px;
+}
+
+textbox {
+    background-color: @bg1;
+    border-radius: 8px;
+}
+
+listview {
+    background-color: transparent;
+    margin: 4px;
+    lines: 8;
+    columns: 1;
+    fixed-height: true;
+    spacing: 4px;
+}
+
+element {
+    padding: 8px 12px;
+    spacing: 8px;
+    border-radius: 8px;
+}
+
+element normal urgent {
+    text-color: @urgent;
+}
+
+element normal active {
+    text-color: @accent;
+}
+
+element selected {
+    background-color: @bg3;
+    text-color: @bg1;
+}
+
+element selected urgent {
+    background-color: @urgent;
+}
+
+element-icon {
+    size: 1.1em;
+    vertical-align: 0.5;
+}
+
+element-text {
+    text-color: inherit;
+    vertical-align: 0.5;
+}
+
+mode-switcher {
+    margin: 4px 0 0 0;
+    padding: 4px;
+    spacing: 4px;
+}
+
+button {
+    background-color: @bg1;
+    border-radius: 8px;
+    padding: 8px 12px;
+    text-color: @fg0;
+}
+
+button selected {
+    background-color: @bg3;
+    text-color: @bg1;
 }

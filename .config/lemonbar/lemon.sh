@@ -19,9 +19,9 @@ ip_interface=$(get_active_interface)
 readonly CD_BACKGROUND="#0E0D0D"
 readonly CD_FOREGROUND="#f8f8ff"
 readonly CD_UNDERLINE="#1d1f21"
-readonly CO_UNDERLINE="#00ff99"
-readonly CF_UNDERLINE="#ff0066"
-readonly CF_BACKGROUND="#ff0066"
+readonly CO_UNDERLINE="#259C6D"
+readonly CF_UNDERLINE="#D76418"
+readonly CF_BACKGROUND="#D76418"
 readonly CF_FOREGROUND="#FFFFFF"
 readonly PADDING=" "
 
@@ -32,10 +32,12 @@ bspwm() {
     occupied_desktops=$(bspc query -D -d .occupied)
     current_desktop=$(bspc query -D -d .focused)
 
+    readonly CO_BACKGROUND="#2E8B57"
+
     local result="%{B$CD_BACKGROUND}%{F$CD_FOREGROUND}"
 
     while IFS= read -r desktop; do
-        local name underline bg fg
+        local name bg fg underline
         name=$(bspc query -d "$desktop" -D --names)
         
         if [[ "$desktop" == "$current_desktop" ]]; then
@@ -43,18 +45,24 @@ bspwm() {
             bg="$CF_BACKGROUND"
             fg="$CF_FOREGROUND"
         elif [[ "$occupied_desktops" =~ "$desktop" ]]; then
-            underline="$CO_UNDERLINE"
-            bg="$CD_BACKGROUND"
+            bg="$CO_BACKGROUND"
             fg="$CD_FOREGROUND"
+            underline=""
         else
-            underline="$CD_UNDERLINE"
             bg="$CD_BACKGROUND"
             fg="$CD_FOREGROUND"
+            underline=""
         fi
 
-        result+="%{B$bg}%{F$fg}%{U$underline}%{+u}"
+        result+="%{B$bg}%{F$fg}"
+        if [[ "$desktop" == "$current_desktop" ]]; then
+            result+="%{U$underline}%{+u}"
+        fi
         result+="$PADDING$name$PADDING"
-        result+="%{-u}%{B-}%{F-}"
+        if [[ "$desktop" == "$current_desktop" ]]; then
+            result+="%{-u}"
+        fi
+        result+="%{B-}%{F-}"
     done <<< "$all_desktops"
 
     echo -n "${result}%{B-}%{F-}"
@@ -64,51 +72,74 @@ cpu() {
     awk '/^cpu / {usage=($2+$4)*100/($2+$4+$5); printf " %.1f%%", usage}' /proc/stat
 }
 
-mem() {
-    free -m | awk '/Mem:/ {printf " %s/%sMB", $3, $2}'
-}
 
 network() {
-    [[ -z "$ip_interface" ]] && { echo " No Interface"; return; }
+    [[ -z "$ip_interface" ]] && { echo " No Interface"; return; }
 
-    # Use a temporary file to store previous values
     local tmp_file="/tmp/network_stats_${ip_interface}"
     local rx_bytes tx_bytes now
 
-    # Read current values
     read rx_bytes tx_bytes <<< $(awk -v iface="$ip_interface" '$0 ~ iface ":" {print $2, $10}' /proc/net/dev)
     now=$(date +%s)
 
-    # Read previous values if they exist
+    # Initialize with zeros if no previous data
+    local rx_rate="0.0"
+    local tx_rate="0.0"
+
     if [[ -f "$tmp_file" ]]; then
         local prev_rx prev_tx prev_time
         read prev_rx prev_tx prev_time < "$tmp_file"
         
         local interval=$((now - prev_time))
         if (( interval > 0 )); then
-            local rx_rate=$(( (rx_bytes - prev_rx) / interval / 1024 ))
-            local tx_rate=$(( (tx_bytes - prev_tx) / interval / 1024 ))
-            echo " ${rx_rate}KB/s  ${tx_rate}KB/s"
+            rx_rate=$(awk -v diff="$((rx_bytes - prev_rx))" -v intv="$interval" 'BEGIN { printf "%.1f", diff / intv / 1048576 }')
+            tx_rate=$(awk -v diff="$((tx_bytes - prev_tx))" -v intv="$interval" 'BEGIN { printf "%.1f", diff / intv / 1048576 }')
         fi
     fi
 
-    # Save current values for next run
     echo "$rx_bytes $tx_bytes $now" > "$tmp_file"
+    
+    # Use printf to ensure consistent spacing
+    printf " %5.1fMB/s  %5.1fMB/s" "$rx_rate" "$tx_rate"
 }
 
-while true; do
-    # Update network interface periodically (every 60 seconds)
-    (( ${SECONDS} % 60 == 0 )) && ip_interface=$(get_active_interface)
 
+
+mem() {
+    free -m | awk '/Mem:/ {printf " %.1f/%.1fGB", $3/1024, $2/1024}'
+}
+
+# Cache for metrics that update every second
+declare -A metrics
+metrics[date]=""
+metrics[network]=""
+metrics[mem]=""
+metrics[cpu]=""
+last_update=0
+
+while true; do
+    current_time=$(date +%s)
+    
+    # Update network interface every 60 seconds
+    (( current_time % 60 == 0 )) && ip_interface=$(get_active_interface)
+    
+    # Update 1-second metrics
+    if (( current_time > last_update )); then
+        metrics[date]="$(date "+%H:%M-%d-%m")"
+        metrics[network]="$(network)"
+        metrics[mem]="$(mem)"
+        metrics[cpu]="$(cpu)"
+        last_update=$current_time
+    fi
+
+    # Print the bar with cached metrics and fresh bspwm data
     printf "%%{l}%s%%{c}%s%%{r}%s | %s | %s \n" \
         "$(bspwm)" \
-        "$(date "+%H:%M-%d-%m")" \
-        "$(network)" \
-        "$(mem)" \
-        "$(cpu)"
+        "${metrics[date]}" \
+        "${metrics[network]}" \
+        "${metrics[mem]}" \
+        "${metrics[cpu]}"
     
-    sleep 1
+    sleep 0.1
 done
-
-
 

@@ -17,6 +17,6 @@ else
     $START_BAR_SCRIPT &
     
     # Set bspwm top padding (adjust 30 to match your bar height)
-    bspc config top_padding 30
+    bspc config top_padding 20
 fi
 
