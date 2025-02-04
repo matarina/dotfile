@@ -4,7 +4,7 @@ fcitx5 &
 feh --bg-scale /home/ma/.config/wall.png &
 redshift -P -O 3600 &
 (sleep 2 && dunst ) &
-(sleep 2 && picom --experimental-backends --config ~/.config/picom/picom.conf) &
+(sleep 2 && picom) &
 #wechat &
 #firefox &
 

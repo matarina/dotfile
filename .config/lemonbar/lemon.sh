@@ -100,13 +100,13 @@ network() {
     echo "$rx_bytes $tx_bytes $now" > "$tmp_file"
     
     # Use printf to ensure consistent spacing
-    printf " %5.1fMB/s  %5.1fMB/s" "$rx_rate" "$tx_rate"
+    printf " %2.1fMB/s  %2.1fMB/s" "$rx_rate" "$tx_rate"
 }
 
 
 
 mem() {
-    free -m | awk '/Mem:/ {printf " %.1f/%.1fGB", $3/1024, $2/1024}'
+    free -m | awk '/Mem:/ {printf " %.1f/%.1fGB", $3/1024, $2/1024}'
 }
 
 # Cache for metrics that update every second
@@ -133,7 +133,7 @@ while true; do
     fi
 
     # Print the bar with cached metrics and fresh bspwm data
-    printf "%%{l}%s%%{c}%s%%{r}%s | %s | %s \n" \
+    printf "%%{l}%s%%{c}%s%%{r}%s %s %s \n" \
         "$(bspwm)" \
         "${metrics[date]}" \
         "${metrics[network]}" \

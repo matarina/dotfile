@@ -1,3 +1,4 @@
+#!/bin/bash
 set -e
 USER_HOME="${HOME}"
 FONT_DIR="$USER_HOME/.local/share/fonts"
@@ -9,6 +10,7 @@ sudo apt update
 
 if lspci | grep -i nvidia &> /dev/null; then
     sudo apt install nvidia-driver
+fi
 sudo apt install -y \
     fcitx5 xclip libnotify-bin\
     pulseaudio pulseaudio-utils pavucontrol\
@@ -46,6 +48,7 @@ sudo apt-get install sing-box # or sing-box-beta
 mkdir -p $USER_HOME/.local/singbox
 curl -fsSL -o $USER_HOME/.local/singbox/config.json 1.94.105.129:8888/config.json
 sing-box run -c $USER_HOME/.local/singbox/config.json &
+
 git config --global http.proxy "http://127.0.0.1:7890"
 git config --global https.proxy "http://127.0.0.1:7890"
 
@@ -125,6 +128,8 @@ if [ -d "$USER_HOME/dotfile/macOS-dark" ]; then
 fi
 
 ####################### Install kitty
+export http_proxy=http://127.0.0.1:7890
+export https_proxy=http://127.0.0.1:7890
 curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 
 # Install Neovim
@@ -171,4 +176,34 @@ fc-cache -f
 cp -r $USER_HOME/dotfile/.config $USER_HOME/
 rm -rf $USER_HOME/dotfile/
 
+
+
+echo "Removing existing Docker packages..."
+for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do
+    sudo apt-get remove -y $pkg
+done
+
+echo "Downloading Docker packages..."
+curl --tlsv1.2 -O https://download.docker.com/linux/debian/dists/bookworm/pool/stable/amd64/containerd.io_1.7.25-1_amd64.deb
+curl --tlsv1.2 -O https://download.docker.com/linux/debian/dists/bookworm/pool/stable/amd64/docker-buildx-plugin_0.20.0-1~debian.12~bookworm_amd64.deb
+curl --tlsv1.2 -O https://download.docker.com/linux/debian/dists/bookworm/pool/stable/amd64/docker-ce-cli_27.5.1-1~debian.12~bookworm_amd64.deb
+curl --tlsv1.2 -O https://download.docker.com/linux/debian/dists/bookworm/pool/stable/amd64/docker-ce_27.5.1-1~debian.12~bookworm_amd64.deb
+curl --tlsv1.2 -O https://download.docker.com/linux/debian/dists/bookworm/pool/stable/amd64/docker-compose-plugin_2.32.4-1~debian.12~bookworm_amd64.deb
+
+echo "Installing Docker packages..."
+sudo dpkg -i containerd.io_1.7.25-1_amd64.deb \
+            docker-ce_27.5.1-1~debian.12~bookworm_amd64.deb \
+            docker-ce-cli_27.5.1-1~debian.12~bookworm_amd64.deb \
+            docker-buildx-plugin_0.20.0-1~debian.12~bookworm_amd64.deb \
+            docker-compose-plugin_2.32.4-1~debian.12~bookworm_amd64.deb
+
+echo "Starting Docker service..."
+sudo service docker start
+
+echo "Cleaning up downloaded files..."
+rm -f containerd.io_1.7.25-1_amd64.deb \
+      docker-ce_27.5.1-1~debian.12~bookworm_amd64.deb \
+      docker-ce-cli_27.5.1-1~debian.12~bookworm_amd64.deb \
+      docker-buildx-plugin_0.20.0-1~debian.12~bookworm_amd64.deb \
+      docker-compose-plugin_2.32.4-1~debian.12~bookworm_amd64.deb
 
