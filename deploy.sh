@@ -14,7 +14,7 @@ fi
 sudo apt install -y \
     fcitx5 xclip libnotify-bin\
     pulseaudio pulseaudio-utils pavucontrol\
-    fcitx5-rime \
+    fcitx5-rime  dbus-x11\
     build-essential \
     git picom\
     curl \
@@ -22,7 +22,7 @@ sudo apt install -y \
     bspwm \
     sxhkd \
     xorg \
-    xinit \
+    xinit axel \
     feh \
     firefox-esr \
     redshift \
@@ -184,11 +184,11 @@ for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do
 done
 
 echo "Downloading Docker packages..."
-curl --tlsv1.2 -O https://download.docker.com/linux/debian/dists/bookworm/pool/stable/amd64/containerd.io_1.7.25-1_amd64.deb
-curl --tlsv1.2 -O https://download.docker.com/linux/debian/dists/bookworm/pool/stable/amd64/docker-buildx-plugin_0.20.0-1~debian.12~bookworm_amd64.deb
-curl --tlsv1.2 -O https://download.docker.com/linux/debian/dists/bookworm/pool/stable/amd64/docker-ce-cli_27.5.1-1~debian.12~bookworm_amd64.deb
-curl --tlsv1.2 -O https://download.docker.com/linux/debian/dists/bookworm/pool/stable/amd64/docker-ce_27.5.1-1~debian.12~bookworm_amd64.deb
-curl --tlsv1.2 -O https://download.docker.com/linux/debian/dists/bookworm/pool/stable/amd64/docker-compose-plugin_2.32.4-1~debian.12~bookworm_amd64.deb
+axel  https://download.docker.com/linux/debian/dists/bookworm/pool/stable/amd64/containerd.io_1.7.25-1_amd64.deb
+axel https://download.docker.com/linux/debian/dists/bookworm/pool/stable/amd64/docker-buildx-plugin_0.20.0-1~debian.12~bookworm_amd64.deb
+axel https://download.docker.com/linux/debian/dists/bookworm/pool/stable/amd64/docker-ce-cli_27.5.1-1~debian.12~bookworm_amd64.deb
+axel https://download.docker.com/linux/debian/dists/bookworm/pool/stable/amd64/docker-ce_27.5.1-1~debian.12~bookworm_amd64.deb
+axel https://download.docker.com/linux/debian/dists/bookworm/pool/stable/amd64/docker-compose-plugin_2.32.4-1~debian.12~bookworm_amd64.deb
 
 echo "Installing Docker packages..."
 sudo dpkg -i containerd.io_1.7.25-1_amd64.deb \

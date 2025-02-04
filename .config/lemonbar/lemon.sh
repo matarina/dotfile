@@ -19,7 +19,7 @@ ip_interface=$(get_active_interface)
 readonly CD_BACKGROUND="#0E0D0D"
 readonly CD_FOREGROUND="#f8f8ff"
 readonly CD_UNDERLINE="#1d1f21"
-readonly CO_UNDERLINE="#259C6D"
+readonly CO_UNDERLINE="#575752"
 readonly CF_UNDERLINE="#D76418"
 readonly CF_BACKGROUND="#D76418"
 readonly CF_FOREGROUND="#FFFFFF"
@@ -32,7 +32,7 @@ bspwm() {
     occupied_desktops=$(bspc query -D -d .occupied)
     current_desktop=$(bspc query -D -d .focused)
 
-    readonly CO_BACKGROUND="#2E8B57"
+    readonly CO_BACKGROUND="#575752"
 
     local result="%{B$CD_BACKGROUND}%{F$CD_FOREGROUND}"
 

@@ -1,35 +1,53 @@
 #!/bin/sh
-sxhkd &
-fcitx5 &
-feh --bg-scale /home/ma/.config/wall.png &
-redshift -P -O 3600 &
-(sleep 2 && dunst ) &
-(sleep 2 && picom) &
-#wechat &
-#firefox &
 
+# Kill existing processes if running
+killall -q sxhkd picom dunst
+
+# Ensure D-Bus session
+if [ -z "$DBUS_SESSION_BUS_ADDRESS" ]; then
+    eval $(dbus-launch --sh-syntax)
+    export DBUS_SESSION_BUS_ADDRESS
+    export DBUS_SESSION_BUS_PID
+fi
+
+
+# Start essential services
+sxhkd &
+dunst &
+picom &
+fcitx5 &
+redshift -P -O 3600 &
+
+# Wait a moment to ensure services start properly
+sleep 1
+
+# Send notifications
+notify-send "Window Manager" "Services started successfully" -t 2000
+
+# Monitor and workspace configuration
 bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 
-bspc config border_width        2
-bspc config window_gap          2
-bspc config focused_border_color "#b5ada5"
-bspc config focus_follows_pointer true
-bspc config borderless_monocle   true
-bspc config gapless_monocle      true
+# General configuration
+bspc config border_width            2
+bspc config window_gap             2
+bspc config focused_border_color   "#b5ada5"
+bspc config normal_border_color    "#2e3440"
+bspc config focus_follows_pointer  true
+bspc config borderless_monocle     true
+bspc config gapless_monocle        true
+bspc config split_ratio            0.52
+bspc config automatic_scheme       alternate
 
-
-
-
-#windows rules
+# Window rules
 bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a Clash-verge desktop='^7'
 bspc rule -a wechat desktop='^5'
 bspc rule -a WeCom state=floating
-bspc rule -a Eog state=floating  rectangle=800x600+1200+50
+bspc rule -a Eog state=floating rectangle=800x600+1200+50
 bspc rule -a mplayer2 state=floating
 bspc rule -a R_x11 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
-
-
+# Optional: Set BSPWM specific environment variables
+export _JAVA_AWT_WM_NONREPARENTING=1200
