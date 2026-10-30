@@ -1,16 +1,11 @@
-# Dotfile Configuration
+# ~/.config
 
-This repository contains my dotfiles configuration for various tools and applications. These configuration files help in setting up a consistent environment across different machines.
+Mirrors the live config of **archma** (Arch Linux, X11, i3wm + Papersway).
 
-## Included Configurations
+* `i3/` - window manager. Papersway owns the layout; Super+F floats, Super+R
+  toggles full-width column.
+* `kitty/`, `fcitx5/`, `nvim/`, `tmux/` - terminal, input method, editor, multiplexer.
+* fcitx5 themes and rime patches live in `../.local/share/fcitx5/`.
 
-- `bsp-layout/bsp-layout`: Configuration for BSP layout manager
-- `clash_verge.AppImage`: Application image for Clash Verge
-- (Add other configurations as needed)
-
-## How to Use
-
-1. Clone this repository to your local machine:
-   ```bash
-   git clone https://github.com/matarina/dotfile.git
-
+See the repo root `README.md` and `deploy.sh` for the full picture and the
+`/home/march` path-rewrite note.
