@@ -1,0 +1,25 @@
+#!/bin/bash
+# Save a screenshot from the native X11 desktop and copy the PNG to CLIPBOARD.
+set -euo pipefail
+capture_mode="${1:-region}"
+case "$capture_mode" in
+    region) capture_args=(-s) ;;
+    window) capture_args=(-u) ;;
+    screen) capture_args=() ;;
+    *) echo 'Usage: screencapture-image [region|window|screen]' >&2; exit 2 ;;
+esac
+export DISPLAY="${DISPLAY:-:0}"
+capture_dir="$HOME/Pictures/Screenshots"
+mkdir -p "$capture_dir"
+capture_path="$capture_dir/$(date +%Y-%m-%d_%H-%M-%S_%N)_${capture_mode}.png"
+if ! scrot -z "${capture_args[@]}" -F "$capture_path"; then
+    exit 1
+fi
+test -s "$capture_path"
+# The clipboard owner must survive this script and its launcher's process group.
+if setsid --fork --wait xclip -selection clipboard -target image/png -i "$capture_path"; then
+    notify-send -u normal -t 3000 'Screenshot saved and copied' "$capture_path" || true
+else
+    notify-send -u normal -t 5000 'Screenshot saved; copy failed' "$capture_path" || true
+fi
+printf '%s\n' "$capture_path"

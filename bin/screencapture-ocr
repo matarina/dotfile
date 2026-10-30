@@ -1,0 +1,48 @@
+#!/bin/bash
+# Native X11 screenshot OCR. Region: Super+Shift+G. Window: Super+Ctrl+O.
+set -euo pipefail
+ocr_mode="${1:-region}"
+case "$ocr_mode" in
+    region|window) ;;
+    *) echo 'Usage: screencapture-ocr [region|window]' >&2; exit 2 ;;
+esac
+export DISPLAY="${DISPLAY:-:0}"
+ocr_tmp_dir=$(mktemp -d)
+trap 'rm -rf "$ocr_tmp_dir"' EXIT
+ocr_image="$ocr_tmp_dir/screenshot.png"
+ocr_args=(-s)
+[ "$ocr_mode" = window ] && ocr_args=(-u)
+if ! scrot -z "${ocr_args[@]}" -F "$ocr_image"; then
+    notify-send -u normal -t 3000 'OCR cancelled' 'No capture selected' || true
+    exit 0
+fi
+# Uniform margins can make small text disappear in OCR's resized input.
+ocr_trimmed="$ocr_tmp_dir/trimmed.png"
+if magick "$ocr_image" -fuzz 2% -trim +repage "$ocr_trimmed" 2>/dev/null && [ -s "$ocr_trimmed" ]; then
+    read -r ocr_width ocr_height < <(identify -format '%w %h\n' "$ocr_trimmed")
+    if [ "$ocr_width" -gt 20 ] && [ "$ocr_height" -gt 20 ]; then
+        ocr_image="$ocr_trimmed"
+    fi
+fi
+if ! ocr_text=$(python3 - "$ocr_image" <<'PY'
+import sys
+import rapidocr
+result = rapidocr.RapidOCR()(sys.argv[1])
+if result and result.txts:
+    print('\n'.join(result.txts))
+PY
+); then
+    notify-send -u normal -t 5000 'OCR failed' 'Text recognition failed' || true
+    exit 1
+fi
+if [ -z "$ocr_text" ]; then
+    notify-send -u normal -t 3000 'OCR empty' 'No text detected' || true
+    exit 0
+fi
+ocr_payload=$(python3 -c 'import json,sys; print(json.dumps({"text":sys.argv[1]}))' "$ocr_text")
+if ! /home/march/.local/bin/cua-driver call clipboard_write --json "$ocr_payload" >/dev/null; then
+    notify-send -u normal -t 5000 'OCR failed' 'Could not copy recognized text' || true
+    exit 1
+fi
+ocr_preview=$(python3 -c 'import sys; print(sys.argv[1][:200])' "$ocr_text")
+notify-send -u normal -t 5000 'OCR complete' "$ocr_preview" || true

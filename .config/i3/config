@@ -352,7 +352,7 @@ for_window [class="(?i)^maestro$" title="^Register with Job Server$"] floating e
 # NOTE: for_window only fires for NEWLY mapped windows — panels that are
 # already open need the same command applied by hand once.
 # NOTE: this i3 build rejects the documented "!=" criteria operator
-# ("Expected one of these tokens: "="), so the negation is done with a PCRE
+# ("Expected one of these tokens: "=""), so the negation is done with a PCRE
 # negative lookahead instead: title="^(?!Maestro)" == title does NOT start with
 # "Maestro". It is a regex, so an empty-title maestro window matches too.
 for_window [class="(?i)^maestro$" title="^(?!Maestro)"] floating enable
