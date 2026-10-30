@@ -1,0 +1,383 @@
+# i3 config (v4) — Papersway scrolling columns, 2026-10-13
+# Previous (niri/DMS-style) config backed up as config.bak-20261012
+# Reference: https://i3wm.org/docs/userguide.html
+#
+# Goal: mirror the GNOME 51 + PaperWM habits from the Wayland session,
+# especially the custom shortcuts:
+#   Super+1..0      jump to workspace N (0=10); odd pinned to DP-1 (left),
+#                   even pinned to HDMI-2 (right/primary)  — parity patch
+#   Super+o         focus the OTHER monitor                — switch-monitor
+#   Super+Shift+o   move window to the OTHER monitor       — move-monitor patch
+# Super+Shift+o previously ran the OCR tool; moved to Super+Shift+g.
+
+# ── Modifier ──
+set $mod Mod4
+
+# ── Font (CJK-safe) ──
+font pango:Noto Sans CJK SC,monospace 10
+
+# ── PaperWM-like behaviour ──
+# precise focus: click/keyboard focus only, no focus-follows-mouse
+focus_follows_mouse no
+# Papersway scrolling columns
+focus_wrapping no
+default_orientation horizontal
+workspace_layout default
+default_border pixel 2
+# papers have no titlebar, just a thin border (2px shows focus colour)
+for_window [class=".*"] border pixel 2
+default_floating_border normal
+# focused window border: dark orange
+client.focused #d35400 #d35400 #ffffff #d35400
+# PaperWM window-gap is 5 (outer: 10 -> 5 -> 1 on 2026-10-13: near edge-to-edge)
+gaps inner 5
+gaps outer 1
+floating_modifier $mod
+
+# ── DingTalk image viewer ("分享的图片") ──
+# DingTalk creates the image-viewer window once on whatever workspace is
+# current at startup, then just hide/shows (unmap/map) that same window on
+# click. i3 never re-focuses a re-mapped managed window, so the viewer stays
+# parked off on its original workspace: the picture never floats above the
+# chat, and stays blank (unpainted) until it gets a configure. Float it,
+# bring it to the workspace that is current when it maps (the chat), focus
+# and re-size it so Qt repaints. (added 2026-10-14)
+for_window [class="com.alibabainc.dingtalk" title="分享的图片"] floating enable, move window to workspace current, focus, resize set 1200 800, move position center
+
+# ── Environment ──
+exec_always --no-startup-id /home/march/.config/i3/session-env.sh
+exec --no-startup-id xsetroot -solid '#1d2021' -cursor_name left_ptr
+exec --no-startup-id xset s off -dpms
+exec --no-startup-id xrdb -merge ~/.Xresources
+exec --no-startup-id ~/.config/i3/setup-monitors.sh
+
+# ── Autostart ──
+exec --no-startup-id dex --autostart --environment i3
+# Input method (CJK)
+exec --no-startup-id fcitx5
+# Polkit auth agent
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+# Screen lock
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+# Network manager
+exec --no-startup-id nm-applet
+exec --no-startup-id blueman-applet
+# CUA driver (this session doubles as the GUI-automation desktop;
+# native Xorg = full-screen capture + uinput/MPX + background input work)
+exec --no-startup-id bash -c 'setsid cua-driver serve >/tmp/cua-driver-serve.log 2>&1 </dev/null &'
+# Centered, click-through Papersway column dots (single instance).
+exec_always --no-startup-id /home/march/.local/bin/papersway-dots
+# Keep the Papersway service honest.  `i3-msg reload` deliberately keeps the
+# running Papersway process and i3bar never respawns its status command, so if
+# the daemon dies every papersway-msg shortcut fails with ENXIO on the command
+# fifo while the session still looks healthy.  The guard notices and recovers.
+exec_always --no-startup-id /home/march/.local/bin/papersway-guard
+
+# ── Apps ──
+set $terminal /home/march/.local/bin/kitty
+set $browser firefox
+set $filemanager thunar
+set $launcher rofi -show drun
+set $switcher rofi -show window
+
+# ═══════════════════════ Workspaces: 1-5 DP-1, 6-10 HDMI-2 ═══════════════════
+# DP-1 (left) holds workspaces 1-5, HDMI-2 (right/primary) holds 6-10.
+# HDMI-1/HDMI-3 no longer exist physically; the real monitors are DP-1
+# (2560x1440) and HDMI-2 (1920x1080 primary). If the cable layout changes,
+# fix the names here and in ~/.config/i3/setup-monitors.sh.
+workspace 1  output DP-1
+workspace 2  output DP-1
+workspace 3  output DP-1
+workspace 4  output DP-1
+workspace 5  output DP-1
+workspace 6  output HDMI-2
+workspace 7  output HDMI-2
+workspace 8  output HDMI-2
+workspace 9  output HDMI-2
+workspace 10 output HDMI-2
+
+# Super+1..0 -> workspace N (0=10), focus follows onto the pinned monitor
+bindsym $mod+1 workspace number 1
+bindsym $mod+2 workspace number 2
+bindsym $mod+3 workspace number 3
+bindsym $mod+4 workspace number 4
+bindsym $mod+5 workspace number 5
+bindsym $mod+6 workspace number 6
+bindsym $mod+7 workspace number 7
+bindsym $mod+8 workspace number 8
+bindsym $mod+9 workspace number 9
+bindsym $mod+0 workspace number 10
+
+# Super+Shift+1..0 -> move window to workspace N (lands on its pinned monitor)
+bindsym $mod+Shift+1 move container to workspace number 1
+bindsym $mod+Shift+2 move container to workspace number 2
+bindsym $mod+Shift+3 move container to workspace number 3
+bindsym $mod+Shift+4 move container to workspace number 4
+bindsym $mod+Shift+5 move container to workspace number 5
+bindsym $mod+Shift+6 move container to workspace number 6
+bindsym $mod+Shift+7 move container to workspace number 7
+bindsym $mod+Shift+8 move container to workspace number 8
+bindsym $mod+Shift+9 move container to workspace number 9
+bindsym $mod+Shift+0 move container to workspace number 10
+
+# Super+Home / Super+End -> first / last workspace
+bindsym $mod+Home workspace number 1
+bindsym $mod+End  workspace number 10
+
+# ═══════════ Paper strip navigation (h/l = papers, vertical = spaces) ═══════════
+# Scroll columns: Super+H/L or Left/Right; Shift moves the column
+bindsym $mod+h exec --no-startup-id /home/march/.local/bin/papersway-msg focus left
+bindsym $mod+l exec --no-startup-id /home/march/.local/bin/papersway-msg focus right
+bindsym $mod+Left exec --no-startup-id /home/march/.local/bin/papersway-msg focus left
+bindsym $mod+Right exec --no-startup-id /home/march/.local/bin/papersway-msg focus right
+bindsym $mod+Shift+h exec --no-startup-id /home/march/.local/bin/papersway-msg move left
+bindsym $mod+Shift+l exec --no-startup-id /home/march/.local/bin/papersway-msg move right
+bindsym $mod+Shift+Left exec --no-startup-id /home/march/.local/bin/papersway-msg move left
+bindsym $mod+Shift+Right exec --no-startup-id /home/march/.local/bin/papersway-msg move right
+
+# Vertical column navigation: Super+J/K or Up/Down; Page keys switch workspaces
+bindsym $mod+j focus down
+bindsym $mod+Down focus down
+bindsym $mod+Page_Down exec --no-startup-id /home/march/.local/bin/papersway-msg workspace next_on_output
+bindsym $mod+k focus up
+bindsym $mod+Up focus up
+bindsym $mod+Page_Up exec --no-startup-id /home/march/.local/bin/papersway-msg workspace prev_on_output
+# Shift+J/K or Up/Down moves vertically; Shift/Ctrl+Page moves to another workspace
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Page_Down exec --no-startup-id /home/march/.local/bin/papersway-msg move-to-workspace next_on_output
+bindsym $mod+Ctrl+Page_Down exec --no-startup-id /home/march/.local/bin/papersway-msg move-to-workspace next_on_output
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Page_Up exec --no-startup-id /home/march/.local/bin/papersway-msg move-to-workspace prev_on_output
+bindsym $mod+Ctrl+Page_Up exec --no-startup-id /home/march/.local/bin/papersway-msg move-to-workspace prev_on_output
+
+# Super+comma / period: previous / next workspace (PaperWM switch-previous/next)
+bindsym $mod+comma exec --no-startup-id /home/march/.local/bin/papersway-msg workspace prev_on_output
+bindsym $mod+period exec --no-startup-id /home/march/.local/bin/papersway-msg workspace next_on_output
+# Super+Ctrl+comma/period: move window there
+bindsym $mod+Ctrl+comma exec --no-startup-id /home/march/.local/bin/papersway-msg move-to-workspace prev_on_output
+bindsym $mod+Ctrl+period exec --no-startup-id /home/march/.local/bin/papersway-msg move-to-workspace next_on_output
+
+# Super+Above_Tab: back to previously focused workspace
+bindsym $mod+grave workspace back_and_forth
+
+# Super+Tab: app switcher (closest to PaperWM live-alt-tab); Alt+Tab: back&forth
+bindsym $mod+Tab      exec --no-startup-id $switcher
+bindsym Mod1+Tab      workspace back_and_forth
+# Super+Escape: overview-ish window picker
+bindsym $mod+Escape   exec --no-startup-id $switcher
+
+# ═══════════════════════ Cross-monitor (the custom shortcuts) ═══════════════════════
+# Super+o            focus other monitor        (PaperWM switch-monitor, patched)
+bindsym $mod+o exec --no-startup-id ~/bin/i3-mon.sh focus-other
+# Super+Shift+o      move window to other monitor + follow (move-monitor patch)
+bindsym $mod+Shift+o exec --no-startup-id ~/bin/i3-mon.sh move-other
+# Super+Ctrl+H/L/arrows (switch-global) -> focus other monitor
+bindsym $mod+Ctrl+Left   exec --no-startup-id ~/bin/i3-mon.sh focus-other
+bindsym $mod+Ctrl+Right  exec --no-startup-id ~/bin/i3-mon.sh focus-other
+bindsym $mod+Ctrl+h      exec --no-startup-id ~/bin/i3-mon.sh focus-other
+bindsym $mod+Ctrl+l      exec --no-startup-id ~/bin/i3-mon.sh focus-other
+# Super+Shift+Ctrl+arrows (move-monitor-left/right) -> same move-other action
+bindsym $mod+Shift+Ctrl+Left   exec --no-startup-id ~/bin/i3-mon.sh move-other
+bindsym $mod+Shift+Ctrl+Right  exec --no-startup-id ~/bin/i3-mon.sh move-other
+# Ctrl+Alt+Shift+Left/Right (move-space-monitor): whole current workspace -> other output
+bindsym $mod+Ctrl+Mod1+Left  move workspace to output left
+bindsym $mod+Ctrl+Mod1+Right move workspace to output right
+# NOTE: Super+n (PaperWM new-window) -> next empty workspace, same parity first
+bindsym $mod+n exec --no-startup-id ~/bin/i3-mon.sh new-space
+
+# No i3 analogue (intentionally unmapped): Super+Alt+arrows swap-monitor,
+# Super+c / Super+v center, Super+bracketleft/right drift, Super+Shift+c focus-mode.
+
+# ── Close window (PaperWM close-window = Super+Q) ──
+bindsym $mod+q         kill
+bindsym $mod+Shift+q   kill
+bindsym Mod1+F4         kill
+
+# ── Launchers ──
+bindsym $mod+Return   exec $terminal --single-instance
+bindsym $mod+t        exec $terminal --single-instance
+bindsym $mod+b        exec $browser
+bindsym $mod+e        exec $filemanager
+bindsym $mod+d        exec $launcher
+bindsym $mod+z        exec $launcher
+bindsym $mod+slash    exec $terminal --single-instance --class quickterminal
+
+# ── Floating / fullscreen ──
+# NOTE 2026-10-13: $mod+space removed — it is the fcitx5 IME switch key and i3's
+# passive grab was swallowing it. Do not rebind space/Shift+space here —
+# fcitx5 uses both.
+# NOTE 2026-10-30: Super+f now toggles float/tile for the focused window
+# (floating overlay <-> back into its Papersway column). Super+Shift+f is still
+# true fullscreen. The full-width-column toggle moved off Super+f and now lives
+# on Super+r only.
+bindsym $mod+f floating toggle
+bindsym $mod+Shift+f    fullscreen toggle   # true fullscreen now here
+
+# ── Column grouping (Papersway controls the layout) ──
+bindsym $mod+Ctrl+e exec --no-startup-id /home/march/.local/bin/papersway-msg absorb-expel left
+bindsym $mod+Ctrl+Shift+e exec --no-startup-id /home/march/.local/bin/papersway-msg absorb-expel right
+# App selector panel (same rofi drun as Super+d / Super+z)
+bindsym $mod+a          exec --no-startup-id $launcher
+
+# ── Column width toggle and row height adjustment ──
+# Super+r is the ONLY full-width column toggle now (Super+f is float/tile).
+bindsym $mod+r exec --no-startup-id /home/march/.local/bin/papersway-msg width toggle
+bindsym $mod+Shift+r resize grow height 30 px or 5 ppt
+
+# ── +/- adjusts visible columns; Shift adjusts row height ──
+bindsym $mod+minus exec --no-startup-id /home/march/.local/bin/papersway-msg cols decr
+bindsym $mod+plus exec --no-startup-id /home/march/.local/bin/papersway-msg cols incr
+bindsym $mod+equal exec --no-startup-id /home/march/.local/bin/papersway-msg cols incr
+bindsym $mod+Shift+minus resize shrink height 30 px or 5 ppt
+bindsym $mod+Shift+plus resize grow height 30 px or 5 ppt
+bindsym $mod+Shift+equal resize grow height 30 px or 5 ppt
+mode "resize" {
+    bindsym Left   exec --no-startup-id /home/march/.local/bin/papersway-msg cols decr
+    bindsym Down   resize grow height 10 px or 10 ppt
+    bindsym Up     resize shrink height 10 px or 10 ppt
+    bindsym Right  exec --no-startup-id /home/march/.local/bin/papersway-msg cols incr
+    bindsym h      exec --no-startup-id /home/march/.local/bin/papersway-msg cols decr
+    bindsym j      resize grow height 10 px or 10 ppt
+    bindsym k      resize shrink height 10 px or 10 ppt
+    bindsym l      exec --no-startup-id /home/march/.local/bin/papersway-msg cols incr
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+    bindsym $mod+Ctrl+r mode "default"
+}
+bindsym $mod+Ctrl+r mode "resize"
+
+# ── Scratchpad (slurp-in analogue: stash away / pull back) ──
+bindsym $mod+Shift+i          move scratchpad
+bindsym $mod+i                scratchpad show
+bindsym $mod+Shift+semicolon  move scratchpad
+bindsym $mod+semicolon        scratchpad show
+
+# ── Screenshot (scrot on X11) ──
+bindsym --release $mod+Shift+s exec --no-startup-id /home/march/bin/screencapture-image region
+bindsym $mod+Mod1+a       exec --no-startup-id /home/march/bin/screencapture-image region
+bindsym $mod+Mod1+Ctrl+a  exec --no-startup-id /home/march/bin/screencapture-image window
+bindsym Print            exec --no-startup-id /home/march/bin/screencapture-image region
+bindsym Ctrl+Print       exec --no-startup-id /home/march/bin/screencapture-image window
+bindsym Shift+Print      exec --no-startup-id /home/march/bin/screencapture-image screen
+
+# ── Media keys ──
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioMute        exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym XF86AudioMicMute     exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
+bindsym XF86AudioPlay        exec --no-startup-id playerctl play-pause
+bindsym XF86AudioPause       exec --no-startup-id playerctl play-pause
+bindsym XF86AudioNext        exec --no-startup-id playerctl next
+bindsym XF86AudioPrev        exec --no-startup-id playerctl previous
+
+# ── Brightness ──
+bindsym XF86MonBrightnessUp   exec --no-startup-id brightnessctl s 5%+
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl s 5%-
+
+# ── Misc tools ──
+bindsym $mod+m                exec --no-startup-id xfce4-taskmanager || htop
+bindsym Ctrl+Mod1+Delete       exec --no-startup-id xfce4-taskmanager || htop
+bindsym $mod+Shift+Escape     exec --no-startup-id i3-nagbar -t warning -m "Power menu" -B "Lock" "loginctl lock-session" -B "Suspend" "systemctl suspend" -B "Reboot" "systemctl reboot" -B "Power off" "systemctl poweroff"
+bindsym $mod+y                exec --no-startup-id feh --bg-scale ~/Pictures/wallpaper.jpg 2>/dev/null || true
+bindsym $mod+Mod1+v            exec --no-startup-id dmenuclipboard || xclip -o
+bindsym $mod+Shift+n          exec --no-startup-id $terminal --single-instance -e vim ~/.local/share/notes.txt
+bindsym $mod+Mod1+l            exec --no-startup-id loginctl lock-session
+bindsym $mod+Mod1+p            exec --no-startup-id xset dpms force off && loginctl lock-session && systemctl suspend
+bindsym $mod+F1               exec --no-startup-id pkill fcitx5 || fcitx5
+bindsym $mod+F2               exec --no-startup-id lxappearance
+# OCR (was Super+Shift+o in the old config; that key is now move-monitor)
+bindsym $mod+Shift+g          exec --no-startup-id /home/march/bin/screencapture-ocr 2>/dev/null || true
+# 2026-10-13: inline scrot|xclip path removed (xclip is not installed); window OCR
+# now lives in the native X11 screencapture-ocr script.
+bindsym $mod+Ctrl+o           exec --no-startup-id ~/bin/screencapture-ocr window
+
+# ── i3 control ──
+bindsym $mod+Shift+c          reload
+bindsym $mod+Shift+Ctrl+r     restart
+bindsym $mod+Shift+Ctrl+w     exec --no-startup-id $terminal --single-instance -e vim ~/.config/i3/config
+bindsym $mod+Shift+slash      exec --no-startup-id $terminal --single-instance -e vim ~/.config/i3/config
+bindsym $mod+p                reload
+bindsym $mod+Shift+e          exec "i3-nagbar -t warning -m 'Exit i3?' -B 'Yes, exit' 'i3-msg exit'"
+
+# ── Workspace rename ──
+bindsym Ctrl+Shift+r exec --no-startup-id $terminal --single-instance -e 'i3-msg -t get_workspaces | jq -r ".[].name" | dmenu | xargs -I{} i3-msg "workspace rename {}"'
+
+# ── Bar (GNOME-style top bar) ──
+bar {
+    mode dock
+    position top
+    tray_output primary
+    status_command /home/march/.local/bin/papersway-bar --cols=2
+    workspace_command /home/march/.local/bin/papersway-ws-cmd
+    font pango:Noto Sans CJK SC,monospace 10
+    workspace_buttons yes
+    modifier Mod1
+    binding_mode_indicator yes
+    separator_symbol "│"
+    colors {
+        background        #1d2021
+        statusline        #cccccc
+        separator         #5f676a
+        focused_workspace #2a2e2f #0089ff #ffffff
+        active_workspace  #2a2e2f #5f676a #dddddd
+        inactive_workspace #2a2e2f #333333 #999999
+        urgent_workspace  #2a2e2f #e60053 #ffffff
+        binding_mode      #2a2e2f #0089ff #ffffff
+    }
+}
+
+# ── Window rules ──
+# Floating dialogs / utilities
+for_window [class="^gnome-calculator$" class="^galculator$"] floating enable
+for_window [class="^blueman-manager$"] floating enable
+for_window [class="^nm-connection-editor$"] floating enable
+for_window [title="^Picture-in-Picture$"] floating enable
+for_window [class="^zoom$"] floating enable
+# Float Maestro dialogs without changing the main project window.
+for_window [class="(?i)^maestro$" window_type="dialog"] floating enable, move position center
+for_window [class="(?i)^maestro$" window_type="utility"] floating enable, move position center
+for_window [class="(?i)^maestro$" title="^Maestro 2026-2$"] floating enable, move position center
+for_window [class="(?i)^maestro$" title="^Register with Job Server$"] floating enable, move position center
+
+# ── Maestro pop-up panels (added 2026-10-27) ──
+# Maestro opens every tool panel (Molecular Dynamics, 2D Sketcher, Docking,
+# System Builder, Protein Preparation, ...) as its own top-level WM_CLASS
+# "maestro" window. Tiled, they squeeze the main project window, hop between
+# monitors, and have already produced a panel spanning BOTH outputs.
+# The main project window is titled "Maestro - <project>.prj"; panels are not.
+# So: float every maestro window whose title does NOT start with "Maestro",
+# give it a titlebar, a comfortable size, and center it on the focused output.
+# NOTE: for_window only fires for NEWLY mapped windows — panels that are
+# already open need the same command applied by hand once.
+# NOTE: this i3 build rejects the documented "!=" criteria operator
+# ("Expected one of these tokens: "="), so the negation is done with a PCRE
+# negative lookahead instead: title="^(?!Maestro)" == title does NOT start with
+# "Maestro". It is a regex, so an empty-title maestro window matches too.
+for_window [class="(?i)^maestro$" title="^(?!Maestro)"] floating enable
+for_window [class="(?i)^maestro$" title="^(?!Maestro)"] border normal
+for_window [class="(?i)^maestro$" title="^(?!Maestro)"] resize set 1500 1050
+for_window [class="(?i)^maestro$" title="^(?!Maestro)"] move position center
+# Maestro additionally maps a stray EMPTY 640x480 top-level window (WM_CLASS
+# maestro, _NET_WM_NAME exactly "maestro", no content => renders solid black) at
+# the screen origin, on top of Maestro's own menu bar. The generic panel rule
+# above matches it too; this later, more specific rule wins and drops it on the
+# scratchpad, so it is simply gone. Get it back with the scratchpad key if ever
+# needed.
+for_window [class="(?i)^maestro$" title="^maestro$"] floating enable
+for_window [class="(?i)^maestro$" title="^maestro$"] move scratchpad
+# fcitx5 GUI (candidate/input-method windows): always-floating overlay —
+# borderless, never steals focus, follows across all workspaces.
+# (On X11 the candidate popup is override-redirect: i3 never manages it and it
+# is top-most by design. This rule is the safety net for any WM-managed fcitx
+# window — e.g. addon/config windows — so nothing IME-related ever tiles.)
+for_window [class="(?i)^fcitx"] floating enable, border none, no_focus, sticky enable
+# Place main WeChat/DingTalk windows on workspace 5. Match their main-window
+# titles so utility windows (emoji panels and profile cards) stay with the chat.
+for_window [class="^wechat$" title="^Weixin$"] move to workspace number 5
+for_window [class="^(DingTalk|dingtalk|com.alibabainc.dingtalk)$" title="^钉钉$"] move to workspace number 5
+
+# ── End of config ──
+
+
