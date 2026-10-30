@@ -1,4 +1,4 @@
-# General settings (consolidated)
+-- General settings (consolidated)
 vim.g.mapleader, vim.g.maplocalleader = " ", "\\"
 --vim.env.PYTHONDONTWRITEBYTECODE = "1"
 --vim.env.PYTHONPYCACHEPREFIX = vim.fn.stdpath("cache") .. "/pycache"
@@ -296,7 +296,6 @@ vim.api.nvim_create_autocmd("ColorScheme", {
   pattern = "*",
   callback = set_flash_highlights,
 })
-
 
 
 
