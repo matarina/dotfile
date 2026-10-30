@@ -1,0 +1,143 @@
+#!/usr/bin/env python3
+"""Watchdog for the Papersway service and its column indicator.
+
+Why this exists
+---------------
+Papersway runs *as the i3bar status command*.  Two consequences:
+
+  * `i3-msg reload` deliberately keeps the running Papersway process, and
+    i3bar does not respawn the status command if it dies.  So when the daemon
+    goes away, nothing brings it back.
+  * Every `papersway-msg ...` binding (Super+h/l/f, Super+period, ...) then
+    dies with `[Errno 6] ... papersway.<i3pid>.pipe` while the session still
+    looks completely healthy.  Silent failure.
+
+This guard polls for the two things that actually matter:
+  1. a live *reader* on the command fifo (without one, every shortcut fails)
+  2. the column indicator process
+and recovers them.  It is deliberately conservative: a condition must be seen
+twice in a row, and i3 restarts are rate-limited.
+"""
+
+import fcntl
+import os
+import subprocess
+import sys
+import time
+from pathlib import Path
+
+RT = Path(os.environ.get("XDG_RUNTIME_DIR", "/run/user/1000"))
+STATE_DIR = Path("/home/march/.local/state/papersway")
+LOG = STATE_DIR / "guard.log"
+LOCK = RT / "papersway-guard.lock"
+
+CHECK_INTERVAL = 15        # seconds between checks
+CONFIRMATIONS = 2          # consecutive bad checks before acting
+RESTART_MIN_INTERVAL = 60  # seconds between i3 restarts
+
+STATE_DIR.mkdir(parents=True, exist_ok=True)
+os.environ.setdefault("DISPLAY", ":0")
+
+
+def log(msg):
+    line = "%s %s\n" % (time.strftime("%Y-%m-%d %H:%M:%S"), msg)
+    try:
+        with LOG.open("a") as fh:
+            fh.write(line)
+    except OSError:
+        pass
+
+
+def pgrep(*args):
+    r = subprocess.run(["pgrep", *args], capture_output=True, text=True)
+    return [p for p in r.stdout.split() if p]
+
+
+def i3_pid():
+    pids = pgrep("-x", "i3")
+    return pids[0] if pids else None
+
+
+def fifo_for(pid):
+    return RT / "i3" / ("papersway.%s.pipe" % pid)
+
+
+def fifo_reader(fifo):
+    """True if some process holds `fifo` open read-only."""
+    target = str(fifo)
+    for proc in Path("/proc").iterdir():
+        if not proc.name.isdigit():
+            continue
+        try:
+            fds = list((proc / "fd").iterdir())
+        except OSError:
+            continue
+        for fd in fds:
+            try:
+                if os.readlink(fd) != target:
+                    continue
+                flags = int(
+                    (proc / "fdinfo" / fd.name).read_text().split()[1], 8)
+                if flags & os.O_ACCMODE == os.O_RDONLY:
+                    return True
+            except (OSError, IndexError, ValueError):
+                continue
+    return False
+
+
+def i3msg(*cmd):
+    return subprocess.run(["i3-msg", *cmd], capture_output=True, text=True)
+
+
+def main():
+    lock_fh = LOCK.open("w")
+    try:
+        fcntl.flock(lock_fh, fcntl.LOCK_EX | fcntl.LOCK_NB)
+    except OSError:
+        log("another guard already running, exiting")
+        return 0
+
+    log("guard started (pid %d)" % os.getpid())
+    bad_service = 0
+    bad_indicator = 0
+    last_restart = 0.0
+
+    while True:
+        time.sleep(CHECK_INTERVAL)
+
+        pid = i3_pid()
+        if pid is None:
+            continue
+        fifo = fifo_for(pid)
+
+        # ---- 1. papersway command pipe ---------------------------------
+        ok = fifo.exists() and fifo_reader(fifo)
+        bad_service = 0 if ok else bad_service + 1
+        if bad_service >= CONFIRMATIONS:
+            now = time.time()
+            if now - last_restart >= RESTART_MIN_INTERVAL:
+                log("no reader on %s -> i3 restart" % fifo)
+                i3msg("restart")
+                last_restart = now
+                bad_service = 0
+                time.sleep(10)          # let the bar come back
+                continue
+            else:
+                log("no reader on %s (restart throttled)" % fifo)
+                bad_service = 0
+
+        # ---- 2. column indicator --------------------------------------
+        alive = bool(pgrep("-f", "column_indicator.py"))
+        bad_indicator = 0 if alive else bad_indicator + 1
+        if bad_indicator >= CONFIRMATIONS:
+            log("column indicator down -> starting papersway-dots")
+            (RT / "papersway-dots.lock").unlink(missing_ok=True)
+            subprocess.Popen(
+                ["setsid", "/home/march/.local/bin/papersway-dots"],
+                stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+                start_new_session=True)
+            bad_indicator = 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

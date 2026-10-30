@@ -1,0 +1,6 @@
+#!/bin/bash
+set -o pipefail
+# Allow the i3 bar configuration to select the initial column count.
+if [ "$#" -eq 0 ]; then set -- --cols=2; fi
+mkdir -p /home/march/.local/state/papersway
+/home/march/.local/bin/papersway --i3status --with-ws-cmd "$@" 2>>/home/march/.local/state/papersway/papersway.log | /usr/bin/python3 /home/march/.local/share/papersway/filter-status.py

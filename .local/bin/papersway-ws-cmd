@@ -1,0 +1,8 @@
+#!/bin/sh
+# User-local Papersway install; always connect to the active X11/i3 session.
+unset SWAYSOCK WAYLAND_DISPLAY
+export DISPLAY="${DISPLAY:-:0}"
+export I3SOCK="$(/usr/bin/i3 --get-socketpath)"
+export XDG_CONFIG_HOME=/home/march/.config
+export PERL5LIB=/home/march/.local/share/papersway/perl5/lib/perl5${PERL5LIB:+:$PERL5LIB}
+exec /home/march/.local/share/papersway/perl5/bin/papersway-ws-cmd "$@"

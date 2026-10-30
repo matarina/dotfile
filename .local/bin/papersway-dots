@@ -1,0 +1,6 @@
+#!/bin/sh
+unset SWAYSOCK WAYLAND_DISPLAY
+export DISPLAY="${DISPLAY:-:0}"
+export GDK_BACKEND=x11
+mkdir -p /home/march/.local/state/papersway
+exec /usr/bin/python3 /home/march/.local/share/papersway/column_indicator.py >> /home/march/.local/state/papersway/dots.log 2>&1
